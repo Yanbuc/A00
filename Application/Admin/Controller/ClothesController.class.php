@@ -25,19 +25,14 @@ class ClothesController extends AdminLoginController
       $productDescprition=$data["productDescpription"];
       $productType= $data["productType"];
       $sex=$data["sex"];
-      $productImage=$data["productImg"];
-
-      $fileName=date("Y_m_d_His").".".explode(".",$_FILES["img"]["name"])[1];
-      $tmpFileName=$_FILES["img"]["tmp_name"];
-      if(!file_exists($fileName)){
-         $is= move_uploaded_file($tmpFileName,ADMIN_CLOTHES_PATH.$fileName);
-         if(!$is){
-             print("hhahhhahah");
-         }else{
-             print("weeere");
+      // 文件上传
+      if(!empty($_FILES["img"])){
+         $fileName=date("Y_m_d_His").".".explode(".",$_FILES["img"]["name"])[1];
+         $tmpFileName=$_FILES["img"]["tmp_name"];
+        if(!file_exists($fileName)){ // 这里的位置写死了
+           $is= move_uploaded_file($tmpFileName,ADMIN_CLOTHES_PATH.$fileName);
          }
       }
-      print(ADMIN_CLOTHES_PATH.$fileName);
-
+     print($productId." ".$productAlis." ".$productPrice." ".$productDescprition." ". $productType." ".$sex);
    }
 }

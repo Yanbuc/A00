@@ -2230,3 +2230,271 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
 
+[ 2019-06-02T19:40:42+08:00 ] ::1 /A00/admin.php/Clothes/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2019-06-02T19:40:46+08:00 ] ::1 /A00/admin.php/Clothes/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: productImg D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2019-06-02T19:42:44+08:00 ] ::1 /A00/admin.php/Clothes/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2019-06-02T19:42:47+08:00 ] ::1 /A00/admin.php/Clothes/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: productImg D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 28 行.
+NOTIC: [2] dir(D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php,D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php):  D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 40 行.
+NOTIC: [2] dir(D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php): failed to open dir: No such file or directory D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2019-06-02T19:43:31+08:00 ] ::1 /A00/admin.php/Clothes/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2019-06-02T19:43:34+08:00 ] ::1 /A00/admin.php/Clothes/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: productImg D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2019-06-02T19:44:36+08:00 ] ::1 /A00/admin.php/Clothes/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2019-06-02T19:44:39+08:00 ] ::1 /A00/admin.php/Clothes/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+NOTIC: [8] Undefined index: productImg D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2019-06-02T19:47:21+08:00 ] ::1 /A00/admin.php/Clothes/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001486s ]
+
+[ 2019-06-02T19:49:18+08:00 ] ::1 /A00/admin.php/Clothes/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+
+[ 2019-06-02T19:49:18+08:00 ] ::1 /A00/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001606s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2019-06-02T19:49:24+08:00 ] ::1 /A00/admin.php/Index/checkLoginIn.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0037s ]
+SQL: select * from a00_users where   username='aaa'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2019-06-02T19:49:26+08:00 ] ::1 /A00/admin.php/Clothes/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2019-06-02T19:49:35+08:00 ] ::1 /A00/admin.php/Clothes/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2019-06-02T19:49:59+08:00 ] ::1 /A00/admin.php/Clothes/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2019-06-02T19:50:03+08:00 ] ::1 /A00/admin.php/Clothes/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
