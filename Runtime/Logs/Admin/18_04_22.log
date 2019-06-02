@@ -1,0 +1,40 @@
+[ 2018-04-22T17:23:07+08:00 ] ::1 /A00/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014430s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025789s ]
+
+[ 2018-04-22T17:23:07+08:00 ] ::1 /A00/admin.php/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
