@@ -23,16 +23,27 @@ function sendClothesData(){
         processData:false,
         cache:false,
         contentType:false,
-      //  dataType:"JSON",
+         dataType:"JSON",
         data:formData,
         success:function(data){
-            alert(data);
+            if(data.status=="success"){
+                layer.msg(data.message,{icon: 1,time:2000},function(index){
+                    layer.close(index);
+                });
+            }else{
+                layer.msg(data.message,{icon: 2,time:2000},function(index){
+                    layer.close(index);
+                });
+            }
+
+          //  alert(data.status+" "+decodeURI(data.message));
         },
         error:function(e,x){
             console.log('nonono');
         }
 
     })
+
 
 
 }

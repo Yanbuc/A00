@@ -50,6 +50,8 @@ define("ADMIN_DEFINE_JS_PATH",CITE_ROOT."A00/Public/Admin/js/");
 define('ADMIN_SESSION_NAME',"username");
 define("ADMIN_CLOTHES_PATH","./Public/picture/clothes/");
 
+define('H_UI_PATH',CITE_ROOT.'A00/Public/static/H-ui/');
+define('H_UI_STATIC_PATH',CITE_ROOT.'A00/Public/static/H-ui/static/');
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

@@ -58,8 +58,19 @@
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>demo.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>themer.js"></script>
     <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>Click.js"></script>
-    <title>MWS Admin - Form Layouts</title>
-
+    <title>A00 后台页面</title>
+    <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/html5.js"></script>
+    <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/respond.min.js"></script>
+    <![endif]-->
+    <link href="<?php echo (H_UI_STATIC_PATH); ?>h-ui/css/H-ui.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo (H_UI_PATH); ?>lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
+    <!--<link href="<?php echo (H_UI_STATIC_PATH); ?>h-ui/css/style.css" rel="stylesheet" type="text/css" />--><!--自己的样式-->
+    <!--[if IE 6]>
+    <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('.pngfix,.icon');</script>
+    <![endif]-->
+    <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/layer/2.4/layer.js"></script>
 </head>
 
 <body>
