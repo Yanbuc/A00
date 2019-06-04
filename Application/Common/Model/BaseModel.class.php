@@ -27,6 +27,9 @@ class BaseModel extends Model
            return $data;
        }
 
-
+      public function baseFind($sql){
+          $data= $this->query($sql);
+          return $data;
+      }
 
 }

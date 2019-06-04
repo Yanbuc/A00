@@ -29,10 +29,12 @@ function sendClothesData(){
             if(data.status=="success"){
                 layer.msg(data.message,{icon: 1,time:2000},function(index){
                     layer.close(index);
+                    window.history.back();
                 });
             }else{
                 layer.msg(data.message,{icon: 2,time:2000},function(index){
                     layer.close(index);
+                    window.location.reload();
                 });
             }
 
@@ -43,7 +45,35 @@ function sendClothesData(){
         }
 
     })
+}
 
+function searchProductExtraMessage(productId){
+    $.ajax({
+        url:rurl,
+        type:"post",
+        processData:false,
+        cache:false,
+        contentType:false,
+        dataType:"JSON",
+        data:formData,
+        success:function(data){
+            if(data.status=="success"){
+                layer.msg(data.message,{icon: 1,time:2000},function(index){
+                    layer.close(index);
+                    window.history.back();
+                });
+            }else{
+                layer.msg(data.message,{icon: 2,time:2000},function(index){
+                    layer.close(index);
+                    window.location.reload();
+                });
+            }
 
+            //  alert(data.status+" "+decodeURI(data.message));
+        },
+        error:function(e,x){
+            console.log('nonono');
+        }
 
+    })
 }

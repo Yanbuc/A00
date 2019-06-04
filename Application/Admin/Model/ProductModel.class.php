@@ -16,7 +16,8 @@ class ProductModel extends BaseModel
        "product_name"=>"productAlis",
        "product_price"=>"productPrice",
        "product_sex"=>"sex",
-       "product_description"=>"productDescpription");
+       "product_description"=>"productDescpription",
+       "product_date"=>"date");
 
 
   // 插入数据
@@ -25,7 +26,12 @@ class ProductModel extends BaseModel
   }
 
   public function find($sql){
-      $retn=$this->execute($sql);
-      return $retn;
+     $data=$this->query($sql);
+     return $data;
   }
+  public function getCount(){
+     $data= $this->count();
+     return $data;
+  }
+
 }

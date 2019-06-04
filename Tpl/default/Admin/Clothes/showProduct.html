@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Required Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}text.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}fonts/ptsans/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}fluid.css" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}mws.style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}icons/icons.css" media="screen" />
+
+    <!-- Demo and Plugin Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}demo.css" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_PLUGINS_PATH}/colorpicker/colorpicker.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_PLUGINS_PATH}/jimgareaselect/css/imgareaselect-default.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_PLUGINS_PATH}/fullcalendar/fullcalendar.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_PLUGINS_PATH}/fullcalendar/fullcalendar.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_PLUGINS_PATH}/tipsy/tipsy.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_PLUGINS_PATH}/sourcerer/Sourcerer-1.2.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_PLUGINS_PATH}/jgrowl/jquery.jgrowl.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_PLUGINS_PATH}/spinner/spinner.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}jui/jquery.ui.css" media="screen" />
+
+    <!-- Theme Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{$Think.const.ADMIN_CSS_PATH}mws.theme.css" media="screen" />
+
+    <!-- JavaScript {$Think.const.ADMIN_PLUGINS_PATH} -->
+
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_PATH}/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/jimgareaselect/jquery.imgareaselect.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/jquery.dualListBox-1.3.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/jgrowl/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/jquery.filestyle.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/fullcalendar/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/jquery.dataTables.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/flot/excanvas.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/flot/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/flot/jquery.flot.pie.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/flot/jquery.flot.stack.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/flot/jquery.flot.resize.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/colorpicker/colorpicker.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/tipsy/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/sourcerer/Sourcerer-1.2.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/jquery.validate.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_PLUGINS_PATH}/spinner/ui.spinner.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_PATH}jquery-ui.js"></script>
+
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_PATH}mws.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_PATH}demo.js"></script>
+    <script type="text/javascript" src="{$Think.const.ADMIN_JS_PATH}themer.js"></script>
+    <script type="text/javascript"  src="{$Think.const.ADMIN_DEFINE_JS_PATH}Click.js"></script>
+    <title>A00 后台页面</title>
+    <script type="text/javascript" src="{$Think.const.H_UI_PATH}lib/html5.js"></script>
+    <script type="text/javascript" src="{$Think.const.H_UI_PATH}lib/respond.min.js"></script>
+    <![endif]-->
+    <link href="{$Think.const.H_UI_STATIC_PATH}h-ui/css/H-ui.css" rel="stylesheet" type="text/css" />
+    <link href="{$Think.const.H_UI_PATH}lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
+    <!--<link href="{$Think.const.H_UI_STATIC_PATH}h-ui/css/style.css" rel="stylesheet" type="text/css" />--><!--自己的样式-->
+    <!--[if IE 6]>
+    <script type="text/javascript" src="{$Think.const.H_UI_PATH}lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('.pngfix,.icon');</script>
+    <![endif]-->
+    <script type="text/javascript" src="{$Think.const.H_UI_PATH}lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.H_UI_PATH}lib/layer/2.4/layer.js"></script>
+</head>
+
+<body>
+
+<div id="mws-themer">
+    <div id="mws-themer-hide"></div>
+    <div id="mws-themer-content">
+        <div class="mws-themer-section">
+            <label for="mws-theme-presets">Presets</label> <select id="mws-theme-presets"></select>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <ul>
+                <li><span>Base Color</span> <div id="mws-base-cp" class="mws-cp-trigger"></div></li>
+                <li><span>Text Color</span> <div id="mws-text-cp" class="mws-cp-trigger"></div></li>
+                <li><span>Text Glow Color</span> <div id="mws-textglow-cp" class="mws-cp-trigger"></div></li>
+            </ul>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <ul>
+                <li><span>Text Glow Opacity</span> <div id="mws-textglow-op"></div></li>
+            </ul>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <button class="mws-button red small" id="mws-themer-getcss">Get CSS</button>
+        </div>
+    </div>
+    <div id="mws-themer-css-dialog">
+        <div class="mws-form">
+            <div class="mws-form-row" style="padding:0;">
+                <div class="mws-form-item">
+                    <textarea cols="auto" rows="auto" readonly="readonly"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="Public:header"/>
+
+<div id="mws-wrapper">
+    <div id="mws-sidebar-stitch"></div>
+    <div id="mws-sidebar-bg"></div>
+    <div id="mws-sidebar">
+        <div id="mws-searchbox" class="mws-inset">
+            <form action="http://www.malijuwebshop.com/themes/mws-admin/form_layouts.html">
+                <input type="text" class="mws-search-input" />
+                <input type="submit" class="mws-search-submit" />
+            </form>
+        </div>
+        <include file="Public:menu"/>
+    </div>
+    <div id="mws-container" class="clearfix">
+        <div class="container">
+            <div class="mws-panel grid_8">
+                <div class="mws-panel-header">
+                    <span class="mws-i-24 i-list">产品列表</span>
+                </div>
+                <div class="mws-panel-body">
+                    <table class="mws-table">
+                        <thead>
+                        <tr>
+                            <th>产品编号</th>
+                            <th>产品名字</th>
+                            <th>产品类别</th>
+                            <th>产品价格</th>
+                            <th>产品性别</th>
+                            <th>产品描述</th>
+                            <th>产品添加时间</th>
+                            <th>产品额外信息</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name="data" item="v" key="k">
+                           <tr>
+                            <td>{$v.product_id}</td>
+                            <td>{$v.product_name}</td>
+                            <td>{$v.product_type}</td>
+                            <td>{$v.product_price}</td>
+                            <td>{$v.product_sex}</td>
+                            <td>{$v.product_description}</td>
+                            <td>{$v.product_date}</td>
+                               <td><input class="btn btn-success radius" type="button" value="查询" onclick="searchProductExtraMessage({$v['product_id']})"></td>
+                           <!--  <td><button>额外信息</button></td> -->
+                           </tr>
+                        </foreach>
+                        <!--
+                        <tr class="gradeX">
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 4.0</td>
+                            <td>Win 95+</td>
+                            <td class="center">4</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 5.0</td>
+                            <td>Win 95+</td>
+                            <td class="center">5</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 5.5</td>
+                            <td>Win 95+</td>
+                            <td class="center">5.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 6</td>
+                            <td>Win 98+</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet Explorer 7</td>
+                            <td>Win XP SP2+</td>
+                            <td class="center">7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>AOL browser (AOL desktop)</td>
+                            <td>Win XP</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 1.0</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 1.5</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Camino 1.5</td>
+                            <td>OSX.3+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Netscape 7.2</td>
+                            <td>Win 95+ / Mac OS 8.6-9.2</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        -->
+
+                        </tbody>
+
+                    </table>
+                    {$show}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

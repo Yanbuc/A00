@@ -14,4 +14,5 @@ class ProductImageModel extends BaseModel
     public function  insert($sql){
         $this.$this->execute($sql);
     }
+
 }

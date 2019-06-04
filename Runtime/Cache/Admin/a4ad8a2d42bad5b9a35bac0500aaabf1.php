@@ -306,106 +306,126 @@
 <!-- End Navigation -->
 
     </div>
-
     <div id="mws-container" class="clearfix">
         <div class="container">
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span class="mws-i-24 i-list">Inline Form</span>
+                    <span class="mws-i-24 i-list">产品列表</span>
                 </div>
                 <div class="mws-panel-body">
-                    <form class="mws-form"  enctype="multipart/form-data" id="uploadForm">
-    <div class="mws-form-inline">
-        <div class="mws-form-row">
-            <label>产品编号</label>
-            <div class="mws-form-item small">
-                <input type="text" class="mws-textinput" name="clothesId" id="clothesId" />
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>衣服别名</label>
-            <div class="mws-form-item medium">
-                <input type="text" class="mws-textinput" name="clothesAlis" id="clothesAlis" />
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>衣服价格</label>
-            <div class="mws-form-item large">
-                <input type="text" class="mws-textinput" name="clothesPrice" id="clothesPrice" />
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>服装类别</label>
-            <div class="mws-form-item large">
-                <input type="text" class="mws-textinput" name="clothesType" id="clothesType" />
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>简单描述</label>
-            <div class="mws-form-item large">
-                <textarea rows="100%" cols="100%" name="clothesDescription" id="clothesDescription"></textarea>
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>服装图片</label>
-            <div class="mws-form-item large">
-                <input type="file" class="mws-textinput" name="clothesImage" id="clothesImage" value="选择图片" />
-            </div>
-        </div>
-        <!--
-        <div class="mws-form-row">
-            <label>Dropdown List</label>
-            <div class="mws-form-item small">
-                <select>
-                    <option>Option 1</option>
-                    <option>Option 3</option>
-                    <option>Option 4</option>
-                    <option>Option 5</option>
-                </select>
-            </div>
-        </div>
-        -->
-       <!--
-        <div class="mws-form-row">
-            <label>男装 or 女装</label>
-            <div class="mws-form-item clearfix">
-                <ul class="mws-form-list inline">
-                    <li><input type="checkbox" /> <label>男装</label></li>
-                    <li><input type="checkbox" /> <label>女装</label></li>
-                    <li><input type="checkbox" /> <label>通用</label></li>
-                </ul>
-            </div>
-        </div>
-        -->
-        <div class="mws-form-row">
-            <label>男装 or 女装</label>
-            <div class="mws-form-item clearfix">
-                <ul class="mws-form-list inline">
-                    <li><input type="radio" name="sex" value="1" /> <label>男装</label></li>
-                    <li><input type="radio" name="sex" value="2" /> <label>女装</label></li>
-                    <li><input type="radio" name="sex" value="3" /> <label>通用</label></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="mws-button-row">
-        <button type="button" value="提交" class="mws-button green" onclick="sendClothesData()" >提交</button>
-        <!--
-        <input type="submit" value="Submit" class="mws-button green" />
-        <input type="submit" value="Submit" class="mws-button red" />
-        <input type="submit" value="Submit" class="mws-button blue" />
-        <input type="submit" value="Submit" class="mws-button orange" />
-        <input type="submit" value="Submit" class="mws-button gray" />
-        <input type="submit" value="Submit" class="mws-button black" />
-        <input type="submit" value="Disabled" class="mws-button gray" disabled="disabled" />
-        -->
-    </div>
-</form>
+                    <table class="mws-table">
+                        <thead>
+                        <tr>
+                            <th>产品编号</th>
+                            <th>产品名字</th>
+                            <th>产品类别</th>
+                            <th>产品价格</th>
+                            <th>产品性别</th>
+                            <th>产品描述</th>
+                            <th>产品添加时间</th>
+                            <th>产品额外信息</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php if(is_array($data)): foreach($data as $k=>$v): ?><tr>
+                            <td><?php echo ($v["product_id"]); ?></td>
+                            <td><?php echo ($v["product_name"]); ?></td>
+                            <td><?php echo ($v["product_type"]); ?></td>
+                            <td><?php echo ($v["product_price"]); ?></td>
+                            <td><?php echo ($v["product_sex"]); ?></td>
+                            <td><?php echo ($v["product_description"]); ?></td>
+                            <td><?php echo ($v["product_date"]); ?></td>
+                               <td><input class="btn btn-success radius" type="button" value="查询" onclick="searchProductExtraMessage(<?php echo ($v['product_id']); ?>)"></td>
+                           <!--  <td><button>额外信息</button></td> -->
+                           </tr><?php endforeach; endif; ?>
+                        <!--
+                        <tr class="gradeX">
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 4.0</td>
+                            <td>Win 95+</td>
+                            <td class="center">4</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 5.0</td>
+                            <td>Win 95+</td>
+                            <td class="center">5</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 5.5</td>
+                            <td>Win 95+</td>
+                            <td class="center">5.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 6</td>
+                            <td>Win 98+</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet Explorer 7</td>
+                            <td>Win XP SP2+</td>
+                            <td class="center">7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>AOL browser (AOL desktop)</td>
+                            <td>Win XP</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 1.0</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 1.5</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Camino 1.5</td>
+                            <td>OSX.3+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Netscape 7.2</td>
+                            <td>Win 95+ / Mac OS 8.6-9.2</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        -->
+
+                        </tbody>
+
+                    </table>
+                    <?php echo ($show); ?>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 </body>
 
 </html>

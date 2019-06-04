@@ -2,7 +2,7 @@
 return array(
 	//'配置项'=>'配置值'
     "CHECK_MESSAGE"=>array(
-        "productId"=>"no productId ",
+        "productId"=>"缺少产品编号 ",
         "productAlis"=>  "缺少产品名称 ",
         "productPrice"=>  "缺少产品价格 ",
         "productType" => "缺少产品类型 ",
@@ -16,7 +16,9 @@ return array(
         "sex","productDescpription"),
     //**********************************数据库名的配置
     "A00_PRODUCT"=>"a00_product",
-    "A00_IMAGE_PATH"=>"a00_product_image"
-
+    "A00_IMAGE_PATH"=>"a00_product_image",
+    "A00_PRODUCT_NUM"=>"a00_product_num",
+    // *************************页面配置
+    "PAGE_SIZE"=>10
 
 );
