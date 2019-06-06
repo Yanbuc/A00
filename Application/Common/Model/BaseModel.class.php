@@ -31,5 +31,8 @@ class BaseModel extends Model
           $data= $this->query($sql);
           return $data;
       }
+      public function baseInsert($sql){
+          $this->execute($sql);
+      }
 
 }

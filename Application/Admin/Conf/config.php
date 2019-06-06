@@ -8,7 +8,9 @@ return array(
         "productType" => "缺少产品类型 ",
         "sex"=>"缺少产品性别 "
     ),
-
+    "CATEGORY_CHECK"=>array(
+        "productName"=>"缺少类别名"
+    ),
     "TRANSFORM_FIELDS"=>array("productId",
         "productAlis",
         "productPrice",
@@ -18,7 +20,15 @@ return array(
     "A00_PRODUCT"=>"a00_product",
     "A00_IMAGE_PATH"=>"a00_product_image",
     "A00_PRODUCT_NUM"=>"a00_product_num",
+    "A00_CATEGORY"=>"a00_categories",
+    "A00_USERS"=>"a00_users",
     // *************************页面配置
-    "PAGE_SIZE"=>10
+    "PAGE_SIZE"=>10,
+    //*****************************返回标志配置
+    "RETN_SUCCESS"=>"success",
+     "RETN_ERROR"=>"error",
+
+    //******************************提示配置
+    "CATEGORY_TIP"=>"类别名已经存在",
 
 );

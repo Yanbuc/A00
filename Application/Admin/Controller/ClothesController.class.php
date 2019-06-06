@@ -56,6 +56,7 @@ class ClothesController extends AdminLoginController
          $fileName=date("Y_m_d_His").".".explode(".",$_FILES["img"]["name"])[1];
          $tmpFileName=$_FILES["img"]["tmp_name"];
         if(!file_exists($fileName)){
+            $fileName=trim($fileName);
             move_uploaded_file($tmpFileName,ADMIN_CLOTHES_PATH.$fileName);
             $productImageModel=new ProductImageModel();
             $picSql=$this->insertPicture($productId,$fileName);
@@ -93,7 +94,7 @@ class ClothesController extends AdminLoginController
        return $sql;
    }
    private function insertPicture($productId,$pictureName){
-       $sql="insert into ".C("A00_IMAGE_PATH")."  values(  ".$productId.","." ' ".$pictureName."'"." ) ";
+       $sql="insert into ".C("A00_IMAGE_PATH")."(`pid`,`image_path`)   values(  ".$productId.","." ' ".$pictureName."'"." ) ";
        return $sql;
    }
 
@@ -130,7 +131,7 @@ class ClothesController extends AdminLoginController
    public function getProductFullInformation(){
        $retn=array("status"=>"","message"=>"");
        $product=intval($_GET["product_id"]);
-       $sql="select product_name,product_description from ".C("A00_PRODUCT")." where product_id= ".$product;
+       $sql="select * from ".C("A00_PRODUCT")." where product_id= ".$product." and product_del=0";
        $productModel=new ProductModel();
        $data=$productModel->find($sql);
        if(empty($data)){
@@ -147,14 +148,24 @@ class ClothesController extends AdminLoginController
        $imageModel=new ProductImageModel();
        $image=$imageModel->baseFind($imageSql);
        $data["image"]=array();
+       $data["image_id"]=array();
        foreach ($image as $k=>$v){
-           $data["image"][]=$v["image_path"];
+           $data["image"][]=PUBLIC_PICTURE_PATH.trim($v["image_path"]);
+           $data["image_id"][]=$v["pic_id"];
        }
        $numSql="select * from ".C("A00_PRODUCT_NUM")." where product_id=".$product;
        $numModel=new ProductNumModel();
        $num=$numModel->baseFind($numSql);
        $data["num"]=empty($num)?"产品还没有填写数量":$num[0]["product_num"];
-
+       $this->showProductDetail($data);
    }
+
+   public function showProductDetail($data){
+       $this->assign("data",$data);
+       $this->assign("image",$data["image"]);
+       $this->assign("image_id",$data["image_id"]);
+       $this->display("Clothes/showProductDetail");
+   }
+
 
 }

@@ -286,6 +286,12 @@
                 <li><a href="<?php echo U('Admin/Clothes/showProduct');?>">显示所有产品</a></li>
             </ul>
         </li>
+        <li>
+            <a href="<?php echo U('Admin/Category/showCategoryList');?>" class="mws-i-24 i-chart">产品种类</a>
+            <ul>
+                <li><a href="<?php echo U('Admin/Category/add');?>">添加</a></li>
+            </ul>
+        </li>
         <!--<li><a href="<?php echo U('Admin/Calendar/index');?>" class="mws-i-24 i-day-calendar">Calendar</a></li>-->
         <li>
             <a href="#" class="mws-i-24 i-list">Forms</a>

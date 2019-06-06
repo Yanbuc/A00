@@ -289,7 +289,7 @@
         <li>
             <a  class="mws-i-24 i-chart">类别</a>
             <ul>
-                <li><a href="<?php echo U('Admin/Category/showCatgeoryList');?>">显示类别</a></li>
+                <li><a href="<?php echo U('Admin/Category/showCategoryList');?>">类别列表</a></li>
                 <li><a href="<?php echo U('Admin/Category/add');?>">添加</a></li>
             </ul>
         </li>
@@ -313,126 +313,38 @@
 <!-- End Navigation -->
 
     </div>
+
     <div id="mws-container" class="clearfix">
         <div class="container">
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span class="mws-i-24 i-list">产品列表</span>
+                    <span class="mws-i-24 i-list">类别添加表</span>
                 </div>
                 <div class="mws-panel-body">
-                    <table class="mws-table">
-                        <thead>
-                        <tr>
-                            <th>产品编号</th>
-                            <th>产品名字</th>
-                            <th>产品类别</th>
-                            <th>产品价格</th>
-                            <th>产品性别</th>
-                            <th>产品描述</th>
-                            <th>产品添加时间</th>
-                            <th>产品额外信息</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php if(is_array($data)): foreach($data as $k=>$v): ?><tr>
-                            <td><?php echo ($v["product_id"]); ?></td>
-                            <td><?php echo ($v["product_name"]); ?></td>
-                            <td><?php echo ($v["product_type"]); ?></td>
-                            <td><?php echo ($v["product_price"]); ?></td>
-                            <td><?php echo ($v["product_sex"]); ?></td>
-                            <td><?php echo ($v["product_description"]); ?></td>
-                            <td><?php echo ($v["product_date"]); ?></td>
-                               <td><input class="btn btn-success radius" type="button" value="查询" onclick="searchProductExtraMessage(<?php echo ($v['product_id']); ?>)"></td>
-                           <!--  <td><button>额外信息</button></td> -->
-                           </tr><?php endforeach; endif; ?>
-                        <!--
-                        <tr class="gradeX">
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 4.0</td>
-                            <td>Win 95+</td>
-                            <td class="center">4</td>
-                            <td class="center">X</td>
-                        </tr>
-                        <tr class="gradeC">
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 5.0</td>
-                            <td>Win 95+</td>
-                            <td class="center">5</td>
-                            <td class="center">C</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 5.5</td>
-                            <td>Win 95+</td>
-                            <td class="center">5.5</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 6</td>
-                            <td>Win 98+</td>
-                            <td class="center">6</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Trident</td>
-                            <td>Internet Explorer 7</td>
-                            <td>Win XP SP2+</td>
-                            <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Trident</td>
-                            <td>AOL browser (AOL desktop)</td>
-                            <td>Win XP</td>
-                            <td class="center">6</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Firefox 1.0</td>
-                            <td>Win 98+ / OSX.2+</td>
-                            <td class="center">1.7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Firefox 1.5</td>
-                            <td>Win 98+ / OSX.2+</td>
-                            <td class="center">1.8</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Camino 1.5</td>
-                            <td>OSX.3+</td>
-                            <td class="center">1.8</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Netscape 7.2</td>
-                            <td>Win 95+ / Mac OS 8.6-9.2</td>
-                            <td class="center">1.7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        -->
-
-                        </tbody>
-
-                    </table>
-                    <?php echo ($show); ?>
+                    <form class="mws-form" id="uploadForm">
+                        <div class="mws-form-inline">
+                            <div class="mws-form-row">
+                                <label>类别名字</label>
+                                <div class="mws-form-item small">
+                                    <input type="text" class="mws-textinput" name="categoryName" id="categoryName" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>类别描述</label>
+                            <div class="mws-form-item large">
+                                <textarea rows="100%" cols="100%" name="categoryDescription" id="categoryDescription"></textarea>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="mws-button-row">
+                            <button type="button" value="添加" class="mws-button green" onclick="addCategory()" >添加</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
 </body>
 
 </html>
