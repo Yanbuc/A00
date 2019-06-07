@@ -110,42 +110,74 @@ function addCategory() {
             //no 按钮
             layer.close(index)
         });
-    /*
-    layer.open({
-        type: 1,
-        content: '确认添加类别'
-    });
-    */
 }
 
 // 改变类别的信息
 function changeCategory(product_id){
-    url=urlPrefix+"Category/changeCategory"
-    $.ajax({
-        url:rurl,
-        type:"post",
-        dataType:"JSON",
-        data:{
-            "productName":categoryName,
-            "productDescription":categoryDesc
-        },
-        success:function(data){
-            if(data.status=="success"){
-                layer.msg(data.message,{icon: 1,time:2000},function(index){
-                    layer.close(index);
-                    window.location.reload();
-                });
+    var url=urlPrefix+"Category/changeCategory"+"?product_id="+product_id;
+    layer.open({
+        area:["800px","400px"],
+        type: 2,
+        scrollbar:false,
+        content: url//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    });
+}
 
-            }else{
-                layer.msg(data.message,{icon: 2,time:2000},function(index){
-                    layer.close(index);
-                    window.location.reload();
-                });
+function submitChangeCategory() {
+    var today=document.getElementById("today");
+    var flag=today.name;
+    if(flag==1){
+       layer.open(
+           {
+               title:"友情提示",
+               type:1,
+               content:"<span style=\"font-size: large;color: #006dcc\">尚未点击修改按钮,无法修改</span>",
+               area:["240px","150px"]
+           }
+       )
+    }
+    if(flag==2){
+       var desc=$("#category_desc").val();
+       var category_id=$("#category_id").val();
+       var name=$("#category_name").val();
+       if(name==""){
+           layer.msg('没有输入类别名',{time:2000},function(){
+               window.location.reload();
+           });
+           return ;
+       }
+
+       var ru=urlPrefix+"Category/submitChangeCategory";
+        $.ajax({
+            url:ru,
+            type:"post",
+            dataType:"JSON",
+            data:{
+                "category_id":category_id,
+                "category_name":name,
+                "category_desc":desc
+            },
+            success:function(data){
+                if(data.status=="success"){
+                    layer.msg(data.message,{icon: 1,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+
+                }else{
+                    layer.msg(data.message,{icon: 2,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+
+                }
+            },
+            error:function(e,x){
+                console.log('nonono');
             }
-        },
-        error:function(e,x){
-            console.log('nonono');
-        }
 
-    })
+        })
+    }
+
+
 }

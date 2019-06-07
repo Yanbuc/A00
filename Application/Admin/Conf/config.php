@@ -16,6 +16,12 @@ return array(
         "productPrice",
         "productType",
         "sex","productDescpription"),
+    // category 更新检查的字段
+    "CHECK_CATEGORY_UPDATE_FIELDS"=>array(
+        "category_id"=>"没有类别编号",
+        "category_name"=>"没有类别名字",
+    ),
+
     //**********************************数据库名的配置
     "A00_PRODUCT"=>"a00_product",
     "A00_IMAGE_PATH"=>"a00_product_image",
@@ -27,8 +33,14 @@ return array(
     //*****************************返回标志配置
     "RETN_SUCCESS"=>"success",
      "RETN_ERROR"=>"error",
+    "RETN_ARRAY"=>array("status"=>"","message"=>""),
 
     //******************************提示配置
     "CATEGORY_TIP"=>"类别名已经存在",
+   //******************日志级别配置
+    "LOG_LEVEL_CATEGORY_ADD"=>1,
+    "LOG_LEVEL_CATEGORY_CHANGE"=>2,
+    "LOG_LEVEL_CATEGORY_ADD_EXCEPTION"=>4,
+    "LOG_LEVEL_CATEGORY_CHANGE_EXCEPTION"=>3
 
 );

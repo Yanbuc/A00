@@ -325,8 +325,8 @@
                         <tr>
                             <th>类别编号</th>
                             <th>类别名字</th>
-                            <th>类别描述</th>
                             <th>类别添加时间</th>
+                            <th>类别修改时间</th>
                             <th>类别添加人</th>
                             <th>其他操作</th>
                         </tr>
@@ -335,8 +335,8 @@
                         <?php if(is_array($data)): foreach($data as $key=>$v): ?><tr id="<?php echo ($v['category_id']); ?>">
                                 <td><?php echo ($v["category_id"]); ?></td>
                                 <td><?php echo ($v["category_name"]); ?></td>
-                                <td><?php echo ($v["category_desc"]); ?></td>
                                 <td><?php echo ($v["category_date"]); ?></td>
+                                <td><?php echo ($v["category_change_date"]); ?></td>
                                 <td><?php echo ($v["realName"]); ?></td>
                                 <td><input class="btn btn-success radius" type="button" value="修改" onclick="changeCategory(<?php echo ($v['category_id']); ?>)" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <input class="btn btn-danger radius" type="button" value="删除"></td>

@@ -16,3 +16,12 @@ function getPage($count,$pageSize){
     $p->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
     return $p;
 }
+
+function getLogMessage($message){
+    $user=$_SESSION["username"];
+    $ip = $_SERVER['REMOTE_ADDR'];
+    return $user."|".$ip."|".$message;
+}
+
+
+

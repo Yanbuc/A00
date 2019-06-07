@@ -34,5 +34,7 @@ class BaseModel extends Model
       public function baseInsert($sql){
           $this->execute($sql);
       }
-
+      public function baseUpdate($sql){
+          $this->execute($sql);
+      }
 }

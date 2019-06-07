@@ -15,5 +15,8 @@ class CategoriesModel extends BaseModel
        "productName"=>"category_name",
        "productDescription"=>"category_desc",
        "category_date"=>"category_date",
-       "category_add_owner"=>"category_add_owner");
+       "category_add_owner"=>"category_add_owner",
+       "category_change_date"=>"category_change_date");
+
+
 }

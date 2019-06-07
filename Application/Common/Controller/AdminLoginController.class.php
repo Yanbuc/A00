@@ -23,4 +23,10 @@ class AdminLoginController extends AdminController
         $this->assign("username",$_SESSION[$tmp]);
     }
 
+    public function getRetnArray($status,$message){
+        $retn=C("RETN_ARRAY");
+        $retn["status"]=$status;
+        $retn["message"]=$message;
+        return $retn;
+    }
 }
