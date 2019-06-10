@@ -17,6 +17,10 @@ class CategoriesModel extends BaseModel
        "category_date"=>"category_date",
        "category_add_owner"=>"category_add_owner",
        "category_change_date"=>"category_change_date");
-
+   public function  getCount(){
+       $sql="select * from a00_categories where category_del=0";
+       $data=$this->query($sql);
+       return count($data);
+   }
 
 }

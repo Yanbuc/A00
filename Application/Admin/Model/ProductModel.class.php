@@ -30,8 +30,9 @@ class ProductModel extends BaseModel
      return $data;
   }
   public function getCount(){
-     $data= $this->count();
-     return $data;
+      $sql="select * from ".C("A00_PRODUCT" )." where product_del=0 ";
+      $data= $this->query($sql);
+      return count($data);
   }
 
 }

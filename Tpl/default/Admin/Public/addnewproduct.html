@@ -20,8 +20,12 @@
         </div>
         <div class="mws-form-row">
             <label>服装类别</label>
-            <div class="mws-form-item large">
-                <input type="text" class="mws-textinput" name="clothesType" id="clothesType" />
+            <div class="mws-form-item small">
+                <select id="sel">
+                    <foreach name="data" item="v">
+                    <option value="{$v['category_id']}">{$v["category_name"]}</option>
+                    </foreach>>
+                </select>
             </div>
         </div>
         <div class="mws-form-row">
@@ -36,31 +40,6 @@
                 <input type="file" class="mws-textinput" name="clothesImage" id="clothesImage" value="选择图片" />
             </div>
         </div>
-        <!--
-        <div class="mws-form-row">
-            <label>Dropdown List</label>
-            <div class="mws-form-item small">
-                <select>
-                    <option>Option 1</option>
-                    <option>Option 3</option>
-                    <option>Option 4</option>
-                    <option>Option 5</option>
-                </select>
-            </div>
-        </div>
-        -->
-       <!--
-        <div class="mws-form-row">
-            <label>男装 or 女装</label>
-            <div class="mws-form-item clearfix">
-                <ul class="mws-form-list inline">
-                    <li><input type="checkbox" /> <label>男装</label></li>
-                    <li><input type="checkbox" /> <label>女装</label></li>
-                    <li><input type="checkbox" /> <label>通用</label></li>
-                </ul>
-            </div>
-        </div>
-        -->
         <div class="mws-form-row">
             <label>男装 or 女装</label>
             <div class="mws-form-item clearfix">

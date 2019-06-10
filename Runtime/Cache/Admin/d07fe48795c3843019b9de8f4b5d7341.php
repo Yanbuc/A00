@@ -339,7 +339,7 @@
                                 <td><?php echo ($v["category_change_date"]); ?></td>
                                 <td><?php echo ($v["realName"]); ?></td>
                                 <td><input class="btn btn-success radius" type="button" value="修改" onclick="changeCategory(<?php echo ($v['category_id']); ?>)" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input class="btn btn-danger radius" type="button" value="删除"></td>
+                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteCategory(<?php echo ($v['category_id']); ?>)"></td>
                             </tr><?php endforeach; endif; ?>
                         </tbody>
 

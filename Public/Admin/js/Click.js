@@ -1,11 +1,12 @@
 var urlPrefix="http://localhost/A00/admin.php/"
 
 function sendClothesData(){
+    var options=$("#sel option:selected");
     var productId=$("#clothesId").val();
     var productPrice=$("#clothesPrice").val();
     var productDescription=$("#clothesDescription").val();
     var productAlis=$("#clothesAlis").val();
-    var productType=$("#clothesType").val();
+    var productType=options.val();
     var sex=$('input:radio[name="sex"]:checked').val();
     var image=document.getElementById('clothesImage').files[0];
     var rurl=urlPrefix+"Clothes/add";
@@ -56,6 +57,64 @@ function searchProductExtraMessage(productId){
     });
 }
 
+function deleteProduct(product_id) {
+    layer.confirm('确定是否产品', {
+        btn: ['删除', '我再想想'] //可以无限个按钮
+    }, function(inde, layero){
+        rurl=urlPrefix+"Clothes/deleteProduct"
+        //yes 按钮的回调
+        $.ajax({
+            url:rurl,
+            type:"post",
+            dataType:"JSON",
+            data:{
+                "product_id":product_id,
+            },
+            success:function(data){
+                if(data.status=="success"){
+                    layer.msg(data.message,{icon: 1,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+
+                }else{
+                    layer.msg(data.message,{icon: 2,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+                }
+            },
+            error:function(e,x){
+                console.log('nonono');
+            }
+
+        })
+        layer.close(inde);
+
+    },function(index){
+        //no 按钮
+        layer.close(index)
+    });
+}
+
+function changeProduct(){
+    var productId=$("#product_id").val();
+    var productName=$("#product_name").val();
+    var productDesc=$("#product_desc").val();
+    var productPrice=$("#product_price").val();
+    var productNum=$("#product_num").val();
+    var options=$("#sels option:selected");
+}
+
+function showUploadImage(product_id) {
+    var url=urlPrefix+"Clothes/showUploadImage"+"?product_id="+product_id;
+    layer.open({
+        area:["800px","400px"],
+        type: 2,
+        scrollbar:false,
+        content: url//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    });
+}
 
 //今日click
 function todayDate() {
@@ -180,4 +239,44 @@ function submitChangeCategory() {
     }
 
 
+}
+
+function deleteCategory(product_id) {
+    layer.confirm('确定是否删除类别', {
+        btn: ['删除', '我再想想'] //可以无限个按钮
+    }, function(inde, layero){
+        rurl=urlPrefix+"Category/deleteCategory"
+        //yes 按钮的回调
+        $.ajax({
+            url:rurl,
+            type:"post",
+           dataType:"JSON",
+            data:{
+                "category_id":product_id,
+            },
+            success:function(data){
+                if(data.status=="success"){
+                    layer.msg(data.message,{icon: 1,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+
+                }else{
+                    layer.msg(data.message,{icon: 2,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+                }
+            },
+            error:function(e,x){
+                console.log('nonono');
+            }
+
+        })
+        layer.close(inde);
+
+    },function(index){
+        //no 按钮
+        layer.close(index)
+    });
 }

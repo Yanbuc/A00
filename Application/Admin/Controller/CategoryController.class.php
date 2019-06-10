@@ -64,7 +64,7 @@ class CategoryController extends AdminLoginController
        $categoriesModel=new CategoriesModel();
        $usersModel=new UsersModel();
        $pageSize = C("PAGE_SIZE");
-       $count = $categoriesModel->count();
+       $count = $categoriesModel->getCount();
        if($pageSize*($pid-1)>$count){
            $pid=1;
        }
@@ -167,6 +167,47 @@ class CategoryController extends AdminLoginController
         return ;
     }
 
+    public function deleteCategory(){
+        $data=$_POST;
+        $retn=array();
+        $logModel=new LogModel();
+        $categoryModel=new CategoriesModel();
+        if(empty($data["category_id"])){
+            $retn=$this->getRetnArray(C("RETN_ERROR"),"产品数据编号传入缺失");
+            $logMessage="删除类别请求出现异常,没有需要删除的类别编号";
+            $logMessage=getLogMessage($logMessage);
+            $logLevel=C("LOG_LEVEL_CATEGORY_DELETE_EXCEPTION");
+            $logDate=date("Y_m_d_H:i:s");
+            $logModel->insertLog($logLevel,$logMessage,$logDate);
+            echo json_encode($retn);
+            return ;
+        }
+        $categoryId=$data["category_id"];
+        $findSql=$this->produceSelectCategorySql($categoryId);
+        $data=$categoryModel->baseFind($findSql);
+        if(count($data)<=0){
+            $retn=$this->getRetnArray(C("RETN_ERROR"),"you are a inererting boy !!!!");
+            $logMessage="删除类别请求出现异常,传入了类别编号，但是数据库之中不存在";
+            $logMessage=getLogMessage($logMessage);
+            $logLevel=C("LOG_LEVEL_CATEGORY_DELETE_EXCEPTION");
+            $logDate=date("Y_m_d_H:i:s");
+            $logModel->insertLog($logLevel,$logMessage,$logDate);
+            echo json_encode($retn);
+            return ;
+        }
+        $deleteSql=$this->produceDeleteCategorySql($categoryId);
+        $categoryModel->baseUpdate($deleteSql);
+        $logMessage="类别被删除";
+        $logMessage=getLogMessage($logMessage);
+        $logLevel=C("LOG_LEVEL_NORMAL");
+        $logDate=date("Y_m_d_H:i:s");
+        $logModel->insertLog($logLevel,$logMessage,$logDate);
+        $retn= $this->getRetnArray(C("RETN_SUCCESS"),"类别删除成功");
+        echo json_encode($retn);
+        return ;
+
+    }
+
 
    // 插入的sql语句
    private function produceInsertCategorySql($data,$fields){
@@ -212,6 +253,10 @@ class CategoryController extends AdminLoginController
        $body=trim($body,",");
        $end=" where  category_id=".$category_id;
        $sql=$sql.$body.$end;
+       return $sql;
+   }
+   private function produceDeleteCategorySql($category_id){
+       $sql="update ".C("A00_CATEGORY")." set category_del=1 where category_id= ".$category_id;
        return $sql;
    }
 

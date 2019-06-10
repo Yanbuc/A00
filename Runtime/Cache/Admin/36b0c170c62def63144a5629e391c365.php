@@ -287,8 +287,9 @@
             </ul>
         </li>
         <li>
-            <a href="<?php echo U('Admin/Category/showCategoryList');?>" class="mws-i-24 i-chart">产品种类</a>
+            <a  class="mws-i-24 i-chart">类别</a>
             <ul>
+                <li><a href="<?php echo U('Admin/Category/showCatgeoryList');?>">显示类别</a></li>
                 <li><a href="<?php echo U('Admin/Category/add');?>">添加</a></li>
             </ul>
         </li>
@@ -342,8 +343,10 @@
         </div>
         <div class="mws-form-row">
             <label>服装类别</label>
-            <div class="mws-form-item large">
-                <input type="text" class="mws-textinput" name="clothesType" id="clothesType" />
+            <div class="mws-form-item small">
+                <select id="sel">
+                    <?php if(is_array($data)): foreach($data as $key=>$v): ?><option value="<?php echo ($v['category_id']); ?>"><?php echo ($v["category_name"]); ?></option><?php endforeach; endif; ?>>
+                </select>
             </div>
         </div>
         <div class="mws-form-row">
@@ -358,31 +361,6 @@
                 <input type="file" class="mws-textinput" name="clothesImage" id="clothesImage" value="选择图片" />
             </div>
         </div>
-        <!--
-        <div class="mws-form-row">
-            <label>Dropdown List</label>
-            <div class="mws-form-item small">
-                <select>
-                    <option>Option 1</option>
-                    <option>Option 3</option>
-                    <option>Option 4</option>
-                    <option>Option 5</option>
-                </select>
-            </div>
-        </div>
-        -->
-       <!--
-        <div class="mws-form-row">
-            <label>男装 or 女装</label>
-            <div class="mws-form-item clearfix">
-                <ul class="mws-form-list inline">
-                    <li><input type="checkbox" /> <label>男装</label></li>
-                    <li><input type="checkbox" /> <label>女装</label></li>
-                    <li><input type="checkbox" /> <label>通用</label></li>
-                </ul>
-            </div>
-        </div>
-        -->
         <div class="mws-form-row">
             <label>男装 or 女装</label>
             <div class="mws-form-item clearfix">

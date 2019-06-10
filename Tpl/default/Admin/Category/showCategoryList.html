@@ -152,7 +152,7 @@
                                 <td>{$v["category_change_date"]}</td>
                                 <td>{$v["realName"]}</td>
                                 <td><input class="btn btn-success radius" type="button" value="修改" onclick="changeCategory({$v['category_id']})" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input class="btn btn-danger radius" type="button" value="删除"></td>
+                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteCategory({$v['category_id']})"></td>
                             </tr>
                         </foreach>
                         </tbody>

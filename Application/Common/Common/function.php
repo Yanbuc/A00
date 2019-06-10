@@ -22,6 +22,13 @@ function getLogMessage($message){
     $ip = $_SERVER['REMOTE_ADDR'];
     return $user."|".$ip."|".$message;
 }
+//对图片的路径进行加工
+function dealImagePath($data){
+    foreach($data as $k =>$v){
+        $data[$k]["image_path"]=PUBLIC_PICTURE_PATH.$v["image_path"];
+    }
+    return $data;
+}
 
 
 

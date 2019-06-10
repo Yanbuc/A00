@@ -7,10 +7,12 @@
  */
 
 namespace Common\Controller;
+use Admin\Model\LogModel;
 use \Common\Controller\AdminController ;
 
 class AdminLoginController extends AdminController
 {
+    private $log = null;
     public function __construct()
     {
         parent::__construct();
@@ -20,6 +22,7 @@ class AdminLoginController extends AdminController
             return ;
         }
         $tmp=C("SESSION_NAME");
+        $log=new LogModel();
         $this->assign("username",$_SESSION[$tmp]);
     }
 
@@ -29,4 +32,12 @@ class AdminLoginController extends AdminController
         $retn["message"]=$message;
         return $retn;
     }
+
+    public function putLog($logMessage){
+        $logMessage=getLogMessage($logMessage);
+        $logLevel=C("LOG_LEVEL_PRODUCT_DELETE_EXCEPTION");
+        $logDate=date("Y_m_d_H:i:s");
+        $this->log->insertLog($logLevel,$logMessage,$logDate);
+    }
+
 }

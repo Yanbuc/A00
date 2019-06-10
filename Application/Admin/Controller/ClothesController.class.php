@@ -7,15 +7,21 @@
  */
 
 namespace Admin\Controller;
+use Admin\Model\CategoriesModel;
 use Admin\Model\ProductImageModel;
 use Admin\Model\ProductModel;
 use Admin\Model\ProductNumModel;
+use Admin\Model\LogModel;
 use Common\Controller\AdminLoginController;
 
 
 class ClothesController extends AdminLoginController
 {
    public function show(){
+       $categoryModel=new CategoriesModel();
+       $findSql=$this->produceSearchCategorySql();
+       $data=$categoryModel->baseFind($findSql);
+       $this->assign("data",$data);
        $this->display("Clothes/add");
    }
 
@@ -112,9 +118,26 @@ class ClothesController extends AdminLoginController
        $p = getPage($count, $pageSize);
        $sql=$this->findSql($pid,$pageSize);
        $data=$productModel->find($sql);
+       $findCategorySql=$this->produceSearchCategoryInList($data);
+       $categoryModel=new CategoriesModel();
+       $categoryData=$categoryModel->baseFind($findCategorySql);
+       $caData=array();
+       foreach($categoryData as $k=>$v){
+           $caData[$v["category_id"]]=$v;
+       }
        $retn=array();
        foreach($data as $k=>$v){
-          $retn[]=$v;
+           $v["category_name"]=$caData[$v["product_type"]]["category_del"]==0?$caData[$v["product_type"]]["category_name"]:$caData[$v["product_type"]]["category_name"]."(已被删除)";
+           $retn[]=$v;
+       }
+       foreach ($retn as $k=>$v){
+           if($v["product_sex"]==1){
+               $retn[$k]["product_real_sex"]="男装";
+           }else if($v["product_sex"]==2){
+               $retn[$k]["product_real_sex"]="女装";
+           }else{
+               $retn[$k]["product_real_sex"]="通用";
+           }
        }
        $this->assign("data",$retn);
        $this->assign("show",$p->show());
@@ -127,6 +150,7 @@ class ClothesController extends AdminLoginController
        $sql="select * from ".C("A00_PRODUCT")." where product_del=0 order by product_id  limit ".$start." ,".$pageSize;
        return $sql;
    }
+
    // 要查询的东西有 产品名字 产品数量 产品的描述 产品的图片
    public function getProductFullInformation(){
        $retn=array("status"=>"","message"=>"");
@@ -156,6 +180,17 @@ class ClothesController extends AdminLoginController
        $numSql="select * from ".C("A00_PRODUCT_NUM")." where product_id=".$product;
        $numModel=new ProductNumModel();
        $num=$numModel->baseFind($numSql);
+       $cateSql="select * from ".C("A00_CATEGORY")." where category_del=0 ";
+       $categoryModel=new CategoriesModel();
+       $res=$categoryModel->baseFind($cateSql);
+       foreach ($res as $k=>$v){
+           if($res[$k]["category_id"]==$data["product_type"]){
+               $res[$k]["real"]=1;
+           }else{
+               $res[$k]["real"]=0;
+           }
+       }
+       $data["category"]=$res;
        $data["num"]=empty($num)?"产品还没有填写数量":$num[0]["product_num"];
        $this->showProductDetail($data);
    }
@@ -164,8 +199,99 @@ class ClothesController extends AdminLoginController
        $this->assign("data",$data);
        $this->assign("image",$data["image"]);
        $this->assign("image_id",$data["image_id"]);
+       $this->assign("category_ids",$data["category"]);
        $this->display("Clothes/showProductDetail");
    }
 
+   // 删除产品
+    public function deleteProduct(){
+       $logModel=new LogModel();
+       if(empty($_POST["product_id"])){
+           $logMessage="删除产品出现异常，传入的时候没有product_id";
+           $logMessage=getLogMessage($logMessage);
+           $logLevel=C("LOG_LEVEL_PRODUCT_DELETE_EXCEPTION");
+           $logDate=date("Y_m_d_H:i:s");
+           $logModel->insertLog($logLevel,$logMessage,$logDate);
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"没有足够的输入信息");
+           echo json_encode($retn);
+           return ;
+       }
+       $productId=intval($_POST["product_id"]);
+       $produceModel=new ProductModel();
+       $findSql=$this->produceSelectProductSql($productId);
+       $data=$produceModel->baseFind($findSql);
+       if(count($data)==0){
+           $logMessage="删除产品出现异常，传入了product_id，但是数据库之中没有这个product_id,需要检查";
+           $logMessage=getLogMessage($logMessage);
+           $logLevel=C("LOG_LEVEL_PRODUCT_DELETE_EXCEPTION");
+           $logDate=date("Y_m_d_H:i:s");
+           $logModel->insertLog($logLevel,$logMessage,$logDate);
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"you are a silly boy!!!!");
+           echo json_encode($retn);
+           return ;
+       }
+       $deleteSql=$this->produceDeleteProduct($productId);
+       $produceModel->baseUpdate($deleteSql);
+       $retn=$this->getRetnArray(C("RETN_SUCCESS"),"产品删除成功");
+        echo json_encode($retn);
+        return ;
+    }
+
+    public function showUploadImage(){
+      $productId=intval($_GET["product_id"]);
+      if($productId==0){
+          $logMessage="上传异常,传入的产品id 不正确";
+          $this->putLog($logMessage);
+          $retn=$this->getRetnArray(C("RETN_ERROR"),"you are a silly boy!!!!");
+          echo json_encode($retn);
+          return ;
+      }
+      $productModel=new ProductModel();
+      $sql=$this->produceSelectProductSql($productId);
+      $data=$productModel->baseFind($sql);
+      if(count($data)==0){
+          $logMessage="传入了product_id,但是数据库之中没有";
+          $this->putLog($logMessage);
+          $retn=$this->getRetnArray(C("RETN_ERROR"),"淘气的宝宝");
+          echo json_encode($retn);
+          return ;
+      }
+      $data=$data[0];
+      $imageModel=new ProductImageModel();
+      $findSql=$this->produceSearchProductImageSql($productId);
+      $image=$imageModel->baseFind($findSql);
+      if(count($image)!=0){
+          $image=dealImagePath($image);
+      }
+      $this->assign("image",$image);
+      $this->assign("data",$data);
+      $this->display("Clothes/showUploadImage");
+    }
+
+   private function produceSearchCategorySql(){
+       $sql="select * from ".C("A00_CATEGORY")." where category_del=0";
+       return $sql;
+   }
+   private function produceSearchCategoryInList($data){
+       $ids=array();
+       foreach($data as $k=>$v){
+           $ids[]=$v["product_type"];
+       }
+       $idlist=implode($ids,",");
+       $sql="select * from ".C("A00_CATEGORY")." where category_id in (".$idlist.")";
+       return $sql;
+   }
+   private function produceSelectProductSql($productId){
+       $sql="select * from ".C("A00_PRODUCT")." where product_id=".$productId." and product_del=0 ";
+       return $sql;
+   }
+   private function  produceDeleteProduct($productId){
+       $sql="update ".C("A00_PRODUCT")." set `product_del`=1  where `product_id`=".$productId;
+       return $sql;
+   }
+   private function produceSearchProductImageSql($productId){
+       $sql="select * from ".C("A00_IMAGE_PATH")." where pid=".$productId;
+       return $sql;
+   }
 
 }
