@@ -203,6 +203,15 @@ class ClothesController extends AdminLoginController
        $this->display("Clothes/showProductDetail");
    }
 
+   public function changeProduct(){
+       $data=$_POST;
+       if(empty($data["productId"])||empty($data["productName"])||empty($data["productPrice"])||empty($data["productType"])||empty($data["productImage"])){
+              $retn=$this->getRetnArray(C("RETN_ERROR"),"缺乏必要的信息");
+              echo json_encode($retn);
+              return ;
+       }
+   }
+
    // 删除产品
     public function deleteProduct(){
        $logModel=new LogModel();
@@ -241,7 +250,7 @@ class ClothesController extends AdminLoginController
       $productId=intval($_GET["product_id"]);
       if($productId==0){
           $logMessage="上传异常,传入的产品id 不正确";
-          $this->putLog($logMessage);
+          $this->putLog($logMessage,C( "LOG_LEVEL_NORMAL"));
           $retn=$this->getRetnArray(C("RETN_ERROR"),"you are a silly boy!!!!");
           echo json_encode($retn);
           return ;
@@ -251,7 +260,7 @@ class ClothesController extends AdminLoginController
       $data=$productModel->baseFind($sql);
       if(count($data)==0){
           $logMessage="传入了product_id,但是数据库之中没有";
-          $this->putLog($logMessage);
+          $this->putLog($logMessage,C( "LOG_LEVEL_NORMAL"));
           $retn=$this->getRetnArray(C("RETN_ERROR"),"淘气的宝宝");
           echo json_encode($retn);
           return ;
@@ -266,6 +275,46 @@ class ClothesController extends AdminLoginController
       $this->assign("image",$image);
       $this->assign("data",$data);
       $this->display("Clothes/showUploadImage");
+    }
+
+     // 上传图片
+    public function uploadImage(){
+        $data=$_POST;
+        if(empty($data["productId"])){
+            $logMessage="传入的数据缺失,没有product_id";
+            $this->putLog($logMessage, C("LOG_LEVEL_NORMAL"));
+            $retn=$this->getRetnArray(C("RETN_ERROR"),"传入数据缺失");
+            echo json_encode($retn);
+            return ;
+        }
+        if(empty($_FILES["img"])){
+            $retn=$this->getRetnArray(C("RETN_ERROR"),"没有上传图片");
+            echo json_encode($retn);
+            return ;
+        }
+        $tmp=$this->produceSelectProductSql($data["productId"]);
+        if(count($tmp)==0){
+            $logMessage="Clothes uploadImage 传入了product_id，但是数据库之中不存在";
+            $this->putLog($logMessage, C("LOG_LEVEL_NORMAL"));
+            $retn=$this->getRetnArray(C("RETN_ERROR"),"传入数据缺失");
+            echo json_encode($retn);
+            return ;
+        }
+        $fileName=trim(date("Y_m_d_His").".".explode(".",$_FILES["img"]["name"])[1]);
+        $tmpFileName=$_FILES["img"]["tmp_name"];
+        if(!file_exists($fileName)){
+            $fileName=trim($fileName);
+            move_uploaded_file($tmpFileName,ADMIN_CLOTHES_PATH.$fileName);
+            $productImageModel=new ProductImageModel();
+            $sql="insert into ".C("A00_IMAGE_PATH")."(`pid`,`image_path`)  values(".$data["productId"].", '".$fileName."')";
+            $productImageModel->baseInsert($sql);
+            $retn=$this->getRetnArray(C("RETN_SUCCESS"),"文件上传成功");
+            echo json_encode($retn);
+            return ;
+        }
+        $retn=$this->getRetnArray(C("RETN_ERROR"),"文件上传失败");
+        echo json_encode($retn);
+        return ;
     }
 
    private function produceSearchCategorySql(){

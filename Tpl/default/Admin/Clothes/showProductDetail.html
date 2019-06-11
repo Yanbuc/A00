@@ -104,7 +104,7 @@
 							<select id="sels" class="select" size="1" name="demo1">
                                 <foreach name="category_ids" item="v">
                                     <if condition="$v['real'] eq 1 "><option value="{$v['category_id']}" selected>{$v["category_name"]}</option>
-                                    <else /><option value="1">{$v["category_name"]}</option>
+                                    <else /><option value="{$v['category_id']}">{$v["category_name"]}</option>
                                     </if>
 
                                 </foreach>
@@ -150,7 +150,8 @@
             <label class="form-label col-xs-4 col-sm-3">产品图片</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <foreach name="image" item="v" key="k">
-                    <img src="{$v}" >
+                    <span style="color:red;font-size: 15px;">{$k+1}&nbsp;&nbsp;&nbsp;&nbsp;</span><img src="{$v}" >
+
                 </foreach>
             </div>
         </div>
@@ -159,7 +160,7 @@
             <div class="formControls skin-minimal col-xs-8 col-sm-9">
                 <foreach name="image_id" item="v" key="k">
                     <div class="check-box">
-                        <input type="checkbox" id="checkbox-{$v}">
+                        <input type="checkbox" id="checkbox-{$v}" name="chk" value="{$v['pic_id']}">
                         <label for="checkbox-{$v}">{$k+1}&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     </div>
                 </foreach>

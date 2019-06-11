@@ -98,12 +98,77 @@ function deleteProduct(product_id) {
 }
 
 function changeProduct(){
-    var productId=$("#product_id").val();
-    var productName=$("#product_name").val();
-    var productDesc=$("#product_desc").val();
-    var productPrice=$("#product_price").val();
-    var productNum=$("#product_num").val();
-    var options=$("#sels option:selected");
+    var today=document.getElementById("today");
+    var flag=today.name;
+    if(flag==1){
+        layer.open(
+            {
+                title:"友情提示",
+                type:1,
+                content:"<span style=\"font-size: large;color: #006dcc\">尚未点击修改按钮,无法上传图片</span>",
+                area:["240px","150px"]
+            }
+        )
+    }
+    if(flag==2) {
+        var productId = $("#product_id").val();
+        var productName = $("#product_name").val();
+        var productDesc = $("#product_desc").val();
+        var productPrice = $("#product_price").val();
+        var productNum = $("#product_num").val();
+        var options = $("#sels option:selected").val();
+        var deletePids = "";
+        var check = document.getElementsByName("chk");
+        for (var i = 0; i < check.length; i++) {
+            if (check[i].checked) {
+                deletePids += (check[i].value + ";");
+            }
+        }
+        layer.confirm('确定是否修改产品信息', {
+            btn: ['确定修改', '我再想想'] //可以无限个按钮
+        }, function(inde, layero){
+            rurl=urlPrefix+"Clothes/changeProduct"
+            //yes 按钮的回调
+            $.ajax({
+                url:rurl,
+                type:"post",
+                dataType:"JSON",
+                data:{
+                    "productId":productId,
+                    "productName":productName,
+                    "productNum":productNum,
+                    "productPrice":productPrice,
+                    "productDesc":productDesc,
+                    "productType":options,
+                    "productImage":deletePids
+                },
+                success:function(data){
+                    if(data.status=="success"){
+                        layer.msg(data.message,{icon: 1,time:2000},function(index){
+                            layer.close(index);
+                            window.location.reload();
+                        });
+
+                    }else{
+                        layer.msg(data.message,{icon: 2,time:2000},function(index){
+                            layer.close(index);
+                            window.location.reload();
+                        });
+                    }
+                },
+                error:function(e,x){
+                    console.log('nonono');
+                }
+
+            })
+            layer.close(inde);
+
+        },function(index){
+            //no 按钮
+            layer.close(index)
+        });
+
+    }
 }
 
 function showUploadImage(product_id) {
@@ -112,8 +177,60 @@ function showUploadImage(product_id) {
         area:["800px","400px"],
         type: 2,
         scrollbar:false,
+        maxmin:true,
         content: url//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
     });
+}
+
+function uploadImage() {
+    var today=document.getElementById("today");
+    var flag=today.name;
+    if(flag==1){
+        layer.open(
+            {
+                title:"友情提示",
+                type:1,
+                content:"<span style=\"font-size: large;color: #006dcc\">尚未点击修改按钮,无法上传图片</span>",
+                area:["240px","150px"]
+            }
+        )
+    }
+    if(flag==2) {
+        var productId = $("#product_id").val();
+        var image = document.getElementById('product_image').files[0];
+        var formData = new FormData();
+        formData.append('img', image);
+        formData.append("productId", productId);
+        rurl = urlPrefix + "Clothes/uploadImage";
+        $.ajax({
+            url: rurl,
+            type: "post",
+            processData: false,
+            cache: false,
+            contentType: false,
+            dataType: "JSON",
+            data: formData,
+            success: function (data) {
+                if (data.status == "success") {
+                    layer.msg(data.message, {icon: 1, time: 2000}, function (index) {
+                        layer.close(index);
+                        window.history.back();
+                    });
+                } else {
+                    layer.msg(data.message, {icon: 2, time: 2000}, function (index) {
+                        layer.close(index);
+                        window.location.reload();
+                    });
+                }
+
+                //  alert(data.status+" "+decodeURI(data.message));
+            },
+            error: function (e, x) {
+                console.log('nonono');
+            }
+
+        })
+    }
 }
 
 //今日click

@@ -103,7 +103,7 @@
             <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 							<select id="sels" class="select" size="1" name="demo1">
                                 <?php if(is_array($category_ids)): foreach($category_ids as $key=>$v): if($v['real'] == 1 ): ?><option value="<?php echo ($v['category_id']); ?>" selected><?php echo ($v["category_name"]); ?></option>
-                                    <?php else: ?><option value="1"><?php echo ($v["category_name"]); ?></option><?php endif; endforeach; endif; ?>
+                                    <?php else: ?><option value="<?php echo ($v['category_id']); ?>"><?php echo ($v["category_name"]); ?></option><?php endif; endforeach; endif; ?>
 							</select>
 							</span> </div>
         </div>
@@ -144,14 +144,14 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3">产品图片</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <?php if(is_array($image)): foreach($image as $k=>$v): ?><img src="<?php echo ($v); ?>" ><?php endforeach; endif; ?>
+                <?php if(is_array($image)): foreach($image as $k=>$v): ?><span style="color:red;font-size: 15px;"><?php echo ($k+1); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span><img src="<?php echo ($v); ?>" ><?php endforeach; endif; ?>
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3">图片是否删除</label>
             <div class="formControls skin-minimal col-xs-8 col-sm-9">
                 <?php if(is_array($image_id)): foreach($image_id as $k=>$v): ?><div class="check-box">
-                        <input type="checkbox" id="checkbox-<?php echo ($v); ?>">
+                        <input type="checkbox" id="checkbox-<?php echo ($v); ?>" name="chk" value="<?php echo ($v['pic_id']); ?>">
                         <label for="checkbox-<?php echo ($v); ?>"><?php echo ($k+1); ?>&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     </div><?php endforeach; endif; ?>
             </div>

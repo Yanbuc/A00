@@ -33,9 +33,8 @@ class AdminLoginController extends AdminController
         return $retn;
     }
 
-    public function putLog($logMessage){
+    public function putLog($logMessage,$logLevel){
         $logMessage=getLogMessage($logMessage);
-        $logLevel=C("LOG_LEVEL_PRODUCT_DELETE_EXCEPTION");
         $logDate=date("Y_m_d_H:i:s");
         $this->log->insertLog($logLevel,$logMessage,$logDate);
     }
