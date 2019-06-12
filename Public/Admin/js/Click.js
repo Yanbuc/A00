@@ -100,6 +100,13 @@ function deleteProduct(product_id) {
 function changeProduct(){
     var today=document.getElementById("today");
     var flag=today.name;
+    var list=document.getElementsByName("sex")
+    var sex=0;
+    for(var i=0;i<list.length;i++){
+        if(list[i].checked){
+            sex=list[i].value;
+        }
+    }
     if(flag==1){
         layer.open(
             {
@@ -140,7 +147,8 @@ function changeProduct(){
                     "productPrice":productPrice,
                     "productDesc":productDesc,
                     "productType":options,
-                    "productImage":deletePids
+                    "productImage":deletePids,
+                    "productSex":1
                 },
                 success:function(data){
                     if(data.status=="success"){

@@ -22,7 +22,7 @@ class AdminLoginController extends AdminController
             return ;
         }
         $tmp=C("SESSION_NAME");
-        $log=new LogModel();
+        $this->log=new LogModel();
         $this->assign("username",$_SESSION[$tmp]);
     }
 
@@ -36,7 +36,8 @@ class AdminLoginController extends AdminController
     public function putLog($logMessage,$logLevel){
         $logMessage=getLogMessage($logMessage);
         $logDate=date("Y_m_d_H:i:s");
-        $this->log->insertLog($logLevel,$logMessage,$logDate);
+        $logM=$this->log;
+        $logM->insertLog($logLevel,$logMessage,$logDate);
     }
 
 }

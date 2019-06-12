@@ -168,7 +168,7 @@ class ClothesController extends AdminLoginController
        if(empty($data["product_description"])|| $data["product_description"]==""){
            $data["product_description"]="产品没有简介";
        }
-       $imageSql="select * from  ".C("A00_IMAGE_PATH")." where pid=".$product;
+       $imageSql="select * from  ".C("A00_IMAGE_PATH")." where pid=".$product." and `pic_del`=0";
        $imageModel=new ProductImageModel();
        $image=$imageModel->baseFind($imageSql);
        $data["image"]=array();
@@ -177,7 +177,7 @@ class ClothesController extends AdminLoginController
            $data["image"][]=PUBLIC_PICTURE_PATH.trim($v["image_path"]);
            $data["image_id"][]=$v["pic_id"];
        }
-       $numSql="select * from ".C("A00_PRODUCT_NUM")." where product_id=".$product;
+       $numSql="select * from ".C("A00_PRODUCT_NUM")." where product_id=".$product." and `product_del`=0";
        $numModel=new ProductNumModel();
        $num=$numModel->baseFind($numSql);
        $cateSql="select * from ".C("A00_CATEGORY")." where category_del=0 ";
@@ -205,11 +205,93 @@ class ClothesController extends AdminLoginController
 
    public function changeProduct(){
        $data=$_POST;
-       if(empty($data["productId"])||empty($data["productName"])||empty($data["productPrice"])||empty($data["productType"])||empty($data["productImage"])){
-              $retn=$this->getRetnArray(C("RETN_ERROR"),"缺乏必要的信息");
+       if(empty($data["productId"])||empty($data["productName"])||empty($data["productPrice"])||empty($data["productType"])){
+              $retn=$this->getRetnArray(C("RETN_ERROR"),"缺乏必要的信息 ");
+              $retn["message"].=empty($data["productId"])?"没有输入产品编号 ":"";
+              $retn["message"].=empty($data["productName"])?"没有输入产品名字 ":"";
+              $retn["message"].=empty($data["productPrice"])?"没有输入产品价格 ":"";
+              $retn["message"].=empty($data["productType"])?"没有输入产品类型 ":"";
+             // $retn["message"].=empty($data["productSex"])?"没有输入产品性别":"";
               echo json_encode($retn);
               return ;
        }
+       $sql=$this->produceSelectProductSql($data["productId"]);
+       $productModel=new ProductModel();
+       $pdata=$productModel->baseFind($sql);
+       if(count($pdata)==0){
+           $logMessage="Admin ClothesController changProduct 传入了ProductId 但是数据库之中不存在";
+           $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_PRODUCT_EXCEPTION"));
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"you are a silly boy !!!!!");
+           echo json_encode($retn);
+           return ;
+       }
+       $pdata=$pdata[0];
+       // 删除图片
+       if(!empty($data["productImage"])){
+           $ids=explode(";",$data["productImage"]);
+           $deleteSql=$this->produceDeleteProductImageSql($ids);
+           $imageModel=new ProductImageModel();
+           $imageModel->baseUpdate($deleteSql);
+           $logMessage="Admin ClothesController changProduct 删除".$data["productName"]."图片";
+           $this->putLog($logMessage,C("LOG_LEVEL_NORMAL"));
+       }
+       $productName=strval($data["productName"]);
+       $productNum=intval($data["productNum"]);
+       $productId=intval($data["productId"]);
+       $productType=intval($data["productType"]);
+       $productPrice=doubleval($data["productPrice"]);
+       $productSex=intval($data["productSex"]);
+       if(!empty($productNum)||$productNum!=0){
+          $numSql=$this->produceSelectProductNumSql($productId);
+          $numModel=new ProductNumModel();
+          $num=$numModel->baseFind($numSql);
+           $tmp=array();
+           $tmp["product_id"]=$productId;
+           $tmp["product_num"]=$productNum;
+           $tmp["product_change_date"]=date("Y/m/d_H:i:s");
+          if(count($num)==0){
+              $tmp["product_add_date"]=date("Y/m/d_H:i:s");
+              $addNumSql=$this->produceInsertProductNumSql($tmp);
+              $numModel->baseInsert($addNumSql);
+              $logMessage="Admin ClothesController changProduct 添加了产品".$productName."的数量，数量为".$productNum;
+              $this->putLog($logMessage,C("LOG_LEVEL_INSERT_PRODUCT_NUM"));
+          }else{
+              $num=$num[0];
+              $numDelSql=$this->produceDeleteProductNumSql($num);
+              $numModel->baseUpdate($numDelSql);
+              $numInsSql=$this->produceInsertProductNumSql($tmp);
+              $numModel->baseInsert($numInsSql);
+              $logMessage="Admin ClothesController changProduct 更新了产品".$productName."的数量，数量为".$productNum;
+              $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_PRODUCT_NUM"));
+          }
+       }
+
+       $updateProductData=array();
+       if($pdata["product_name"]!=$productName){
+           $updateProductData["product_name"]=$productName;
+       }
+       if($pdata["product_type"]!=$productType){
+           $updateProductData["product_type"]=$productType;
+       }
+       if($pdata["product_price"]!=$productPrice){
+           $updateProductData["product_price"]=$productPrice;
+       }
+       if($pdata["product_sex"]!=$productSex){
+           $updateProductData["product_sex"]=$productSex;
+       }
+       if(!empty($data["productDesc"])&& trim($data["productDesc"])!=$pdata["product_description"]){
+           $updateProductData["product_description"]=strval($data["productDesc"]);
+       }
+       if(!empty($updateProductData)){
+           $updateProductData["product_update_date"]=date("Y/m/d_H:i:s");
+           $updateSql=$this->produceUpdateProductSql($productId,$updateProductData);
+           $productModel->baseUpdate($updateSql);
+           $logMessage="Admin ClothesController changProduct 更新了产品".$productName."的信息";
+           $this->putLog($logMessage,C("LOG_LEVEL_UPDATE_PRODUCT_INFOR"));
+       }
+       $retn=$this->getRetnArray(C("RETN_SUCCESS"),"产品信息修改成功");
+       echo json_encode($retn);
+       return ;
    }
 
    // 删除产品
@@ -338,9 +420,49 @@ class ClothesController extends AdminLoginController
        $sql="update ".C("A00_PRODUCT")." set `product_del`=1  where `product_id`=".$productId;
        return $sql;
    }
-   private function produceSearchProductImageSql($productId){
-       $sql="select * from ".C("A00_IMAGE_PATH")." where pid=".$productId;
+   private function  produceUpdateProductSql($productId,$data){
+       $sql="update ".C("A00_PRODUCT")." set  ";
+       $body="";
+       foreach($data as $k=>$v){
+           $body.=$k."='".$v."',";
+       }
+       $body=trim($body,",");
+       $end=" where product_id=".$productId;
+       $sql=$sql.$body.$end;
        return $sql;
    }
+   private function produceSearchProductImageSql($productId){
+       $sql="select * from ".C("A00_IMAGE_PATH")." where pid=".$productId." and `pic_del`=0";
+       return $sql;
+   }
+   private function produceDeleteProductImageSql($ids){
+       $ids=implode(",",$ids);
+       $ids=trim($ids,",");
+       $ids="(".$ids.")";
+       $sql="update ".C("A00_IMAGE_PATH")." set `pic_del`=1 where `pic_id` in ".$ids;
+       return $sql;
+   }
+   private function produceSelectProductNumSql($productId){
+       $sql="select * from ".C("A00_PRODUCT_NUM")."  where `product_id`=".$productId."  and `product_del`=0";
+       return $sql;
+   }
+
+   private function produceInsertProductNumSql($data){
+       $body="(";
+       $end="values(";
+       foreach($data as $k=>$v){
+           $body.=$k.",";
+           $end.="'".$v."',";
+       }
+       $body=trim($body,",").")";
+       $end=trim($end,",").")";
+       $sql=" insert into ".C("A00_PRODUCT_NUM")."  ".$body.$end;
+       return $sql;
+   }
+   private function produceDeleteProductNumSql($data){
+       $sql="update ".C("A00_PRODUCT_NUM")." set `product_del`=1  where `num_id`=".$data["num_id"];
+       return $sql;
+   }
+
 
 }

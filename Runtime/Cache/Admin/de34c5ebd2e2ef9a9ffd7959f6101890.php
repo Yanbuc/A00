@@ -77,7 +77,7 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3">产品编号</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input id="product_id" type="text" class="input-text" autocomplete="off" placeholder="产品编号" value="<?php echo ($data['product_id']); ?>">
+                <input id="product_id" readonly="true" type="text" class="input-text" autocomplete="off" placeholder="产品编号" value="<?php echo ($data['product_id']); ?>">
             </div>
         </div>
         <div class="row cl">
@@ -108,7 +108,7 @@
 							</span> </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3">产品性别<?php echo ($data['product_sex']); ?></label>
+            <label class="form-label col-xs-4 col-sm-3">产品性别</label>
             <div class="mws-form-item clearfix">
                 <ul class="mws-form-list inline">
                     <?php if($data['product_sex'] == 1 ): ?><li>
@@ -131,7 +131,7 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3">产品添加日期</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input id="product_date" type="text" class="input-text" autocomplete="off" placeholder="产品添加日期" value="<?php echo ($data['product_date']); ?>">
+                <input id="product_date" readonly="true"  type="text" class="input-text" autocomplete="off" placeholder="产品添加日期" value="<?php echo ($data['product_date']); ?>">
             </div>
         </div>
 
