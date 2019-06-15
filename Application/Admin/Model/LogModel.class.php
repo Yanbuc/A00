@@ -16,6 +16,9 @@ class LogModel extends BaseModel
         $this->execute($sql);
     }
 
-
+    public function insertLog2($logLevel,$logMessage,$logDate,$log_user){
+        $sql="insert into a00_log(log_level,log_message,log_date,log_user) values('".$logLevel."','".$logMessage."','".$logDate."','".$log_user."')";
+        $this->execute($sql);
+    }
 
 }

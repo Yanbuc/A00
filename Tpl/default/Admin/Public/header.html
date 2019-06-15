@@ -139,10 +139,10 @@
             </div>
             <div id="mws-user-functions">
                 <div id="mws-username">
-                   用户名: {$username}
+                      用户名: {$username}<input type="hidden" id="userNa" value="{$userId}">
                 </div>
                 <ul>
-                    <li><a href="{:U('Admin/Chpwd/index')}">修改密码</a></li>
+                    <li><a onclick="changeUserPwd()">修改密码</a></li>
                     <li><a href="{:U('Admin/Index/logout')}">退出登陆</a></li>
                 </ul>
             </div>

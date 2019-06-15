@@ -1,4 +1,4 @@
-var urlPrefix="http://localhost/A00/admin.php/"
+//var urlPrefix="http://localhost/A00/admin.php/"
 
 function sendClothesData(){
     var options=$("#sel option:selected");
@@ -405,3 +405,4 @@ function deleteCategory(product_id) {
         layer.close(index)
     });
 }
+

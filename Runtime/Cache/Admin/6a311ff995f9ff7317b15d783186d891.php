@@ -57,9 +57,12 @@
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>mws.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>demo.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>themer.js"></script>
+
     <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>Click.js"></script>
     <title>A00 后台页面</title>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/html5.js"></script>
+    <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>myconfig.js"></script>
+    <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>headerJ.js"></script>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/respond.min.js"></script>
     <![endif]-->
     <link href="<?php echo (H_UI_STATIC_PATH); ?>h-ui/css/H-ui.css" rel="stylesheet" type="text/css" />
@@ -71,6 +74,7 @@
     <![endif]-->
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/layer/2.4/layer.js"></script>
+
 </head>
 <body>
 <form action="" method="post" class="form form-horizontal" id="demoform-1">

@@ -57,12 +57,9 @@
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>mws.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>demo.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>themer.js"></script>
-
     <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>Click.js"></script>
     <title>A00 后台页面</title>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/html5.js"></script>
-    <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>myconfig.js"></script>
-    <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>headerJ.js"></script>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/respond.min.js"></script>
     <![endif]-->
     <link href="<?php echo (H_UI_STATIC_PATH); ?>h-ui/css/H-ui.css" rel="stylesheet" type="text/css" />
@@ -74,9 +71,10 @@
     <![endif]-->
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/layer/2.4/layer.js"></script>
-
 </head>
+
 <body>
+
 <div id="mws-themer">
     <div id="mws-themer-hide"></div>
     <div id="mws-themer-content">
@@ -112,7 +110,6 @@
         </div>
     </div>
 </div>
-
 <div id="mws-header" class="clearfix">
 
     <!-- Logo Wrapper -->
@@ -267,7 +264,6 @@
     </div>
 </div>
 
-
 <div id="mws-wrapper">
     <div id="mws-sidebar-stitch"></div>
     <div id="mws-sidebar-bg"></div>
@@ -308,83 +304,41 @@
 <!-- End Navigation -->
 
     </div>
-
     <div id="mws-container" class="clearfix">
         <div class="container">
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span class="mws-i-24 i-list">Inline Form</span>
+                    <span class="mws-i-24 i-list">用户信息列表</span>
                 </div>
                 <div class="mws-panel-body">
-                    <form class="mws-form"  enctype="multipart/form-data" id="uploadForm">
-    <div class="mws-form-inline">
-        <div class="mws-form-row">
-            <label>产品编号</label>
-            <div class="mws-form-item small">
-                <input type="text" class="mws-textinput" name="clothesId" id="clothesId" />
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>衣服别名</label>
-            <div class="mws-form-item medium">
-                <input type="text" class="mws-textinput" name="clothesAlis" id="clothesAlis" />
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>衣服价格</label>
-            <div class="mws-form-item large">
-                <input type="text" class="mws-textinput" name="clothesPrice" id="clothesPrice" />
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>服装类别</label>
-            <div class="mws-form-item small">
-                <select id="sel">
-                    <?php if(is_array($data)): foreach($data as $key=>$v): ?><option value="<?php echo ($v['category_id']); ?>"><?php echo ($v["category_name"]); ?></option><?php endforeach; endif; ?>>
-                </select>
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>简单描述</label>
-            <div class="mws-form-item large">
-                <textarea rows="100%" cols="100%" name="clothesDescription" id="clothesDescription"></textarea>
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>服装图片</label>
-            <div class="mws-form-item large">
-                <input type="file" class="mws-textinput" name="clothesImage" id="clothesImage" value="选择图片" />
-            </div>
-        </div>
-        <div class="mws-form-row">
-            <label>男装 or 女装</label>
-            <div class="mws-form-item clearfix">
-                <ul class="mws-form-list inline">
-                    <li><input type="radio" name="sex" value="1" /> <label>男装</label></li>
-                    <li><input type="radio" name="sex" value="2" /> <label>女装</label></li>
-                    <li><input type="radio" name="sex" value="3" /> <label>通用</label></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="mws-button-row">
-        <button type="button" value="提交" class="mws-button green" onclick="sendClothesData()" >提交</button>
-        <!--
-        <input type="submit" value="Submit" class="mws-button green" />
-        <input type="submit" value="Submit" class="mws-button red" />
-        <input type="submit" value="Submit" class="mws-button blue" />
-        <input type="submit" value="Submit" class="mws-button orange" />
-        <input type="submit" value="Submit" class="mws-button gray" />
-        <input type="submit" value="Submit" class="mws-button black" />
-        <input type="submit" value="Disabled" class="mws-button gray" disabled="disabled" />
-        -->
-    </div>
-</form>
+                    <table class="mws-table">
+                        <thead>
+                        <tr>
+                            <th>用户名</th>
+                            <th>用户密码</th>
+                            <th>用户真实姓名</th>
+                            <th>用户添加日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php if(is_array($data)): foreach($data as $k=>$v): ?><tr>
+                                <td><?php echo ($v["product_id"]); ?></td>
+                                <td><?php echo ($v["product_name"]); ?></td>
+                                <td><?php echo ($v["category_name"]); ?></td>
+                                <td><?php echo ($v["product_price"]); ?></td>
+                                <td><input class="btn btn-success radius" type="button" value="查询" onclick="searchProductExtraMessage(<?php echo ($v['product_id']); ?>)">
+                                    <input class="btn btn-success radius" type="button" value="上传图片" onclick="showUploadImage(<?php echo ($v['product_id']); ?>)">
+                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteProduct(<?php echo ($v['product_id']); ?>)">
+                                </td>
+                            </tr><?php endforeach; endif; ?>
+
+                        </tbody>
+
+                    </table>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </body>
-
 </html>

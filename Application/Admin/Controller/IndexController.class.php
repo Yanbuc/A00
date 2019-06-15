@@ -31,6 +31,7 @@ class IndexController extends AdminController {
         $isTrue=$this->checkPwd($pwd,$data);
         if($isTrue){
             $this->assign("username",$userName);
+            $this->assign("userId",$data["id"]);
             $this->setSessionName($data["username"]);
             $this->logSuccess();
             return ;
@@ -40,7 +41,7 @@ class IndexController extends AdminController {
 
 
     public  function  logSuccess(){
-        $this->display('DashBoard/index');
+        $this->display('Index/admin');
     }
 
     // 检查是否已经登陆
@@ -84,5 +85,9 @@ class IndexController extends AdminController {
         $this->index();
     }
 
+    public function admin(){
+        $this->display("Index/admin");
+        return ;
+    }
 
 }

@@ -280,7 +280,7 @@
         <li>
             <a  class="mws-i-24 i-chart">类别</a>
             <ul>
-                <li><a href="<?php echo U('Admin/Category/showCategoryList');?>">类别列表</a></li>
+                <li><a href="<?php echo U('Admin/Category/showCatgeoryList');?>">显示类别</a></li>
                 <li><a href="<?php echo U('Admin/Category/add');?>">添加</a></li>
             </ul>
         </li>

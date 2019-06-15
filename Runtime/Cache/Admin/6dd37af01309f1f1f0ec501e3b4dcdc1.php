@@ -57,9 +57,12 @@
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>mws.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>demo.js"></script>
     <script type="text/javascript" src="<?php echo (ADMIN_JS_PATH); ?>themer.js"></script>
+
     <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>Click.js"></script>
     <title>A00 后台页面</title>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/html5.js"></script>
+    <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>myconfig.js"></script>
+    <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>headerJ.js"></script>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/respond.min.js"></script>
     <![endif]-->
     <link href="<?php echo (H_UI_STATIC_PATH); ?>h-ui/css/H-ui.css" rel="stylesheet" type="text/css" />
@@ -71,8 +74,8 @@
     <![endif]-->
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/layer/2.4/layer.js"></script>
-</head>
 
+</head>
 <body>
 
 <div id="mws-themer">
@@ -252,10 +255,10 @@
             </div>
             <div id="mws-user-functions">
                 <div id="mws-username">
-                   用户名: <?php echo ($username); ?>
+                      用户名: <?php echo ($username); ?><input type="hidden" id="userNa" value="<?php echo ($userId); ?>">
                 </div>
                 <ul>
-                    <li><a href="<?php echo U('Admin/Chpwd/index');?>">修改密码</a></li>
+                    <li><a onclick="changeUserPwd()">修改密码</a></li>
                     <li><a href="<?php echo U('Admin/Index/logout');?>">退出登陆</a></li>
                 </ul>
             </div>
@@ -264,6 +267,7 @@
 
     </div>
 </div>
+
 
 <div id="mws-wrapper">
     <div id="mws-sidebar-stitch"></div>
@@ -278,7 +282,7 @@
         <!-- Main Navigation -->
 <div id="mws-navigation">
     <ul>
-        <li class="active"><a href="<?php echo U('Admin/DashBoard/index');?>" class="mws-i-24 i-home">后台界面</a></li>
+        <li class="active"><a href="<?php echo U('Admin/Index/admin');?>" class="mws-i-24 i-home">后台界面</a></li>
         <li>
             <a href="<?php echo U('Admin/Charts/index');?>" class="mws-i-24 i-chart">服装</a>
             <ul>
@@ -293,21 +297,13 @@
                 <li><a href="<?php echo U('Admin/Category/add');?>">添加</a></li>
             </ul>
         </li>
-        <!--<li><a href="<?php echo U('Admin/Calendar/index');?>" class="mws-i-24 i-day-calendar">Calendar</a></li>-->
         <li>
             <a href="#" class="mws-i-24 i-list">Forms</a>
             <ul>
-                <li><a href="<?php echo U('Admin/Form/showLayOut');?>">Layouts</a></li>
-                <li><a href="<?php echo U('Admin/Form/showElements');?>">Elements</a></li>
+                <li><a href="">Layouts</a></li>
+                <li><a href="">Elements</a></li>
             </ul>
         </li>
-        <!--
-        <li><a href="../../../../../../admin/widgets.html" class="mws-i-24 i-cog">Widgets</a></li>
-        <li><a href="../../../../../../admin/typography.html" class="mws-i-24 i-text-styling">Typography</a></li>
-        <li><a href="../../../../../../admin/grids.html" class="mws-i-24 i-blocks-images">Grids &amp; Panels</a></li>
-        <li><a href="../../../../../../admin/gallery.html" class="mws-i-24 i-polaroids">Gallery</a></li>
-        <li><a href="../../../../../../admin/error.html" class="mws-i-24 i-alert-2">Error Page</a></li>
-        -->
     </ul>
 </div>
 <!-- End Navigation -->

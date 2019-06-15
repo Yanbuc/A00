@@ -104,7 +104,9 @@
     </div>
     <!-- Themer End -->
 
-    <div id="mws-header" class="clearfix">
+    <script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>myconfig.js"></script>
+<script type="text/javascript"  src="<?php echo (ADMIN_DEFINE_JS_PATH); ?>headerJ.js"></script>
+<div id="mws-header" class="clearfix">
 
     <!-- Logo Wrapper -->
     <div id="mws-logo-container">
@@ -245,10 +247,10 @@
             </div>
             <div id="mws-user-functions">
                 <div id="mws-username">
-                   用户名: <?php echo ($username); ?>
+                      用户名: <?php echo ($username); ?><input type="hidden" id="userNa" value="<?php echo ($userId); ?>">
                 </div>
                 <ul>
-                    <li><a href="<?php echo U('Admin/Chpwd/index');?>">修改密码</a></li>
+                    <li><a onclick="changeUserPwd()">修改密码</a></li>
                     <li><a href="<?php echo U('Admin/Index/logout');?>">退出登陆</a></li>
                 </ul>
             </div>
@@ -257,6 +259,7 @@
 
     </div>
 </div>
+
 
 
 
@@ -295,7 +298,6 @@
                 <li><a href="<?php echo U('Admin/Category/add');?>">添加</a></li>
             </ul>
         </li>
-        <!--<li><a href="<?php echo U('Admin/Calendar/index');?>" class="mws-i-24 i-day-calendar">Calendar</a></li>-->
         <li>
             <a href="#" class="mws-i-24 i-list">Forms</a>
             <ul>
@@ -303,13 +305,6 @@
                 <li><a href="<?php echo U('Admin/Form/showElements');?>">Elements</a></li>
             </ul>
         </li>
-        <!--
-        <li><a href="../../../../../../admin/widgets.html" class="mws-i-24 i-cog">Widgets</a></li>
-        <li><a href="../../../../../../admin/typography.html" class="mws-i-24 i-text-styling">Typography</a></li>
-        <li><a href="../../../../../../admin/grids.html" class="mws-i-24 i-blocks-images">Grids &amp; Panels</a></li>
-        <li><a href="../../../../../../admin/gallery.html" class="mws-i-24 i-polaroids">Gallery</a></li>
-        <li><a href="../../../../../../admin/error.html" class="mws-i-24 i-alert-2">Error Page</a></li>
-        -->
     </ul>
 </div>
 <!-- End Navigation -->

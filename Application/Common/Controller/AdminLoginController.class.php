@@ -33,11 +33,13 @@ class AdminLoginController extends AdminController
         return $retn;
     }
 
+    // 写入日志
     public function putLog($logMessage,$logLevel){
         $logMessage=getLogMessage($logMessage);
         $logDate=date("Y_m_d_H:i:s");
         $logM=$this->log;
-        $logM->insertLog($logLevel,$logMessage,$logDate);
+        $logUser=$_SESSION["username"];
+        $logM->insertLog2($logLevel,$logMessage,$logDate,$logUser);
     }
 
 }
