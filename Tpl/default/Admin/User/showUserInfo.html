@@ -74,92 +74,44 @@
 </head>
 
 <body>
+<form action="" method="post" class="form form-horizontal" id="demoform-1">
+    <div class="row cl" >
+        <label class="form-label col-xs-4 col-sm-3">用户名</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="userName" value="{$user['username']}" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" readonly="true">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">真实姓名</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="userRealName" type="text" value="{$user['real_name']}" class="input-text" autocomplete="off" placeholder="用户真实姓名"   style="width: 400px">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">密码</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="password" value="{$user['password']}" type="password" class="input-text" autocomplete="off" placeholder="用户密码"   style="width: 400px">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">新的密码</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="newPassword"  type="password" class="input-text" autocomplete="off" placeholder="新密码"   style="width: 400px">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">确认新的密码</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="confirmPassword" type="password" class="input-text" autocomplete="off" placeholder="确认密码"   style="width: 400px">
+        </div>
+    </div>
+    <div class="row cl">
+        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+            <input  id="today" class="btn btn-success radius" type="button" value="是否修改" onclick="todayDate()" style="color: #FFFFFF;" name="1">
+            <input class="btn btn-primary radius" type="button" value="提交" onclick="submitChangeCategory()">
+        </div>
+    </div>
+</form>
 
-<div id="mws-themer">
-    <div id="mws-themer-hide"></div>
-    <div id="mws-themer-content">
-        <div class="mws-themer-section">
-            <label for="mws-theme-presets">Presets</label> <select id="mws-theme-presets"></select>
-        </div>
-        <div class="mws-themer-separator"></div>
-        <div class="mws-themer-section">
-            <ul>
-                <li><span>Base Color</span> <div id="mws-base-cp" class="mws-cp-trigger"></div></li>
-                <li><span>Text Color</span> <div id="mws-text-cp" class="mws-cp-trigger"></div></li>
-                <li><span>Text Glow Color</span> <div id="mws-textglow-cp" class="mws-cp-trigger"></div></li>
-            </ul>
-        </div>
-        <div class="mws-themer-separator"></div>
-        <div class="mws-themer-section">
-            <ul>
-                <li><span>Text Glow Opacity</span> <div id="mws-textglow-op"></div></li>
-            </ul>
-        </div>
-        <div class="mws-themer-separator"></div>
-        <div class="mws-themer-section">
-            <button class="mws-button red small" id="mws-themer-getcss">Get CSS</button>
-        </div>
-    </div>
-    <div id="mws-themer-css-dialog">
-        <div class="mws-form">
-            <div class="mws-form-row" style="padding:0;">
-                <div class="mws-form-item">
-                    <textarea cols="auto" rows="auto" readonly="readonly"></textarea>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<include file="Public:header"/>
-<div id="mws-wrapper">
-    <div id="mws-sidebar-stitch"></div>
-    <div id="mws-sidebar-bg"></div>
-    <div id="mws-sidebar">
-        <div id="mws-searchbox" class="mws-inset">
-            <form action="http://www.malijuwebshop.com/themes/mws-admin/form_layouts.html">
-                <input type="text" class="mws-search-input" />
-                <input type="submit" class="mws-search-submit" />
-            </form>
-        </div>
-        <include file="Public:menu"/>
-    </div>
-    <div id="mws-container" class="clearfix">
-        <div class="container">
-            <div class="mws-panel grid_8">
-                <div class="mws-panel-header">
-                    <span class="mws-i-24 i-list">用户信息列表</span>
-                </div>
-                <div class="mws-panel-body">
-                    <table class="mws-table">
-                        <thead>
-                        <tr>
-                            <th>用户名</th>
-                            <th>用户密码</th>
-                            <th>用户真实姓名</th>
-                            <th>用户添加日期</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <foreach name="data" item="v" key="k">
-                            <tr>
-                                <td>{$v.product_id}</td>
-                                <td>{$v.product_name}</td>
-                                <td>{$v.category_name}</td>
-                                <td>{$v.product_price}</td>
-                                <td><input class="btn btn-success radius" type="button" value="查询" onclick="searchProductExtraMessage({$v['product_id']})">
-                                    <input class="btn btn-success radius" type="button" value="上传图片" onclick="showUploadImage({$v['product_id']})">
-                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteProduct({$v['product_id']})">
-                                </td>
-                            </tr>
-                        </foreach>
-
-                        </tbody>
-
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>

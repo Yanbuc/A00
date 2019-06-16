@@ -259,7 +259,7 @@
                       用户名: <?php echo ($username); ?><input type="hidden" id="userNa" value="<?php echo ($userId); ?>">
                 </div>
                 <ul>
-                    <li><a onclick="changeUserPwd()">修改密码</a></li>
+                    <li><a onclick="changeUserPwd()">修改用户信息</a></li>
                     <li><a href="<?php echo U('Admin/Index/logout');?>">退出登陆</a></li>
                 </ul>
             </div>

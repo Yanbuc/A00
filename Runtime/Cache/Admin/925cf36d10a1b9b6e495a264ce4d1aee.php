@@ -74,271 +74,44 @@
 </head>
 
 <body>
-
-<div id="mws-themer">
-    <div id="mws-themer-hide"></div>
-    <div id="mws-themer-content">
-        <div class="mws-themer-section">
-            <label for="mws-theme-presets">Presets</label> <select id="mws-theme-presets"></select>
-        </div>
-        <div class="mws-themer-separator"></div>
-        <div class="mws-themer-section">
-            <ul>
-                <li><span>Base Color</span> <div id="mws-base-cp" class="mws-cp-trigger"></div></li>
-                <li><span>Text Color</span> <div id="mws-text-cp" class="mws-cp-trigger"></div></li>
-                <li><span>Text Glow Color</span> <div id="mws-textglow-cp" class="mws-cp-trigger"></div></li>
-            </ul>
-        </div>
-        <div class="mws-themer-separator"></div>
-        <div class="mws-themer-section">
-            <ul>
-                <li><span>Text Glow Opacity</span> <div id="mws-textglow-op"></div></li>
-            </ul>
-        </div>
-        <div class="mws-themer-separator"></div>
-        <div class="mws-themer-section">
-            <button class="mws-button red small" id="mws-themer-getcss">Get CSS</button>
+<form action="" method="post" class="form form-horizontal" id="demoform-1">
+    <div class="row cl" >
+        <label class="form-label col-xs-4 col-sm-3">用户名</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="userName" value="<?php echo ($user['username']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" readonly="true">
         </div>
     </div>
-    <div id="mws-themer-css-dialog">
-        <div class="mws-form">
-            <div class="mws-form-row" style="padding:0;">
-                <div class="mws-form-item">
-                    <textarea cols="auto" rows="auto" readonly="readonly"></textarea>
-                </div>
-            </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">真实姓名</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="userRealName" type="text" value="<?php echo ($user['real_name']); ?>" class="input-text" autocomplete="off" placeholder="用户真实姓名"   style="width: 400px">
         </div>
     </div>
-</div>
-<div id="mws-header" class="clearfix">
-
-    <!-- Logo Wrapper -->
-    <div id="mws-logo-container">
-        <div id="mws-logo-wrap">
-            <img src="<?php echo (ADMIN_IMAGES_PATH); ?>mws-logo.png" alt="mws admin" />
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">密码</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="password" value="<?php echo ($user['password']); ?>" type="password" class="input-text" autocomplete="off" placeholder="用户密码"   style="width: 400px">
         </div>
     </div>
-
-    <!-- User Area Wrapper -->
-    <div id="mws-user-tools" class="clearfix">
-
-        <!-- User Notifications -->
-        <div id="mws-user-notif" class="mws-dropdown-menu">
-            <a href="#" class="mws-i-24 i-alert-2 mws-dropdown-trigger">Notifications</a>
-            <span class="mws-dropdown-notif">35</span>
-            <div class="mws-dropdown-box">
-                <div class="mws-dropdown-content">
-                    <ul class="mws-notifications">
-
-                        <!-- Notification Content -->
-                        <li class="read">
-                            <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                    </span>
-                                <span class="time">
-                                        January 21, 2012
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="read">
-                            <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                <span class="time">
-                                        January 21, 2012
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="unread">
-                            <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                <span class="time">
-                                        January 21, 2012
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="unread">
-                            <a href="#">
-                                    <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                <span class="time">
-                                        January 21, 2012
-                                    </span>
-                            </a>
-                        </li>
-                        <!-- End Notification Content -->
-
-                    </ul>
-                    <div class="mws-dropdown-viewall">
-                        <a href="#">View All Notifications</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- User Messages -->
-        <div id="mws-user-message" class="mws-dropdown-menu">
-            <a href="#" class="mws-i-24 i-message mws-dropdown-trigger">Messages</a>
-            <span class="mws-dropdown-notif">35</span>
-            <div class="mws-dropdown-box">
-                <div class="mws-dropdown-content">
-                    <ul class="mws-messages">
-
-                        <!-- Message Content -->
-                        <li class="read">
-                            <a href="#">
-                                <span class="sender">John Doe</span>
-                                <span class="message">
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                    </span>
-                                <span class="time">
-                                        January 21, 2012
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="read">
-                            <a href="#">
-                                <span class="sender">John Doe</span>
-                                <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                <span class="time">
-                                        January 21, 2012
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="unread">
-                            <a href="#">
-                                <span class="sender">John Doe</span>
-                                <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                <span class="time">
-                                        January 21, 2012
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="unread">
-                            <a href="#">
-                                <span class="sender">John Doe</span>
-                                <span class="message">
-                                        Lorem ipsum dolor sit amet
-                                    </span>
-                                <span class="time">
-                                        January 21, 2012
-                                    </span>
-                            </a>
-                        </li>
-                        <!-- End Messages -->
-
-                    </ul>
-                    <div class="mws-dropdown-viewall">
-                        <a href="#">View All Messages</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- User Functions -->
-        <div id="mws-user-info" class="mws-inset">
-            <div id="mws-user-photo">
-                <img src="<?php echo (ADMIN_EXAMPLE_PATH); ?>/profile.jpg" alt="User Photo" />
-            </div>
-            <div id="mws-user-functions">
-                <div id="mws-username">
-                      用户名: <?php echo ($username); ?><input type="hidden" id="userNa" value="<?php echo ($userId); ?>">
-                </div>
-                <ul>
-                    <li><a onclick="changeUserPwd()">修改密码</a></li>
-                    <li><a href="<?php echo U('Admin/Index/logout');?>">退出登陆</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End User Functions -->
-
-    </div>
-</div>
-
-<div id="mws-wrapper">
-    <div id="mws-sidebar-stitch"></div>
-    <div id="mws-sidebar-bg"></div>
-    <div id="mws-sidebar">
-        <div id="mws-searchbox" class="mws-inset">
-            <form action="http://www.malijuwebshop.com/themes/mws-admin/form_layouts.html">
-                <input type="text" class="mws-search-input" />
-                <input type="submit" class="mws-search-submit" />
-            </form>
-        </div>
-        <!-- Main Navigation -->
-<div id="mws-navigation">
-    <ul>
-        <li class="active"><a href="<?php echo U('Admin/Index/admin');?>" class="mws-i-24 i-home">后台界面</a></li>
-        <li>
-            <a href="#" class="mws-i-24 i-chart">服装</a>
-            <ul>
-                <li><a href="<?php echo U('Admin/Clothes/show');?>">添加</a></li>
-                <li><a href="<?php echo U('Admin/Clothes/showProduct');?>">显示所有产品</a></li>
-            </ul>
-        </li>
-        <li>
-            <a  class="mws-i-24 i-chart">类别</a>
-            <ul>
-                <li><a href="<?php echo U('Admin/Category/showCatgeoryList');?>">显示类别</a></li>
-                <li><a href="<?php echo U('Admin/Category/add');?>">添加</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#" class="mws-i-24 i-list">Forms</a>
-            <ul>
-                <li><a href="">Layouts</a></li>
-                <li><a href="">Elements</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<!-- End Navigation -->
-
-    </div>
-    <div id="mws-container" class="clearfix">
-        <div class="container">
-            <div class="mws-panel grid_8">
-                <div class="mws-panel-header">
-                    <span class="mws-i-24 i-list">用户信息列表</span>
-                </div>
-                <div class="mws-panel-body">
-                    <table class="mws-table">
-                        <thead>
-                        <tr>
-                            <th>用户名</th>
-                            <th>用户密码</th>
-                            <th>用户真实姓名</th>
-                            <th>用户添加日期</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php if(is_array($data)): foreach($data as $k=>$v): ?><tr>
-                                <td><?php echo ($v["product_id"]); ?></td>
-                                <td><?php echo ($v["product_name"]); ?></td>
-                                <td><?php echo ($v["category_name"]); ?></td>
-                                <td><?php echo ($v["product_price"]); ?></td>
-                                <td><input class="btn btn-success radius" type="button" value="查询" onclick="searchProductExtraMessage(<?php echo ($v['product_id']); ?>)">
-                                    <input class="btn btn-success radius" type="button" value="上传图片" onclick="showUploadImage(<?php echo ($v['product_id']); ?>)">
-                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteProduct(<?php echo ($v['product_id']); ?>)">
-                                </td>
-                            </tr><?php endforeach; endif; ?>
-
-                        </tbody>
-
-                    </table>
-                </div>
-            </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">新的密码</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="newPassword"  type="password" class="input-text" autocomplete="off" placeholder="新密码"   style="width: 400px">
         </div>
     </div>
-</div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">确认新的密码</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="confirmPassword" type="password" class="input-text" autocomplete="off" placeholder="确认密码"   style="width: 400px">
+        </div>
+    </div>
+    <div class="row cl">
+        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+            <input  id="today" class="btn btn-success radius" type="button" value="是否修改" onclick="todayDate()" style="color: #FFFFFF;" name="1">
+            <input class="btn btn-primary radius" type="button" value="提交" onclick="submitChangeCategory()">
+        </div>
+    </div>
+</form>
+
 </body>
 </html>
