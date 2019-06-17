@@ -37,9 +37,39 @@ class UserController extends AdminLoginController
       return;
    }
 
-   private function produceSelectUserSql($userId){
-      $sql="select * from ".C("a00_users")." where `id`=".$userId." and `user_del`=0";
-      return $sql;
+
+
+   public function showChangePwdInfo(){
+      $this->display("User/showChangePwdInfo");
+      return ;
    }
+
+   public  function changeUserName(){
+       $data=$_POST;
+       $userId=empty($data["user_id"])?0:intval($data["user_id"]);
+       $name=empty($data["username"])?"":strval($data["user_id"]);
+       $realName=empty($data["real_name"])?"":strval($data["real_name"]);
+       if($userId==0||$name==""||$realName==""){
+           $message="缺少输入的信息";
+           $retn=$this->getRetnArray(C("RETN_ERROR"),$message);
+           $logMessage="修改用户信息失败,但是缺少必要的信息";
+           $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_INFO_EXCEPTION"));
+           echo json_encode($retn);
+           return ;
+       }
+       if(strlen($name)>20){
+           $message="用户名的长度太长,不符合要求";
+           $retn=$this->getRetnArray(C("RETN_ERROR"),$message);
+           $logMessage="修改用户信息失败,用户名的长度过长";
+           $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_INFO_EXCEPTION"));
+           echo json_encode($retn);
+           return ;
+       }
+   }
+
+    private function produceSelectUserSql($userId){
+        $sql="select * from ".C("a00_users")." where `id`=".$userId." and `user_del`=0";
+        return $sql;
+    }
 
 }

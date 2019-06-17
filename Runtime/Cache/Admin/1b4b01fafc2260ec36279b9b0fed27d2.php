@@ -120,7 +120,7 @@
     <!-- Logo Wrapper -->
     <div id="mws-logo-container">
         <div id="mws-logo-wrap">
-            <img src="<?php echo (ADMIN_IMAGES_PATH); ?>mws-logo.png" alt="mws admin" />
+            <!--<img src="<?php echo (ADMIN_IMAGES_PATH); ?>mws-logo.png" alt="mws admin" />-->
         </div>
     </div>
 
@@ -130,7 +130,6 @@
         <!-- User Notifications -->
         <div id="mws-user-notif" class="mws-dropdown-menu">
             <a href="#" class="mws-i-24 i-alert-2 mws-dropdown-trigger">Notifications</a>
-            <span class="mws-dropdown-notif">35</span>
             <div class="mws-dropdown-box">
                 <div class="mws-dropdown-content">
                     <ul class="mws-notifications">
@@ -188,8 +187,8 @@
 
         <!-- User Messages -->
         <div id="mws-user-message" class="mws-dropdown-menu">
+
             <a href="#" class="mws-i-24 i-message mws-dropdown-trigger">Messages</a>
-            <span class="mws-dropdown-notif">35</span>
             <div class="mws-dropdown-box">
                 <div class="mws-dropdown-content">
                     <ul class="mws-messages">
@@ -247,6 +246,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- User Functions -->
@@ -257,9 +257,11 @@
             <div id="mws-user-functions">
                 <div id="mws-username">
                       用户名: <?php echo ($username); ?><input type="hidden" id="userNa" value="<?php echo ($userId); ?>">
+
                 </div>
                 <ul>
-                    <li><a onclick="changeUserPwd()">修改用户信息</a></li>
+                    <li><a onclick="changeUserInfo()">用户信息</a></li>
+                    <li><a onclick="changeUserPwd()" >修改密码</a></li>
                     <li><a href="<?php echo U('Admin/Index/logout');?>">退出登陆</a></li>
                 </ul>
             </div>
