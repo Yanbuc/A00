@@ -24,6 +24,7 @@ class AdminLoginController extends AdminController
         $tmp=C("SESSION_NAME");
         $this->log=new LogModel();
         $this->assign("username",$_SESSION[$tmp]);
+        $this->assign("userId",$_SESSION["user_id"]);
     }
 
     public function getRetnArray($status,$message){

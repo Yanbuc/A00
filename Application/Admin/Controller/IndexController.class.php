@@ -30,9 +30,10 @@ class IndexController extends AdminController {
         $data=$data[0];
         $isTrue=$this->checkPwd($pwd,$data);
         if($isTrue){
-            $this->assign("username",$userName);
+            $this->assign("username",$data["useralis"]);
             $this->assign("userId",$data["id"]);
-            $this->setSessionName($data["username"]);
+            $this->setSessionName($data["useralis"]);
+            $_SESSION["user_id"]=$data["id"];
             $this->logSuccess();
             return ;
         }
@@ -41,6 +42,8 @@ class IndexController extends AdminController {
 
 
     public  function  logSuccess(){
+        $this->assign("username",$_SESSION["username"]);
+        $this->assign("userId",$_SESSION["user_id"]);
         $this->display('Index/admin');
     }
 
@@ -86,7 +89,7 @@ class IndexController extends AdminController {
     }
 
     public function admin(){
-        $this->display("Index/admin");
+        $this->index();
         return ;
     }
 

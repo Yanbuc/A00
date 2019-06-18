@@ -30,5 +30,11 @@ function dealImagePath($data){
     return $data;
 }
 
+function encodePassword($pwd){
+    $newPd=md5($pwd);
+    $newPd=substr($newPd,0,16);
+    return $newPd;
+}
+
 
 
