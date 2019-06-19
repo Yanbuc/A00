@@ -7,16 +7,26 @@
     <list default="true" id="73226bb6-5638-4bdd-91b0-836ce7359bd2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Common/function.php" afterPath="$PROJECT_DIR$/Application/Common/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php" afterPath="$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/js/Click.js" afterPath="$PROJECT_DIR$/Public/Admin/js/Click.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/js/headerJ.js" afterPath="$PROJECT_DIR$/Public/Admin/js/headerJ.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/0624284b37336278d642e8aea73cf64a.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/0624284b37336278d642e8aea73cf64a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/1b4b01fafc2260ec36279b9b0fed27d2.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/1b4b01fafc2260ec36279b9b0fed27d2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/36b0c170c62def63144a5629e391c365.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/36b0c170c62def63144a5629e391c365.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/6dd37af01309f1f1f0ec501e3b4dcdc1.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/6dd37af01309f1f1f0ec501e3b4dcdc1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/925cf36d10a1b9b6e495a264ce4d1aee.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/925cf36d10a1b9b6e495a264ce4d1aee.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/a4ad8a2d42bad5b9a35bac0500aaabf1.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/a4ad8a2d42bad5b9a35bac0500aaabf1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/d07fe48795c3843019b9de8f4b5d7341.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/d07fe48795c3843019b9de8f4b5d7341.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Category/add.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Category/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Category/changeCategory.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Category/changeCategory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Category/showCategoryList.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Category/showCategoryList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Public/jsandcss.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Public/jsandcss.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,79 +38,165 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="headerJ.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/Admin/js/headerJ.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-              <folding>
-                <marker date="1560858147478" expanded="true" signature="910:941" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showChangePwdInfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-              <folding>
-                <marker date="1560858307237" expanded="true" signature="235:241" ph=" " />
-                <marker date="1560858307237" expanded="true" signature="241:247" ph=" " />
-                <marker date="1560858307237" expanded="true" signature="273:279" ph=" " />
-                <marker date="1560858307237" expanded="true" signature="279:285" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Click.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/Admin/js/Click.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="42" />
+            <state relative-caret-position="-210">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="n#!!block;n#todayDate#0" expanded="false" />
                 <element signature="n#!!block;n#addCategory#0" expanded="false" />
-                <marker date="1560597692401" expanded="true" signature="3508:3539" ph="..." />
-                <marker date="1560597692401" expanded="true" signature="6320:6351" ph="..." />
-                <marker date="1560597692401" expanded="true" signature="9837:9868" ph="..." />
+                <marker date="1560944456141" expanded="true" signature="4239:4270" ph="..." />
+                <marker date="1560944456141" expanded="true" signature="7051:7082" ph="..." />
+                <marker date="1560944456141" expanded="true" signature="10568:10599" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            <state relative-caret-position="420">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jsandcss.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/jsandcss.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="78" column="5" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="85" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="anotherjsandcss.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/anotherjsandcss.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="766">
+              <caret line="85" column="13" lean-forward="false" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClothesController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
-                <element signature="e#118#145#0#PHP" expanded="true" />
-                <element signature="e#1317#3342#0#PHP" expanded="false" />
-                <element signature="e#3348#3511#0#PHP" expanded="false" />
-                <marker date="1560857392204" expanded="true" signature="3410:3482" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
+                <element signature="e#2510#3032#0#PHP" expanded="false" />
+                <element signature="e#3037#3185#0#PHP" expanded="false" />
+                <element signature="e#3189#3397#0#PHP" expanded="false" />
+                <element signature="e#3402#4810#0#PHP" expanded="false" />
+                <element signature="e#4815#5063#0#PHP" expanded="false" />
+                <element signature="e#6882#7170#0#PHP" expanded="false" />
+                <element signature="e#10639#10753#0#PHP" expanded="false" />
+                <element signature="e#11614#13012#0#PHP" expanded="false" />
+                <element signature="e#14164#15797#0#PHP" expanded="false" />
+                <element signature="e#15802#15943#0#PHP" expanded="false" />
+                <element signature="e#15947#16245#0#PHP" expanded="false" />
+                <element signature="e#16249#16428#0#PHP" expanded="false" />
+                <element signature="e#16432#16603#0#PHP" expanded="false" />
+                <element signature="e#16607#16939#0#PHP" expanded="false" />
+                <element signature="e#16943#17120#0#PHP" expanded="false" />
+                <element signature="e#17124#17372#0#PHP" expanded="false" />
+                <element signature="e#17376#17567#0#PHP" expanded="false" />
+                <element signature="e#17572#17919#0#PHP" expanded="false" />
+                <element signature="e#17923#18099#0#PHP" expanded="false" />
+                <marker date="1560596233778" expanded="true" signature="2573:2585" ph="insert into ${C(&quot;A00_PRODUCT&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3100:3113" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="3100:3114" ph="select * fro... ${C()}" />
+                <marker date="1560596233778" expanded="true" signature="3100:3153" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="3100:3154" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="3100:3155" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="3259:3271" ph="insert into ${C()}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3292" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3324" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3326" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3327" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3341" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3342" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3343" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3344" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3347" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3348" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3364" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3369" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="3259:3371" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="4932:4945" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="4932:4946" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="4932:5013" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="4932:5014" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="4932:5015" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="4932:5026" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="4932:5027" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5255:5268" ph="select produ... " />
+                <marker date="1560596233778" expanded="true" signature="5255:5269" ph="select produ... ${C90}" />
+                <marker date="1560596233778" expanded="true" signature="5255:5307" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5255:5308" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5255:5309" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5255:5338" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5255:5339" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5771:5784" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="5771:5786" ph="select * fro... ${C()}" />
+                <marker date="1560596233778" expanded="true" signature="5771:5820" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5771:5821" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5771:5848" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="5771:5849" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="6185:6198" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="6185:6199" ph="select * fro... ${C()}" />
+                <marker date="1560596233778" expanded="true" signature="6185:6241" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="6185:6242" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="6185:6273" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="6185:6274" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="6375:6388" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="6375:6389" ph="select * fro... ${C()}" />
+                <marker date="1560596233778" expanded="true" signature="6375:6411" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="6375:6431" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="15389:15401" ph="insert into ${C()}... " />
+                <marker date="1560596233778" expanded="true" signature="15389:15453" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="15389:15454" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="15389:15478" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="15389:15479" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="15389:15492" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="15389:15493" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="15389:15494" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="15860:15873" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="15860:15874" ph="select * fro... ${C()}" />
+                <marker date="1560596233778" expanded="true" signature="15860:15916" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="15860:15917" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16148:16161" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="16148:16162" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16148:16182" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16148:16206" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16148:16207" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16148:16218" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16148:16219" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16316:16329" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="16316:16330" ph="select * fro... ${C()}" />
+                <marker date="1560596233778" expanded="true" signature="16316:16368" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16316:16369" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16316:16400" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="16316:16402" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="17015:17028" ph="select * fro... " />
+                <marker date="1560596233778" expanded="true" signature="17015:17029" ph="select * fro... ${C()}" />
+                <marker date="1560596233778" expanded="true" signature="17015:17063" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="17015:17093" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="17015:17094" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="17446:17460" ph="select * fro... ${C()}" />
+                <marker date="1560596233778" expanded="true" signature="17446:17505" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="17446:17506" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="17446:17540" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="17446:17541" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1560596233778" expanded="true" signature="17843:17855" ph="insert into ${C()}... " />
+                <marker date="1560596233778" expanded="true" signature="17843:17881" ph="insert into ${C(&quot;A00_PRODUCT_NUM&quot;)}... " />
+                <marker date="1560596233778" expanded="true" signature="17843:17882" ph="insert into ${C(&quot;A00_PRODUCT_NUM&quot;)}... " />
               </folding>
             </state>
           </provider>
@@ -163,7 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/chpwd/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/UsersModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Controller/AdminBaseController.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Controller/AdminController.class.php" />
@@ -193,27 +288,28 @@
         <option value="$PROJECT_DIR$/Application/Admin/Model/LogModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php" />
         <option value="$PROJECT_DIR$/Public/Admin/js/myconfig.js" />
-        <option value="$PROJECT_DIR$/Public/Admin/js/Click.js" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/changeCategory.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/add.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/showCategoryList.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html" />
         <option value="$PROJECT_DIR$/Public/Admin/js/a.txt" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/jsandcss.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Index/admin.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/header.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Public/Admin/js/headerJ.js" />
         <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
+        <option value="$PROJECT_DIR$/Public/Admin/js/headerJ.js" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" />
+        <option value="$PROJECT_DIR$/Public/Admin/js/Click.js" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/jsandcss.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/add.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/changeCategory.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/showCategoryList.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/anotherjsandcss.html" />
       </list>
     </option>
   </component>
@@ -344,7 +440,7 @@
               <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Clothes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="A00" type="b2602c69:ProjectViewProjectNode" />
@@ -353,14 +449,6 @@
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="A00" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A00" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="User" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -447,11 +535,12 @@
       <workItem from="1560683508392" duration="2240000" />
       <workItem from="1560770127693" duration="2640000" />
       <workItem from="1560854834584" duration="3470000" />
+      <workItem from="1560938552149" duration="5755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135741000" />
+    <option name="totallyTimeSpent" value="141496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -507,14 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Index/tmp.html" />
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ProductImageModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -619,13 +700,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Form/showLayOut.html" />
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/addnewproduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/LogModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -667,45 +741,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/DashBoard/index.html" />
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/Admin/js/a.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3150">
           <caret line="75" column="3" lean-forward="false" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Category/showCategoryList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -714,48 +753,6 @@
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Calendar/index.html" />
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Form/showElements.html" />
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/CalendarController.class.php" />
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Category/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/jsandcss.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Category/changeCategory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Controller/AdminController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -776,34 +773,165 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1638">
           <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/headerJ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2604">
+          <caret line="77" column="32" lean-forward="true" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!block;n#changeUserPwd#0" expanded="false" />
+            <marker date="1560942676375" expanded="true" signature="910:941" ph="..." />
+            <marker date="1560942676375" expanded="true" signature="2690:2721" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/static/H-ui/lib/jquery/1.9.1/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="9097" column="0" lean-forward="false" selection-start-line="9097" selection-start-column="0" selection-end-line="9097" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#118#145#0#PHP" expanded="true" />
+            <element signature="e#246#1201#0#PHP" expanded="false" />
+            <element signature="e#4254#6568#0#PHP" expanded="false" />
+            <element signature="e#6575#6738#0#PHP" expanded="false" />
+            <element signature="e#6744#7055#0#PHP" expanded="false" />
+            <marker date="1560942061399" expanded="true" signature="6637:6709" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="140" column="39" lean-forward="true" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
+        <state relative-caret-position="6216">
+          <caret line="148" column="21" lean-forward="true" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding>
+            <marker date="1560858307237" expanded="true" signature="235:241" ph=" " />
+            <marker date="1560858307237" expanded="true" signature="241:247" ph=" " />
+            <marker date="1560858307237" expanded="true" signature="273:279" ph=" " />
+            <marker date="1560858307237" expanded="true" signature="279:285" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="67" column="1" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/addnewproduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#form#0;n#body#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Category/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Category/changeCategory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Category/showCategoryList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -926,67 +1054,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/Admin/js/Click.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="-210">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="n#!!block;n#todayDate#0" expanded="false" />
             <element signature="n#!!block;n#addCategory#0" expanded="false" />
-            <marker date="1560597692401" expanded="true" signature="3508:3539" ph="..." />
-            <marker date="1560597692401" expanded="true" signature="6320:6351" ph="..." />
-            <marker date="1560597692401" expanded="true" signature="9837:9868" ph="..." />
+            <marker date="1560944456141" expanded="true" signature="4239:4270" ph="..." />
+            <marker date="1560944456141" expanded="true" signature="7051:7082" ph="..." />
+            <marker date="1560944456141" expanded="true" signature="10568:10599" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/js/headerJ.js">
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1560858147478" expanded="true" signature="910:941" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <marker date="1560858307237" expanded="true" signature="235:241" ph=" " />
-            <marker date="1560858307237" expanded="true" signature="241:247" ph=" " />
-            <marker date="1560858307237" expanded="true" signature="273:279" ph=" " />
-            <marker date="1560858307237" expanded="true" signature="279:285" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        <state relative-caret-position="420">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/jsandcss.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="35" />
+        <state relative-caret-position="262">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="85" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/anotherjsandcss.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
-          <folding>
-            <element signature="e#118#145#0#PHP" expanded="true" />
-            <element signature="e#1317#3342#0#PHP" expanded="false" />
-            <element signature="e#3348#3511#0#PHP" expanded="false" />
-            <marker date="1560857392204" expanded="true" signature="3410:3482" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
-          </folding>
+        <state relative-caret-position="766">
+          <caret line="85" column="13" lean-forward="false" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

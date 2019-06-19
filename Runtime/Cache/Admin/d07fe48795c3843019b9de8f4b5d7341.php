@@ -74,7 +74,16 @@
     <![endif]-->
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/layer/2.4/layer.js"></script>
-
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var ids=[1,2];
+            var prefix="ul.nev";
+            for(var i=0;i<ids.length;i++){
+                $(prefix+""+ids[i]+" li").hide()
+            }
+            $("ul.dev li").hide();
+        });
+    </script>
 </head>
 <body>
 <div id="mws-themer">
@@ -281,17 +290,17 @@
         <!-- Main Navigation -->
 <div id="mws-navigation">
     <ul>
-        <li class="active"><a href="<?php echo U('Admin/Index/admin');?>" class="mws-i-24 i-home">后台界面</a></li>
+        <li class="active"><a href="<?php echo U('Admin/Index/admin');?>" class="mws-i-24 i-home" onclick="showAll()">后台界面</a></li>
         <li>
-            <a href="#" class="mws-i-24 i-chart">服装</a>
-            <ul>
-                <li><a href="<?php echo U('Admin/Clothes/show');?>">添加</a></li>
-                <li><a href="<?php echo U('Admin/Clothes/showProduct');?>">显示所有产品</a></li>
+            <a href="#" class="mws-i-24 i-chart"  onclick="showli('1')" >服装</a>
+            <ul class="nev1">
+                <li ><a href="<?php echo U('Admin/Clothes/show');?>">添加</a></li>
+                <li ><a href="<?php echo U('Admin/Clothes/showProduct');?>">显示所有产品</a></li>
             </ul>
         </li>
         <li>
-            <a  class="mws-i-24 i-chart">类别</a>
-            <ul>
+            <a  class="mws-i-24 i-chart" onclick="showli('2')">类别</a>
+            <ul class="nev2">
                 <li><a href="<?php echo U('Admin/Category/showCatgeoryList');?>">显示类别</a></li>
                 <li><a href="<?php echo U('Admin/Category/add');?>">添加</a></li>
             </ul>

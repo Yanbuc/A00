@@ -1,10 +1,11 @@
-<include file="Public:jsandcss"/>
+<include file="Public:anotherjsandcss"/>
 <body>
 <form action="" method="post" class="form form-horizontal" id="demoform-1">
 
     <div class="row cl">
         <label class="form-label col-xs-4 col-sm-3">原来密码</label>
         <div class="formControls col-xs-8 col-sm-9">
+            <input id="userId" type="hidden" value="{$id}" >
             <input id="password" type="password" value="" class="input-text" autocomplete="off" placeholder="原来密码"   style="width: 400px">
         </div>
     </div>
@@ -23,7 +24,7 @@
     <div class="row cl">
         <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
             <input  id="today" class="btn btn-success radius" type="button" value="是否修改" onclick="todayDate()" style="color: #FFFFFF;" name="1">
-            <input class="btn btn-primary radius" type="button" value="提交" onclick="submitChangeCategory()">
+            <input class="btn btn-primary radius" type="button" value="提交" onclick="submitUserPwd()">
         </div>
     </div>
 </form>

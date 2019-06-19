@@ -40,6 +40,28 @@ class UserController extends AdminLoginController
 
 
    public function showChangePwdInfo(){
+      $userId=empty($_GET["userId"])?0:intval($_GET["userId"]);
+      if($userId==0){
+          $message="信息缺少";
+          $retn=$this->getRetnArray(C("RETN_ERROR"),$message);
+          $logMessage="修改用户密码失败，没有输入user_id";
+          $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PASSWORD_EXCEPTION"));
+          echo json_encode($retn);
+          return ;
+      }
+      $selSql=$this->produceSelectUserSql($userId);
+      $userModel=new UsersModel();
+      $data=$userModel->baseFind($selSql);
+      if(count($data)==0){
+          $message="you are a silly boy!!!";
+          $retn=$this->getRetnArray(C("RETN_ERROR"),$message);
+          $logMessage="修改用户密码失败，传入了用户id,但是数据库之中的用户名不存在。";
+          $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PASSWORD_EXCEPTION"));
+          echo json_encode($retn);
+          return ;
+      }
+      $id=$data[0]["id"];
+      $this->assign("id",$id);
       $this->display("User/showChangePwdInfo");
       return ;
    }
@@ -92,6 +114,65 @@ class UserController extends AdminLoginController
        echo json_encode($retn);
        return ;
    }
+
+   // 修改密码操作
+   public function changeUserPwd(){
+       $data=$_POST;
+       $password=empty($data["password"])?"":strval($data["password"]);
+       $newPassword=empty($data["newPassword"])?"":strval($data["newPassword"]);
+       $confirmPassword=empty($data["confirmPassword"])?"":strval($data["confirmPassword"]);
+       $userId=empty($data["userId"])?0:intval($data["userId"]);
+       if($userId==0||$password==""||$newPassword==""||$confirmPassword==""){
+
+           $message="输入的信息缺乏";
+           $retn=$this->getRetnArray(C("RENT_SUCCESS"),$message);
+           echo json_encode($retn);
+           return ;
+       }
+       if($newPassword!=$confirmPassword){
+           $logMessage="修改用户密码失败，两次输入的密码不相同";
+           $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PASSWORD_EXCEPTION"));
+           $message="两次输入的密码不相同";
+           $retn=$this->getRetnArray(C("RENT_SUCCESS"),$message);
+           echo json_encode($retn);
+           return ;
+       }
+
+       $selSql=$this->produceSelectUserSql($userId);
+       $userModel=new UsersModel();
+       $userData=$userModel->baseFind($selSql);
+       if(count($userData)==0){
+           $message="you are a silly boy!!!";
+           $retn=$this->getRetnArray(C("RETN_ERROR"),$message);
+           $logMessage="修改用户密码失败，传入了用户id,但是数据库之中的用户名不存在。";
+           $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PASSWORD_EXCEPTION"));
+           echo json_encode($retn);
+           return ;
+       }
+       $userData=$userData[0];
+       $pwd=encodePassword($password);
+       if($pwd!=$userData["password"]){
+           $message="输入的原来的密码不正确";
+           $retn=$this->getRetnArray(C("RETN_ERROR"),$message);
+           $logMessage="修改用户密码失败，传入的原本的用户密码，不正确。";
+           $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PASSWORD_EXCEPTION"));
+           echo json_encode($retn);
+           return ;
+       }
+       $newPwd=encodePassword($newPassword);
+       $updateData=array();
+       $updateData["password"]=$newPwd;
+       $updateSql=$this->produceUpdateUserInfo($userId,$updateData);
+       $userModel->baseUpdate($updateSql);
+       $message="用户密码修改成功";
+       $retn=$this->getRetnArray(C("RETN_SUCCESS"),$message);
+       $logMessage="用户修改密码成功";
+       $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PASSWORD"));
+       echo json_encode($retn);
+       return ;
+
+   }
+
 
     private function produceSelectUserSql($userId){
         $sql="select * from ".C("a00_users")." where `id`=".$userId." and `user_del`=0";

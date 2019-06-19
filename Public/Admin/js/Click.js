@@ -1,5 +1,39 @@
 //var urlPrefix="http://localhost/A00/admin.php/"
 
+function showli(pid) {
+    var arrnav = ["1", "525", "531", "541", "60", "14"];
+    if(pid=='1') {
+        var flag=$("ul.nev1 li").css("display");
+        if (flag == "none") {
+            $("ul.nev1 li").show();
+            return ;
+        } else {
+            $("ul.nev1 li").hide();
+            return ;
+        }
+    }
+    if(pid=='2') {
+        var flag=$("ul.nev2 li").css("display");
+        if (flag == "none") {
+            $("ul.nev2 li").show();
+            return ;
+        } else {
+            $("ul.nev2 li").hide();
+            return ;
+        }
+    }
+
+}
+
+function showAll() {
+   var ids=[1,2];
+   var prefix="ul.nev"
+    for(var i=0;i<ids.length;i++){
+      $(prefix+""+ids[i]+" li").hide()
+    }
+   return ;
+}
+
 function sendClothesData(){
     var options=$("#sel option:selected");
     var productId=$("#clothesId").val();
