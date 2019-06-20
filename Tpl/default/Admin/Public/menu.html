@@ -1,4 +1,5 @@
-<!-- Main Navigation -->
+<include file="Public:anotherjsandcss"/>
+<body>
 <div id="mws-navigation">
     <ul>
         <li class="active"><a href="{:U('Admin/Index/admin')}" class="mws-i-24 i-home" onclick="showAll()">后台界面</a></li>
@@ -17,12 +18,12 @@
             </ul>
         </li>
         <li>
-            <a href="#" class="mws-i-24 i-list">Forms</a>
+            <a  href="#" class="mws-i-24 i-chart">商品</a>
             <ul>
-                <li><a href="">Layouts</a></li>
-                <li><a href="">Elements</a></li>
+                <li><a href="{:U('Admin/Bussiness/showAddProduct')}">进货</a></li>
+                <li><a href="{:U('Admin/Bussiness/showAddsellProduct')}">出货</a></li>
             </ul>
         </li>
     </ul>
 </div>
-<!-- End Navigation -->
+</body>

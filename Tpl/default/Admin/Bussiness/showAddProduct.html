@@ -1,0 +1,131 @@
+<include file="Public:anotherjsandcss"/>
+<body>
+<div id="mws-themer">
+    <div id="mws-themer-hide"></div>
+    <div id="mws-themer-content">
+        <div class="mws-themer-section">
+            <label for="mws-theme-presets">Presets</label> <select id="mws-theme-presets"></select>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <ul>
+                <li><span>Base Color</span> <div id="mws-base-cp" class="mws-cp-trigger"></div></li>
+                <li><span>Text Color</span> <div id="mws-text-cp" class="mws-cp-trigger"></div></li>
+                <li><span>Text Glow Color</span> <div id="mws-textglow-cp" class="mws-cp-trigger"></div></li>
+            </ul>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <ul>
+                <li><span>Text Glow Opacity</span> <div id="mws-textglow-op"></div></li>
+            </ul>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <button class="mws-button red small" id="mws-themer-getcss">Get CSS</button>
+        </div>
+    </div>
+    <div id="mws-themer-css-dialog">
+        <div class="mws-form">
+            <div class="mws-form-row" style="padding:0;">
+                <div class="mws-form-item">
+                    <textarea cols="auto" rows="auto" readonly="readonly"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="Public:header"/>
+
+<div id="mws-wrapper">
+    <div id="mws-sidebar-stitch"></div>
+    <div id="mws-sidebar-bg"></div>
+    <div id="mws-sidebar">
+        <div id="mws-searchbox" class="mws-inset">
+            <form action="http://www.malijuwebshop.com/themes/mws-admin/form_layouts.html">
+                <input type="text" class="mws-search-input" />
+                <input type="submit" class="mws-search-submit" />
+            </form>
+        </div>
+        <include file="Public:menu"/>
+    </div>
+
+    <div id="mws-container" class="clearfix">
+        <div class="container">
+            <div class="mws-panel grid_8">
+                <div class="mws-panel-header">
+                    <span class="mws-i-24 i-list">进货</span>
+                </div>
+                <div class="mws-panel-body">
+                    <form class="mws-form"  enctype="multipart/form-data" id="uploadForm">
+                        <div class="mws-form-inline">
+                            <div class="mws-form-row">
+                                <label>产品编号</label>
+                                <div class="mws-form-item small">
+                                    <input type="text" class="mws-textinput" name="clothesId" id="add_product_id" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品别名</label>
+                                <div class="mws-form-item medium">
+                                    <input type="text" class="mws-textinput" name="clothesAlis" id="add_product_alis" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品价格</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_price" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品数量</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品类别</label>
+                                <div class="mws-form-item small">
+                                    <select id="sel">
+                                        <foreach name="data" item="v">
+                                            <option value="{$v['category_id']}">{$v["category_name"]}</option>
+                                        </foreach>>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品简单描述</label>
+                                <div class="mws-form-item large">
+                                    <textarea rows="100%" cols="100%" name="clothesDescription" id="add_product_desc"></textarea>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品图片</label>
+                                <div class="mws-form-item large">
+                                    <input type="file" class="mws-textinput" name="clothesImage" id="add_product_image" value="选择图片" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>男装 or 女装</label>
+                                <div class="mws-form-item clearfix">
+                                    <ul class="mws-form-list inline">
+                                        <li><input type="radio" name="sex" value="1" /> <label>男装</label></li>
+                                        <li><input type="radio" name="sex" value="2" /> <label>女装</label></li>
+                                        <li><input type="radio" name="sex" value="3" /> <label>通用</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mws-button-row">
+                            <button type="button" value="提交" class="mws-button green"  >提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

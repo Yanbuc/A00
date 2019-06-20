@@ -92,7 +92,6 @@
     </style>
 </head>
 <body>
-<!-- Themer -->
 <div id="mws-themer">
     <div id="mws-themer-hide"></div>
     <div id="mws-themer-content">
@@ -128,7 +127,6 @@
         </div>
     </div>
 </div>
-<!-- Themer End -->
 
 <div id="mws-header" class="clearfix">
 
@@ -287,25 +285,16 @@
 </div>
 
 
-
-
-<!-- Main Wrapper -->
 <div id="mws-wrapper">
-    <!-- Necessary markup, do not remove -->
     <div id="mws-sidebar-stitch"></div>
     <div id="mws-sidebar-bg"></div>
-
-    <!-- Sidebar Wrapper -->
     <div id="mws-sidebar">
-
-        <!-- Search Box -->
         <div id="mws-searchbox" class="mws-inset">
-            <form action="http://www.malijuwebshop.com/themes/mws-admin/dashboard.html">
+            <form action="http://www.malijuwebshop.com/themes/mws-admin/form_layouts.html">
                 <input type="text" class="mws-search-input" />
                 <input type="submit" class="mws-search-submit" />
             </form>
         </div>
-
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -420,7 +409,7 @@
         <li>
             <a  href="#" class="mws-i-24 i-chart">商品</a>
             <ul>
-                <li><a href="User/showAddsellProduct">进货</a></li>
+                <li><a href="<?php echo U('Admin/Bussiness/showAddProduct');?>">进货</a></li>
                 <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">出货</a></li>
             </ul>
         </li>
@@ -428,261 +417,81 @@
 </div>
 </body>
 
-
     </div>
 
-
-    <!-- Container Wrapper -->
     <div id="mws-container" class="clearfix">
-
-        <!-- Main Container -->
         <div class="container">
-            <div class="mws-report-container clearfix">
-    <a class="mws-report" href="#">
-        <span class="mws-report-icon mws-ic ic-building"></span>
-        <span class="mws-report-content">
-            <span class="mws-report-title">search/查询</span>
-                           <span class="mws-report-value"> &nbsp;&nbsp; &nbsp; &nbsp;</span>
-                        </span>
-    </a>
-
-    <a class="mws-report" href="#">
-        <span class="mws-report-icon mws-ic ic-sport"></span>
-        <span class="mws-report-content">
-                        	<span class="mws-report-title"><br/>显示服饰销量趋势</span>
-                            <span class="mws-report-value ">&nbsp;&nbsp; &nbsp; &nbsp;</span>
-                        </span>
-    </a>
-
-    <a class="mws-report" href="#">
-        <span class="mws-report-icon mws-ic ic-walk"></span>
-        <span class="mws-report-content">
-                        	<span class="mws-report-title">Kilometers Walked</span>
-                            <span class="mws-report-value">14</span>
-                        </span>
-    </a>
-
-    <a class="mws-report" href="#">
-        <span class="mws-report-icon mws-ic ic-bug"></span>
-        <span class="mws-report-content">
-                        	<span class="mws-report-title">Bugs Fixed</span>
-                            <span class="mws-report-value up">22%</span>
-                        </span>
-    </a>
-
-    <a class="mws-report" href="#">
-        <span class="mws-report-icon mws-ic ic-car"></span>
-        <span class="mws-report-content">
-                        	<span class="mws-report-title">Cars Repaired</span>
-                            <span class="mws-report-value">77</span>
-                        </span>
-    </a>
-</div>
-
-            <div class="mws-panel grid_5">
-                <div class="mws-panel-header">
-                    <span class="mws-i-24 i-graph">Charts</span>
-                </div>
-                <div class="mws-panel-body">
-                    <div class="mws-panel-content">
-                        <div id="mws-dashboard-chart" style="width:100%; height:215px;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mws-panel grid_3">
-                <div class="mws-panel-header">
-                    <span class="mws-i-24 i-books-2">Website Summary</span>
-                </div>
-                <div class="mws-panel-body">
-                    <ul class="mws-summary">
-                        <li>
-                            <span>1238</span> total visits
-                        </li>
-                        <li>
-                            <span>512</span> votes
-                        </li>
-                        <li>
-                            <span>11</span> new members
-                        </li>
-                        <li>
-                            <span>716</span> products
-                        </li>
-                        <li>
-                            <span>831</span> comments
-                        </li>
-                        <li>
-                            <span>312</span> items purchased
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span class="mws-i-24 i-sign-post">Register New Member</span>
+                    <span class="mws-i-24 i-list">进货</span>
                 </div>
                 <div class="mws-panel-body">
-                    <div class="mws-wizard clearfix">
-                        <ul>
-                            <li>
-                                <a class="mws-ic-16 ic-accept" href="#">Member Profile</a>
-                            </li>
-                            <li class="current">
-                                <a href="#" class="mws-ic-16 ic-delivery">Membership Stype</a>
-                            </li>
-                            <li>
-                                <a class="mws-ic-16 ic-user" href="#">Confirmation</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <form class="mws-form" action="http://www.malijuwebshop.com/themes/mws-admin/dashboard.html">
+                    <form class="mws-form"  enctype="multipart/form-data" id="uploadForm">
                         <div class="mws-form-inline">
                             <div class="mws-form-row">
-                                <label>Fullname</label>
-                                <div class="mws-form-item large">
-                                    <input type="text" name="fullname" class="mws-textinput" />
+                                <label>产品编号</label>
+                                <div class="mws-form-item small">
+                                    <input type="text" class="mws-textinput" name="clothesId" id="add_product_id" />
                                 </div>
                             </div>
                             <div class="mws-form-row">
-                                <label>Email</label>
-                                <div class="mws-form-item large">
-                                    <input type="text" name="email" class="mws-textinput" />
+                                <label>产品别名</label>
+                                <div class="mws-form-item medium">
+                                    <input type="text" class="mws-textinput" name="clothesAlis" id="add_product_alis" />
                                 </div>
                             </div>
                             <div class="mws-form-row">
-                                <label>Address</label>
+                                <label>产品价格</label>
                                 <div class="mws-form-item large">
-                                    <textarea name="address" rows="100%" cols="100%"></textarea>
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_price" />
                                 </div>
                             </div>
                             <div class="mws-form-row">
-                                <label>Gender</label>
-                                <div class="mws-form-item">
-                                    <ul class="mws-form-list">
-                                        <li><input type="radio" id="male" name="gender" /> <label for="male">Male</label></li>
-                                        <li><input type="radio" id="female" name="gender" /> <label for="female">Female</label></li>
+                                <label>产品数量</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品类别</label>
+                                <div class="mws-form-item small">
+                                    <select id="sel">
+                                        <?php if(is_array($data)): foreach($data as $key=>$v): ?><option value="<?php echo ($v['category_id']); ?>"><?php echo ($v["category_name"]); ?></option><?php endforeach; endif; ?>>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品简单描述</label>
+                                <div class="mws-form-item large">
+                                    <textarea rows="100%" cols="100%" name="clothesDescription" id="add_product_desc"></textarea>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>产品图片</label>
+                                <div class="mws-form-item large">
+                                    <input type="file" class="mws-textinput" name="clothesImage" id="add_product_image" value="选择图片" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>男装 or 女装</label>
+                                <div class="mws-form-item clearfix">
+                                    <ul class="mws-form-list inline">
+                                        <li><input type="radio" name="sex" value="1" /> <label>男装</label></li>
+                                        <li><input type="radio" name="sex" value="2" /> <label>女装</label></li>
+                                        <li><input type="radio" name="sex" value="3" /> <label>通用</label></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="mws-button-row">
-                            <input type="submit" value="Prev" class="mws-button gray left" />
-                            <input type="submit" value="Next" class="mws-button green" />
+                            <button type="button" value="提交" class="mws-button green"  >提交</button>
                         </div>
                     </form>
                 </div>
             </div>
-
-            <div class="mws-panel grid_8 mws-collapsible">
-                <div class="mws-panel-header">
-                    <span class="mws-i-24 i-table-1">Simple Table</span>
-                </div>
-                <div class="mws-panel-body">
-                    <table class="mws-table">
-                        <thead>
-                        <tr>
-                            <th>Rendering engine</th>
-                            <th>Browser</th>
-                            <th>Platform(s)</th>
-                            <th>Engine version</th>
-                            <th>CSS grade</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="gradeX">
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 4.0</td>
-                            <td>Win 95+</td>
-                            <td class="center">4</td>
-                            <td class="center">X</td>
-                        </tr>
-                        <tr class="gradeC">
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 5.0</td>
-                            <td>Win 95+</td>
-                            <td class="center">5</td>
-                            <td class="center">C</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 5.5</td>
-                            <td>Win 95+</td>
-                            <td class="center">5.5</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Trident</td>
-                            <td>Internet
-                                Explorer 6</td>
-                            <td>Win 98+</td>
-                            <td class="center">6</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Trident</td>
-                            <td>Internet Explorer 7</td>
-                            <td>Win XP SP2+</td>
-                            <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Trident</td>
-                            <td>AOL browser (AOL desktop)</td>
-                            <td>Win XP</td>
-                            <td class="center">6</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Firefox 1.0</td>
-                            <td>Win 98+ / OSX.2+</td>
-                            <td class="center">1.7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Firefox 1.5</td>
-                            <td>Win 98+ / OSX.2+</td>
-                            <td class="center">1.8</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Camino 1.5</td>
-                            <td>OSX.3+</td>
-                            <td class="center">1.8</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr class="gradeA">
-                            <td>Gecko</td>
-                            <td>Netscape 7.2</td>
-                            <td>Win 95+ / Mac OS 8.6-9.2</td>
-                            <td class="center">1.7</td>
-                            <td class="center">A</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </div>
-        <!-- End Main Container -->
-
-        <!-- Footer -->
-        <div id="mws-footer">
-            Copyright &copy; 2014.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
-        </div>
-        <!-- End Footer -->
-
     </div>
-    <!-- End Container Wrapper -->
-
 </div>
-<!-- End Main Wrapper -->
-
-
 </body>
+
 </html>
