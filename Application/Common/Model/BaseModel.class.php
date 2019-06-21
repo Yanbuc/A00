@@ -37,4 +37,7 @@ class BaseModel extends Model
       public function baseUpdate($sql){
           $this->execute($sql);
       }
+
+
+
 }

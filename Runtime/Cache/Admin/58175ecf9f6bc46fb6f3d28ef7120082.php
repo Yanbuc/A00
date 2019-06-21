@@ -127,7 +127,6 @@
         </div>
     </div>
 </div>
-
 <div id="mws-header" class="clearfix">
 
     <!-- Logo Wrapper -->
@@ -284,13 +283,12 @@
     </div>
 </div>
 
-
 <div id="mws-wrapper">
     <div id="mws-sidebar-stitch"></div>
     <div id="mws-sidebar-bg"></div>
     <div id="mws-sidebar">
         <div id="mws-searchbox" class="mws-inset">
-            <form action="http://www.malijuwebshop.com/themes/mws-admin/form_layouts.html">
+            <form action="#">
                 <input type="text" class="mws-search-input" />
                 <input type="submit" class="mws-search-submit" />
             </form>
@@ -433,58 +431,43 @@
 </body>
 
     </div>
-
     <div id="mws-container" class="clearfix">
         <div class="container">
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span class="mws-i-24 i-list">进货</span>
+                    <span class="mws-i-24 i-list">权限列表</span>
                 </div>
                 <div class="mws-panel-body">
-                    <form class="mws-form"  enctype="multipart/form-data" id="uploadForm">
-                        <div class="mws-form-inline">
-                            <div class="mws-form-row">
-                                <label>产品名字</label>
-                                <div class="mws-form-item small">
-                                    <select id="sel">
-                                        <?php if(is_array($productData)): foreach($productData as $key=>$v): ?><option value="<?php echo ($v['product_id']); ?>"><?php echo ($v["product_name"]); ?></option><?php endforeach; endif; ?>>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mws-form-row">
-                                <label>产品数量</label>
-                                <div class="mws-form-item large">
-                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
-                                </div>
-                            </div>
-                            <div class="mws-form-row">
-                                <label>进货成本单价</label>
-                                <div class="mws-form-item large">
-                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
-                                </div>
-                            </div>
-                            <div class="mws-form-row">
-                                <label>进货日期</label>
-                                <div class="mws-form-item large">
-                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
-                                </div>
-                            </div>
-                            <div class="mws-form-row">
-                                <label>进货人</label>
-                                <div class="mws-form-item large">
-                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mws-button-row">
-                            <button type="button" value="提交" class="mws-button green"  >提交</button>
-                        </div>
-                    </form>
+                    <table class="mws-table">
+                        <thead>
+                        <tr>
+                            <th>权限编号</th>
+                            <th>类别描述</th>
+                            <th>权限添加时间</th>
+                            <th>权限添加人</th>
+                            <th>其他操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php if(is_array($data)): foreach($data as $key=>$v): ?><tr id="<?php echo ($v['category_id']); ?>">
+                                <td><?php echo ($v["category_id"]); ?></td>
+                                <td><?php echo ($v["category_name"]); ?></td>
+                                <td><?php echo ($v["category_date"]); ?></td>
+                                <td><?php echo ($v["category_change_date"]); ?></td>
+                                <td><input class="btn btn-success radius" type="button" value="修改" onclick="changeCategory(<?php echo ($v['category_id']); ?>)" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteCategory(<?php echo ($v['category_id']); ?>)"></td>
+                            </tr><?php endforeach; endif; ?>
+                        </tbody>
+
+                    </table>
+                    <?php echo ($show); ?>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 </body>
 
 </html>

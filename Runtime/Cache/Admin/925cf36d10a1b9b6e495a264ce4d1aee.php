@@ -84,6 +84,12 @@
             $("ul.dev li").hide();
         });
     </script>
+    <style type="text/css">
+        body
+        {
+            overflow-x:hidden;
+        }
+    </style>
 </head>
 <body>
 <form action="" method="post" class="form form-horizontal" id="demoform-1">

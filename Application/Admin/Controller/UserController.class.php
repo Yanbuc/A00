@@ -102,6 +102,7 @@ class UserController extends AdminLoginController
        if($userData["useralis"]!=$name){
            $change=array();
            $change["useralis"]=$name;
+           $change["user_change_date"]=date("Y_m_d_H:i:s");
            $updateSql=$this->produceUpdateUserInfo($userId,$change);
            $userModel->baseUpdate($updateSql);
            $logMessage="修改用户信息,将用户名从".$userData["username"]." 转化为".$name;

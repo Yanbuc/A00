@@ -36,5 +36,14 @@ function encodePassword($pwd){
     return $newPd;
 }
 
+function getCurrentDate($flag){
+    $date="";
+    if($flag=="date") {
+        $date = date("Y_m_d_H:i:s");
+
+    }
+    return $date;
+}
+
 
 

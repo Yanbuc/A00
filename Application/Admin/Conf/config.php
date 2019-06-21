@@ -28,12 +28,19 @@ return array(
     "A00_PRODUCT_NUM"=>"a00_product_num",
     "A00_CATEGORY"=>"a00_categories",
     "A00_USERS"=>"a00_users",
+    "A00_PREVELEDGES"=>"a00_prevelidge",
     // *************************页面配置
     "PAGE_SIZE"=>10,
     //*****************************返回标志配置
     "RETN_SUCCESS"=>"success",
      "RETN_ERROR"=>"error",
     "RETN_ARRAY"=>array("status"=>"","message"=>""),
+
+    //*****************返回日期配置参数**********
+     "DATE"=>"date",
+
+    //**********权限id*************************
+    "SELECT_PREVELIDGE_PREVELEDGE"=>1,
 
     //******************************提示配置
     "CATEGORY_TIP"=>"类别名已经存在",

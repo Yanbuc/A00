@@ -8,6 +8,7 @@
 
 namespace Common\Controller;
 use Admin\Model\LogModel;
+use Admin\Model\UsersModel;
 use \Common\Controller\AdminController ;
 
 class AdminLoginController extends AdminController
@@ -41,6 +42,28 @@ class AdminLoginController extends AdminController
         $logM=$this->log;
         $logUser=$_SESSION["username"];
         $logM->insertLog2($logLevel,$logMessage,$logDate,$logUser);
+    }
+
+    // 一个用来检查用户权限是否合法的参数
+    public function checkUserPrevelidges($pid){
+        $userModel=new UsersModel();
+        $userId=$_SESSION["user_id"];
+        $sql="select * from ".C("A00_USERS")." where `id` =".$userId."  and `user_del`=0";
+        $data=$userModel->baseFind($sql);
+        if(count($data)==0){
+            return false;
+        }
+        $data=$data[0];
+        if($data["prevelidge_id"]==""){
+            return false;
+        }
+        $previelidge=explode(",",$data["prevelidge_id"]);
+        foreach($previelidge as $k=>$v){
+            if($v==$pid||$v==3){  // 3 是全部权限
+                return true;
+            }
+        }
+        return false;
     }
 
 }

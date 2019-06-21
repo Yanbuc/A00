@@ -7,6 +7,7 @@
  */
 
 namespace Admin\Controller;
+use Admin\Model\ProductModel;
 use Common\Controller\AdminLoginController;
 
 class BussinessController extends AdminLoginController
@@ -17,7 +18,17 @@ class BussinessController extends AdminLoginController
     }
 
     public function showAddProduct(){
-       $this->display("Bussiness/showAddProduct");
-       return;
+        $sql=$this->produceSelectProductInfoSql();
+        $productModel=new ProductModel();
+        $productData=$productModel->baseFind($sql);
+        $this->assign("productData",$productData);
+        $this->display("Bussiness/showAddProduct");
+        return;
     }
+
+    private function  produceSelectProductInfoSql(){
+        $sql="select `product_id`,`product_name` from ".C("A00_PRODUCT");
+        return $sql;
+    }
+
 }

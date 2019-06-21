@@ -385,7 +385,7 @@
         <li>
             <a  href="#" class="mws-i-24 i-chart">商品</a>
             <ul>
-                <li><a href="User/showAddsellProduct">进货</a></li>
+                <li><a href="<?php echo U('Admin/Bussiness/showAddProduct');?>">进货</a></li>
                 <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">出货</a></li>
             </ul>
         </li>
