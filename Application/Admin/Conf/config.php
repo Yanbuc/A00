@@ -2,9 +2,7 @@
 return array(
 	//'配置项'=>'配置值'
     "CHECK_MESSAGE"=>array(
-        "productId"=>"缺少产品编号 ",
         "productAlis"=>  "缺少产品名称 ",
-        "productPrice"=>  "缺少产品价格 ",
         "productType" => "缺少产品类型 ",
         "sex"=>"缺少产品性别 "
     ),

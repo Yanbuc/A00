@@ -1,0 +1,298 @@
+[ 2019-06-22T00:27:57+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2019-06-22T00:28:01+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T00:28:01+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2019-06-22T00:28:04+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T00:28:05+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2019-06-22T00:28:06+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T00:28:13+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T00:28:14+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+
+[ 2019-06-22T00:28:18+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T00:28:22+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T00:28:37+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2019-06-22T15:14:52+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2019-06-22T15:15:07+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2019-06-22T15:15:16+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014201s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:15:16+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+
+[ 2019-06-22T15:15:28+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:15:28+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+
+[ 2019-06-22T15:15:42+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:15:42+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+
+[ 2019-06-22T15:15:47+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:16:04+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:16:04+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2019-06-22T15:16:38+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:16:38+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+
+[ 2019-06-22T15:16:50+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:16:50+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+
+[ 2019-06-22T15:17:16+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:17:16+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+
+[ 2019-06-22T15:18:19+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:18:25+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:18:25+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+
+[ 2019-06-22T15:18:31+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:18:32+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+
+[ 2019-06-22T15:18:35+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:18:35+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+
+[ 2019-06-22T15:18:42+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:18:42+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2019-06-22T15:18:47+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:19:22+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:19:30+08:00 ] ::1 /A00/Public/static/H-ui/lib/html5.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-06-22T15:19:30+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+
+[ 2019-06-22T15:21:13+08:00 ] ::1 /A00/Public/static/css/core/%7B$Think.const.ADMIN_IMAGHES_PATH%7Dcore/mws-body-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+

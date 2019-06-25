@@ -84,17 +84,23 @@
             $("ul.dev li").hide();
         });
     </script>
+    <style type="text/css">
+        body
+        {
+            overflow-x:hidden;
+        }
+    </style>
 </head>
 <body>
     <form action="" method="post" class="form form-horizontal" id="demoform-1">
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3">产品编号</label>
+            <label class="form-label col-xs-4 col-sm-3">产品序号</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input id="product_id" readonly="true" type="text" class="input-text" autocomplete="off" placeholder="产品编号" value="<?php echo ($data['product_id']); ?>">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3">产品名字</label>
+            <label class="form-label col-xs-4 col-sm-3">产品编号</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input id="product_name" type="text" class="input-text" autocomplete="off" placeholder="产品名字" value="<?php echo ($data['product_name']); ?>">
             </div>
@@ -164,7 +170,7 @@
             <label class="form-label col-xs-4 col-sm-3">图片是否删除</label>
             <div class="formControls skin-minimal col-xs-8 col-sm-9">
                 <?php if(is_array($image_id)): foreach($image_id as $k=>$v): ?><div class="check-box">
-                        <input type="checkbox" id="checkbox-<?php echo ($v); ?>" name="chk" value="<?php echo ($v['pic_id']); ?>">
+                        <input type="checkbox" id="checkbox-<?php echo ($v); ?>" name="chk" value="<?php echo ($v); ?>">
                         <label for="checkbox-<?php echo ($v); ?>"><?php echo ($k+1); ?>&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     </div><?php endforeach; endif; ?>
             </div>

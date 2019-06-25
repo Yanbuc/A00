@@ -74,7 +74,22 @@
     <![endif]-->
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo (H_UI_PATH); ?>lib/layer/2.4/layer.js"></script>
-
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var ids=[1,2];
+            var prefix="ul.nev";
+            for(var i=0;i<ids.length;i++){
+                $(prefix+""+ids[i]+" li").hide()
+            }
+            $("ul.dev li").hide();
+        });
+    </script>
+    <style type="text/css">
+        body
+        {
+            overflow-x:hidden;
+        }
+    </style>
 </head>
 <body>
 <form action="" method="post" class="form form-horizontal" id="demoform-1">

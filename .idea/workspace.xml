@@ -7,21 +7,20 @@
     <list default="true" id="73226bb6-5638-4bdd-91b0-836ce7359bd2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/BussinessController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/BussinessController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Common/function.php" afterPath="$PROJECT_DIR$/Application/Common/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php" afterPath="$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Model/BaseModel.class.php" afterPath="$PROJECT_DIR$/Application/Common/Model/BaseModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/1b4b01fafc2260ec36279b9b0fed27d2.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/1b4b01fafc2260ec36279b9b0fed27d2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/js/Click.js" afterPath="$PROJECT_DIR$/Public/Admin/js/Click.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/275a4bca06d7406f8ab8c8df6fab1526.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/275a4bca06d7406f8ab8c8df6fab1526.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/36b0c170c62def63144a5629e391c365.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/36b0c170c62def63144a5629e391c365.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/6369c8f9f1d151cf15186cd50cdc65c1.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/6369c8f9f1d151cf15186cd50cdc65c1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/6a311ff995f9ff7317b15d783186d891.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/6a311ff995f9ff7317b15d783186d891.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/6dd37af01309f1f1f0ec501e3b4dcdc1.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/6dd37af01309f1f1f0ec501e3b4dcdc1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/79e9f5d1e9bcc25037801a66506242c8.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/79e9f5d1e9bcc25037801a66506242c8.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/925cf36d10a1b9b6e495a264ce4d1aee.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/925cf36d10a1b9b6e495a264ce4d1aee.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/a4ad8a2d42bad5b9a35bac0500aaabf1.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/a4ad8a2d42bad5b9a35bac0500aaabf1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/d07fe48795c3843019b9de8f4b5d7341.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/d07fe48795c3843019b9de8f4b5d7341.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Bussiness/showAddProduct.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Bussiness/showAddProduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/de34c5ebd2e2ef9a9ffd7959f6101890.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/de34c5ebd2e2ef9a9ffd7959f6101890.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Public/addnewproduct.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Public/addnewproduct.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,18 +31,159 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Click.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Click.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Public/Admin/js/Click.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="555">
+              <caret line="127" column="7" lean-forward="true" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
               <folding>
+                <element signature="n#!!block;n#showli#0" expanded="false" />
+                <element signature="n#!!block;n#showAll#0" expanded="false" />
+                <element signature="n#!!block;n#sendClothesData#0" expanded="false" />
+                <element signature="n#!!block;n#changeProduct#0" expanded="false" />
+                <element signature="n#!!block;n#uploadImage#0" expanded="false" />
                 <element signature="n#!!block;n#todayDate#0" expanded="false" />
                 <element signature="n#!!block;n#addCategory#0" expanded="false" />
-                <marker date="1560944456141" expanded="true" signature="4239:4270" ph="..." />
-                <marker date="1560944456141" expanded="true" signature="7051:7082" ph="..." />
-                <marker date="1560944456141" expanded="true" signature="10568:10599" ph="..." />
+                <marker date="1561459192396" expanded="true" signature="4086:4117" ph="..." />
+                <marker date="1561459192396" expanded="true" signature="6898:6929" ph="..." />
+                <marker date="1561459192396" expanded="true" signature="10415:10446" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClothesController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-564">
+              <caret line="210" column="35" lean-forward="false" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
+              <folding>
+                <element signature="e#2564#3086#0#PHP" expanded="false" />
+                <element signature="e#3478#4990#0#PHP" expanded="false" />
+                <element signature="e#4995#5243#0#PHP" expanded="false" />
+                <element signature="e#5284#7146#0#PHP" expanded="false" />
+                <element signature="e#7151#7439#0#PHP" expanded="false" />
+                <element signature="e#7444#11914#0#PHP" expanded="false" />
+                <element signature="e#10956#11070#0#PHP" expanded="false" />
+                <element signature="e#14481#16114#0#PHP" expanded="false" />
+                <element signature="e#16119#16260#0#PHP" expanded="false" />
+                <element signature="e#16264#16562#0#PHP" expanded="false" />
+                <element signature="e#16566#16745#0#PHP" expanded="false" />
+                <element signature="e#16749#16920#0#PHP" expanded="false" />
+                <element signature="e#16924#17256#0#PHP" expanded="false" />
+                <element signature="e#17260#17437#0#PHP" expanded="false" />
+                <element signature="e#17693#17884#0#PHP" expanded="false" />
+                <element signature="e#17889#18236#0#PHP" expanded="false" />
+                <element signature="e#18240#18416#0#PHP" expanded="false" />
+                <marker date="1561458840525" expanded="true" signature="2627:2639" ph="insert into ${C(&quot;A00_PRODUCT&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3154:3167" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="3154:3168" ph="select * fro... ${C()}" />
+                <marker date="1561458840525" expanded="true" signature="3154:3209" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="3154:3210" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="3154:3211" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="3154:3212" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="3154:3219" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="3154:3220" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="3320:3332" ph="insert into ${C()}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3353" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3385" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3387" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3388" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3402" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3403" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3404" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3405" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3408" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3409" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3425" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3430" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="3320:3432" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="5112:5125" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="5112:5126" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5112:5193" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5112:5194" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5112:5195" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5112:5206" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5112:5207" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5435:5448" ph="select produ... " />
+                <marker date="1561458840525" expanded="true" signature="5435:5449" ph="select produ... ${C90}" />
+                <marker date="1561458840525" expanded="true" signature="5435:5487" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5435:5488" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5435:5489" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5435:5518" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5435:5519" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5951:5964" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="5951:5966" ph="select * fro... ${C()}" />
+                <marker date="1561458840525" expanded="true" signature="5951:6000" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5951:6001" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5951:6028" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="5951:6029" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="6365:6378" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="6365:6379" ph="select * fro... ${C()}" />
+                <marker date="1561458840525" expanded="true" signature="6365:6421" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="6365:6422" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="6365:6453" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="6365:6454" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="6555:6568" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="6555:6569" ph="select * fro... ${C()}" />
+                <marker date="1561458840525" expanded="true" signature="6555:6591" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="6555:6611" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="15706:15718" ph="insert into ${C()}... " />
+                <marker date="1561458840525" expanded="true" signature="15706:15770" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="15706:15771" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="15706:15795" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="15706:15796" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="15706:15809" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="15706:15810" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="15706:15811" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="16177:16190" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="16177:16191" ph="select * fro... ${C()}" />
+                <marker date="1561458840525" expanded="true" signature="16177:16233" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16177:16234" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16465:16478" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="16465:16479" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16465:16499" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16465:16523" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16465:16524" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16465:16535" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16465:16536" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16633:16646" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="16633:16647" ph="select * fro... ${C()}" />
+                <marker date="1561458840525" expanded="true" signature="16633:16685" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16633:16686" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16633:16717" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="16633:16719" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="17332:17345" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="17332:17346" ph="select * fro... ${C()}" />
+                <marker date="1561458840525" expanded="true" signature="17332:17380" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="17332:17410" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="17332:17411" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="17763:17777" ph="select * fro... ${C()}" />
+                <marker date="1561458840525" expanded="true" signature="17763:17822" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="17763:17823" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="17763:17857" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="17763:17858" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="18160:18172" ph="insert into ${C()}... " />
+                <marker date="1561458840525" expanded="true" signature="18160:18198" ph="insert into ${C(&quot;A00_PRODUCT_NUM&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="18160:18199" ph="insert into ${C(&quot;A00_PRODUCT_NUM&quot;)}... " />
+                <marker date="1561458840525" expanded="true" signature="18499:18512" ph="select * fro... " />
+                <marker date="1561458840525" expanded="true" signature="18499:18513" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="18499:18539" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="18499:18554" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="18499:18555" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="18499:18571" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+                <marker date="1561458840525" expanded="true" signature="18499:18572" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showProduct.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-504">
+              <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,68 +191,8 @@
       <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="892">
-              <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PriviledgesController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PriviledgesController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-              <folding>
-                <element signature="e#118#150#0#PHP" expanded="true" />
-                <marker date="1561116074257" expanded="true" signature="1223:1236" ph="select * fro... " />
-                <marker date="1561116074257" expanded="true" signature="1223:1237" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-                <marker date="1561116074257" expanded="true" signature="1223:1315" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-                <marker date="1561116074257" expanded="true" signature="1223:1317" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-                <marker date="1561116074257" expanded="true" signature="1223:1318" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-                <marker date="1561116074257" expanded="true" signature="1223:1330" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-                <marker date="1561116074257" expanded="true" signature="1223:1331" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="103" column="37" lean-forward="false" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
-              <folding>
-                <element signature="e#118#145#0#PHP" expanded="true" />
-                <element signature="e#246#1201#0#PHP" expanded="false" />
-                <element signature="e#4314#6628#0#PHP" expanded="false" />
-                <element signature="e#6635#6798#0#PHP" expanded="false" />
-                <marker date="1561112953433" expanded="true" signature="6697:6769" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-              <folding>
-                <marker date="1561115149102" expanded="true" signature="235:241" ph=" " />
-                <marker date="1561115149102" expanded="true" signature="241:247" ph=" " />
-                <marker date="1561115149102" expanded="true" signature="273:279" ph=" " />
-                <marker date="1561115149102" expanded="true" signature="279:285" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="294">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -130,7 +210,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>../</find>
       <find>image</find>
       <find>di</find>
       <find>sho</find>
@@ -160,6 +239,7 @@
       <find>search</find>
       <find>显示</find>
       <find>date</find>
+      <find>image_</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -190,22 +270,16 @@
         <option value="$PROJECT_DIR$/Application/Admin/Model/CategoryModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/CategoriesModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/CategoryController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/addnewproduct.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/LogModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php" />
         <option value="$PROJECT_DIR$/Public/Admin/js/myconfig.js" />
         <option value="$PROJECT_DIR$/Public/Admin/js/a.txt" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Index/admin.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/header.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Public/Admin/js/headerJ.js" />
-        <option value="$PROJECT_DIR$/Public/Admin/js/Click.js" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/add.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/changeCategory.html" />
@@ -224,8 +298,14 @@
         <option value="$PROJECT_DIR$/Application/Admin/Model/PrevelidgeModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
         <option value="$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/PriviledgesController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/addnewproduct.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html" />
+        <option value="$PROJECT_DIR$/Public/Admin/js/Click.js" />
       </list>
     </option>
   </component>
@@ -236,7 +316,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="420" />
     <option name="y" value="30" />
     <option name="width" value="1127" />
@@ -260,6 +340,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -362,7 +443,7 @@
               <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Category" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Clothes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="A00" type="b2602c69:ProjectViewProjectNode" />
@@ -372,11 +453,18 @@
               <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="priviledges" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="A00" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A00" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,14 +549,17 @@
       <workItem from="1560938552149" duration="5755000" />
       <workItem from="1561025618819" duration="4474000" />
       <workItem from="1561111188813" duration="4871000" />
+      <workItem from="1561452918769" duration="1769000" />
+      <workItem from="1561454725731" duration="4650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150841000" />
+    <option name="totallyTimeSpent" value="157260000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18385416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -516,7 +607,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -561,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -626,143 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/js/Click.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#todayDate#0" expanded="false" />
-            <element signature="n#!!block;n#addCategory#0" expanded="false" />
-            <marker date="1560944456141" expanded="true" signature="4239:4270" ph="..." />
-            <marker date="1560944456141" expanded="true" signature="7051:7082" ph="..." />
-            <marker date="1560944456141" expanded="true" signature="10568:10599" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding>
-            <element signature="e#2510#3032#0#PHP" expanded="false" />
-            <element signature="e#3037#3185#0#PHP" expanded="false" />
-            <element signature="e#3189#3397#0#PHP" expanded="false" />
-            <element signature="e#3402#4810#0#PHP" expanded="false" />
-            <element signature="e#4815#5063#0#PHP" expanded="false" />
-            <element signature="e#6882#7170#0#PHP" expanded="false" />
-            <element signature="e#10639#10753#0#PHP" expanded="false" />
-            <element signature="e#11614#13012#0#PHP" expanded="false" />
-            <element signature="e#14164#15797#0#PHP" expanded="false" />
-            <element signature="e#15802#15943#0#PHP" expanded="false" />
-            <element signature="e#15947#16245#0#PHP" expanded="false" />
-            <element signature="e#16249#16428#0#PHP" expanded="false" />
-            <element signature="e#16432#16603#0#PHP" expanded="false" />
-            <element signature="e#16607#16939#0#PHP" expanded="false" />
-            <element signature="e#16943#17120#0#PHP" expanded="false" />
-            <element signature="e#17124#17372#0#PHP" expanded="false" />
-            <element signature="e#17376#17567#0#PHP" expanded="false" />
-            <element signature="e#17572#17919#0#PHP" expanded="false" />
-            <element signature="e#17923#18099#0#PHP" expanded="false" />
-            <marker date="1560596233778" expanded="true" signature="2573:2585" ph="insert into ${C(&quot;A00_PRODUCT&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3100:3113" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="3100:3114" ph="select * fro... ${C()}" />
-            <marker date="1560596233778" expanded="true" signature="3100:3153" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="3100:3154" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="3100:3155" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="3259:3271" ph="insert into ${C()}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3292" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3324" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3326" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3327" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3341" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3342" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3343" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3344" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3347" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3348" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3364" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3369" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="3259:3371" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="4932:4945" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="4932:4946" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="4932:5013" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="4932:5014" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="4932:5015" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="4932:5026" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="4932:5027" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5255:5268" ph="select produ... " />
-            <marker date="1560596233778" expanded="true" signature="5255:5269" ph="select produ... ${C90}" />
-            <marker date="1560596233778" expanded="true" signature="5255:5307" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5255:5308" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5255:5309" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5255:5338" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5255:5339" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5771:5784" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="5771:5786" ph="select * fro... ${C()}" />
-            <marker date="1560596233778" expanded="true" signature="5771:5820" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5771:5821" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5771:5848" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="5771:5849" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="6185:6198" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="6185:6199" ph="select * fro... ${C()}" />
-            <marker date="1560596233778" expanded="true" signature="6185:6241" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="6185:6242" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="6185:6273" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="6185:6274" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="6375:6388" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="6375:6389" ph="select * fro... ${C()}" />
-            <marker date="1560596233778" expanded="true" signature="6375:6411" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="6375:6431" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="15389:15401" ph="insert into ${C()}... " />
-            <marker date="1560596233778" expanded="true" signature="15389:15453" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="15389:15454" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="15389:15478" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="15389:15479" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="15389:15492" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="15389:15493" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="15389:15494" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="15860:15873" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="15860:15874" ph="select * fro... ${C()}" />
-            <marker date="1560596233778" expanded="true" signature="15860:15916" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="15860:15917" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16148:16161" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="16148:16162" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16148:16182" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16148:16206" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16148:16207" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16148:16218" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16148:16219" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16316:16329" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="16316:16330" ph="select * fro... ${C()}" />
-            <marker date="1560596233778" expanded="true" signature="16316:16368" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16316:16369" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16316:16400" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="16316:16402" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="17015:17028" ph="select * fro... " />
-            <marker date="1560596233778" expanded="true" signature="17015:17029" ph="select * fro... ${C()}" />
-            <marker date="1560596233778" expanded="true" signature="17015:17063" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="17015:17093" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="17015:17094" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="17446:17460" ph="select * fro... ${C()}" />
-            <marker date="1560596233778" expanded="true" signature="17446:17505" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="17446:17506" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="17446:17540" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="17446:17541" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
-            <marker date="1560596233778" expanded="true" signature="17843:17855" ph="insert into ${C()}... " />
-            <marker date="1560596233778" expanded="true" signature="17843:17881" ph="insert into ${C(&quot;A00_PRODUCT_NUM&quot;)}... " />
-            <marker date="1560596233778" expanded="true" signature="17843:17882" ph="insert into ${C(&quot;A00_PRODUCT_NUM&quot;)}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Category/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="85" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -794,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-84">
@@ -828,27 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
           <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding>
-            <element signature="e#118#147#0#PHP" expanded="true" />
-            <marker date="1561112329638" expanded="true" signature="750:789" ph="select * fro... " />
-            <marker date="1561112329638" expanded="true" signature="750:790" ph="select * fro... ${C()}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/addnewproduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,9 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -866,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="1" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10">
           <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +815,7 @@
         <state relative-caret-position="-2780">
           <caret line="84" column="8" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="87" selection-end-column="51" />
           <folding>
-            <element signature="e#117#149#0#PHP" expanded="true" />
+            <element signature="e#117#149#0#PHP" expanded="false" />
             <element signature="e#390#1568#0#PHP" expanded="false" />
             <element signature="e#2716#3466#0#PHP" expanded="false" />
             <element signature="e#5643#7326#0#PHP" expanded="false" />
@@ -930,16 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <marker date="1560163685988" expanded="true" signature="669:724" ph="select * fro... ${C(&quot;A00_PRODUCT&quot; )}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Model/BaseModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -951,37 +854,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <marker date="1561115149102" expanded="true" signature="235:241" ph=" " />
-            <marker date="1561115149102" expanded="true" signature="241:247" ph=" " />
-            <marker date="1561115149102" expanded="true" signature="273:279" ph=" " />
-            <marker date="1561115149102" expanded="true" signature="279:285" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/PrevelidgeModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="74" lean-forward="false" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="78" />
-          <folding>
-            <marker date="1561114541089" expanded="true" signature="230:243" ph="select * fro... " />
-            <marker date="1561114541089" expanded="true" signature="230:245" ph="select * fro... ${c()}" />
-            <marker date="1561114541089" expanded="true" signature="230:294" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-            <marker date="1561114541089" expanded="true" signature="230:296" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,39 +878,245 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
+        <state relative-caret-position="3150">
           <caret line="103" column="37" lean-forward="false" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
-          <folding>
-            <element signature="e#118#145#0#PHP" expanded="true" />
-            <element signature="e#246#1201#0#PHP" expanded="false" />
-            <element signature="e#4314#6628#0#PHP" expanded="false" />
-            <element signature="e#6635#6798#0#PHP" expanded="false" />
-            <marker date="1561112953433" expanded="true" signature="6697:6769" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PriviledgesController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="546">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Category/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-470">
+          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1806">
+          <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding>
-            <element signature="e#118#150#0#PHP" expanded="true" />
-            <marker date="1561116074257" expanded="true" signature="1223:1236" ph="select * fro... " />
-            <marker date="1561116074257" expanded="true" signature="1223:1237" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-            <marker date="1561116074257" expanded="true" signature="1223:1315" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-            <marker date="1561116074257" expanded="true" signature="1223:1317" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-            <marker date="1561116074257" expanded="true" signature="1223:1318" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-            <marker date="1561116074257" expanded="true" signature="1223:1330" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-            <marker date="1561116074257" expanded="true" signature="1223:1331" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+            <marker date="1561115149102" expanded="true" signature="235:241" ph=" " />
+            <marker date="1561115149102" expanded="true" signature="241:247" ph=" " />
+            <marker date="1561115149102" expanded="true" signature="273:279" ph=" " />
+            <marker date="1561115149102" expanded="true" signature="279:285" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <marker date="1561454338631" expanded="true" signature="603:658" ph="select * fro... ${C(&quot;A00_PRODUCT&quot; )}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/addnewproduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="71" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#foreach#0;n#div#0;n#div#8;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="e#4463#4469#0" expanded="true" />
+            <element signature="e#4469#4475#0" expanded="true" />
+            <element signature="e#4475#4481#0" expanded="true" />
+            <element signature="e#4481#4487#0" expanded="true" />
+            <element signature="e#4995#5001#0" expanded="true" />
+            <element signature="e#5001#5007#0" expanded="true" />
+            <element signature="e#5007#5013#0" expanded="true" />
+            <element signature="e#5013#5019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ClothesController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-564">
+          <caret line="210" column="35" lean-forward="false" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
+          <folding>
+            <element signature="e#2564#3086#0#PHP" expanded="false" />
+            <element signature="e#3478#4990#0#PHP" expanded="false" />
+            <element signature="e#4995#5243#0#PHP" expanded="false" />
+            <element signature="e#5284#7146#0#PHP" expanded="false" />
+            <element signature="e#7151#7439#0#PHP" expanded="false" />
+            <element signature="e#7444#11914#0#PHP" expanded="false" />
+            <element signature="e#10956#11070#0#PHP" expanded="false" />
+            <element signature="e#14481#16114#0#PHP" expanded="false" />
+            <element signature="e#16119#16260#0#PHP" expanded="false" />
+            <element signature="e#16264#16562#0#PHP" expanded="false" />
+            <element signature="e#16566#16745#0#PHP" expanded="false" />
+            <element signature="e#16749#16920#0#PHP" expanded="false" />
+            <element signature="e#16924#17256#0#PHP" expanded="false" />
+            <element signature="e#17260#17437#0#PHP" expanded="false" />
+            <element signature="e#17693#17884#0#PHP" expanded="false" />
+            <element signature="e#17889#18236#0#PHP" expanded="false" />
+            <element signature="e#18240#18416#0#PHP" expanded="false" />
+            <marker date="1561458840525" expanded="true" signature="2627:2639" ph="insert into ${C(&quot;A00_PRODUCT&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3154:3167" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="3154:3168" ph="select * fro... ${C()}" />
+            <marker date="1561458840525" expanded="true" signature="3154:3209" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="3154:3210" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="3154:3211" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="3154:3212" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="3154:3219" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="3154:3220" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="3320:3332" ph="insert into ${C()}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3353" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3385" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3387" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3388" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3402" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3403" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3404" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3405" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3408" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3409" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3425" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3430" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="3320:3432" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="5112:5125" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="5112:5126" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5112:5193" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5112:5194" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5112:5195" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5112:5206" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5112:5207" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5435:5448" ph="select produ... " />
+            <marker date="1561458840525" expanded="true" signature="5435:5449" ph="select produ... ${C90}" />
+            <marker date="1561458840525" expanded="true" signature="5435:5487" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5435:5488" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5435:5489" ph="select produ... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5435:5518" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5435:5519" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5951:5964" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="5951:5966" ph="select * fro... ${C()}" />
+            <marker date="1561458840525" expanded="true" signature="5951:6000" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5951:6001" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5951:6028" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="5951:6029" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="6365:6378" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="6365:6379" ph="select * fro... ${C()}" />
+            <marker date="1561458840525" expanded="true" signature="6365:6421" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="6365:6422" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="6365:6453" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="6365:6454" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="6555:6568" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="6555:6569" ph="select * fro... ${C()}" />
+            <marker date="1561458840525" expanded="true" signature="6555:6591" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="6555:6611" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="15706:15718" ph="insert into ${C()}... " />
+            <marker date="1561458840525" expanded="true" signature="15706:15770" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="15706:15771" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="15706:15795" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="15706:15796" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="15706:15809" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="15706:15810" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="15706:15811" ph="insert into ${C(&quot;A00_IMAGE_PATH&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="16177:16190" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="16177:16191" ph="select * fro... ${C()}" />
+            <marker date="1561458840525" expanded="true" signature="16177:16233" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16177:16234" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16465:16478" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="16465:16479" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16465:16499" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16465:16523" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16465:16524" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16465:16535" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16465:16536" ph="select * fro... ${C(&quot;A00_CATEGORY&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16633:16646" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="16633:16647" ph="select * fro... ${C()}" />
+            <marker date="1561458840525" expanded="true" signature="16633:16685" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16633:16686" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16633:16717" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="16633:16719" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="17332:17345" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="17332:17346" ph="select * fro... ${C()}" />
+            <marker date="1561458840525" expanded="true" signature="17332:17380" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="17332:17410" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="17332:17411" ph="select * fro... ${C(&quot;A00_IMAGE_PATH&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="17763:17777" ph="select * fro... ${C()}" />
+            <marker date="1561458840525" expanded="true" signature="17763:17822" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="17763:17823" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="17763:17857" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="17763:17858" ph="select * fro... ${C(&quot;A00_PRODUCT_NUM&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="18160:18172" ph="insert into ${C()}... " />
+            <marker date="1561458840525" expanded="true" signature="18160:18198" ph="insert into ${C(&quot;A00_PRODUCT_NUM&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="18160:18199" ph="insert into ${C(&quot;A00_PRODUCT_NUM&quot;)}... " />
+            <marker date="1561458840525" expanded="true" signature="18499:18512" ph="select * fro... " />
+            <marker date="1561458840525" expanded="true" signature="18499:18513" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="18499:18539" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="18499:18554" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="18499:18555" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="18499:18571" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+            <marker date="1561458840525" expanded="true" signature="18499:18572" ph="select * fro... ${C(&quot;A00_PRODUCT&quot;)}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/Click.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="127" column="7" lean-forward="true" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!block;n#showli#0" expanded="false" />
+            <element signature="n#!!block;n#showAll#0" expanded="false" />
+            <element signature="n#!!block;n#sendClothesData#0" expanded="false" />
+            <element signature="n#!!block;n#changeProduct#0" expanded="false" />
+            <element signature="n#!!block;n#uploadImage#0" expanded="false" />
+            <element signature="n#!!block;n#todayDate#0" expanded="false" />
+            <element signature="n#!!block;n#addCategory#0" expanded="false" />
+            <marker date="1561459192396" expanded="true" signature="4086:4117" ph="..." />
+            <marker date="1561459192396" expanded="true" signature="6898:6929" ph="..." />
+            <marker date="1561459192396" expanded="true" signature="10415:10446" ph="..." />
           </folding>
         </state>
       </provider>

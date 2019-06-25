@@ -443,8 +443,8 @@
                     <table class="mws-table">
                         <thead>
                         <tr>
+                            <th>产品序号</th>
                             <th>产品编号</th>
-                            <th>产品名字</th>
                             <th>产品类别</th>
                             <th>产品价格</th>
                             <th>产品性别</th>

@@ -11,10 +11,9 @@ namespace Admin\Model;
 use Common\Model\BaseModel;
 class ProductModel extends BaseModel
 {
-   public $tableFields=array("product_id"=>"productId",
+   public $tableFields=array(
        "product_type"=>"productType",
        "product_name"=>"productAlis",
-       "product_price"=>"productPrice",
        "product_sex"=>"sex",
        "product_description"=>"productDescpription",
        "product_date"=>"date");

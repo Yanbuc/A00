@@ -36,8 +36,6 @@ function showAll() {
 
 function sendClothesData(){
     var options=$("#sel option:selected");
-    var productId=$("#clothesId").val();
-    var productPrice=$("#clothesPrice").val();
     var productDescription=$("#clothesDescription").val();
     var productAlis=$("#clothesAlis").val();
     var productType=options.val();
@@ -46,9 +44,7 @@ function sendClothesData(){
     var rurl=urlPrefix+"Clothes/add";
     var formData = new FormData()  //创建一个forData
     formData.append('img',image );
-    formData.append("productId",productId);
     formData.append("productAlis",productAlis);
-    formData.append("productPrice",productPrice);
     formData.append("productDescpription",productDescription);
     formData.append("productType",productType);
     formData.append("sex",sex);
@@ -82,6 +78,7 @@ function sendClothesData(){
     })
 }
 
+// 查询产品的信息
 function searchProductExtraMessage(productId){
     var url=urlPrefix+"Clothes/getProductFullInformation"+"?product_id="+productId;
     layer.open({
@@ -90,7 +87,7 @@ function searchProductExtraMessage(productId){
         content: url//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
     });
 }
-
+// 删除产品
 function deleteProduct(product_id) {
     layer.confirm('确定是否产品', {
         btn: ['删除', '我再想想'] //可以无限个按钮
@@ -131,6 +128,7 @@ function deleteProduct(product_id) {
     });
 }
 
+// 改变产品的信息
 function changeProduct(){
     var today=document.getElementById("today");
     var flag=today.name;

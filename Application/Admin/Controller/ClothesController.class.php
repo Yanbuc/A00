@@ -27,12 +27,11 @@ class ClothesController extends AdminLoginController
 
    // 添加服装
    public function add(){
-
        header("Content-type:text/html;charset=utf-8");
        $retn=array();
        $data=$_POST;
        // 产品描述可以不传送过来
-       if(empty($data["productId"])||empty($data["productAlis"])||empty($data["productPrice"])||empty($data["productType"])||empty($data["sex"])){
+       if(empty($data["productAlis"])||empty($data["productType"])||empty($data["sex"])){
           $con=C("CHECK_MESSAGE");
           $retn["status"]="error";
           $retn["message"]="产品信息缺失: ";
@@ -42,35 +41,36 @@ class ClothesController extends AdminLoginController
           echo json_encode($retn);
            return ;
        }
-      $data["date"]=date("Y/m/d_H:i:s");
-      $productId=$data["productId"];
+      $data["date"]=getCurrentDate(C("DATE"));
       $productAlis=$data["productAlis"];
-      $productPrice=$data["productPrice"];
       $productDescprition=$data["productDescpription"];
       $productType= $data["productType"];
       $sex=$data["sex"];
       $productModel=new ProductModel();
-      $findSql=$this->findProductIdWhetherExists($productId);
+      $findSql=$this->findProductIdWhetherExists($productAlis);
       if($productModel->find($findSql)){
           $retn["status"]="error";
           $retn["message"]="产品编号已经存在";
           echo json_encode($retn);
           return ;
       }
-      // 文件上传
-      if(!empty($_FILES["img"])){
-         $fileName=date("Y_m_d_His").".".explode(".",$_FILES["img"]["name"])[1];
-         $tmpFileName=$_FILES["img"]["tmp_name"];
-        if(!file_exists($fileName)){
-            $fileName=trim($fileName);
-            move_uploaded_file($tmpFileName,ADMIN_CLOTHES_PATH.$fileName);
-            $productImageModel=new ProductImageModel();
-            $picSql=$this->insertPicture($productId,$fileName);
-            $productImageModel->insert($picSql);
-         }
-      }
-      $sql=$this.$this->produceSql($productModel,$data);
+      $sql=$this->produceSql($productModel,$data);
       $productModel->insert($sql);
+      $find=$this->produceSelectProductIdByNameSql($productAlis);
+      $pdData=$productModel->baseFind($find);
+      $productId=$pdData[0]["product_id"];
+       // 文件上传
+       if(!empty($_FILES["img"])){
+           $fileName=getCurrentDate(C("DATE")).".".explode(".",$_FILES["img"]["name"])[1];
+           $tmpFileName=$_FILES["img"]["tmp_name"];
+           if(!file_exists($fileName)){
+               $fileName=trim($fileName);
+               move_uploaded_file($tmpFileName,ADMIN_CLOTHES_PATH.$fileName);
+               $productImageModel=new ProductImageModel();
+               $picSql=$this->insertPicture($productId,$fileName);
+               $productImageModel->insert($picSql);
+           }
+       }
       $retn["status"]="success";
       $retn["message"]="产品信息插入成功";
       echo json_encode($retn);
@@ -96,7 +96,7 @@ class ClothesController extends AdminLoginController
    }
 
    private function findProductIdWhetherExists($id){
-       $sql="select * from ".C("A00_PRODUCT")." where product_id = ".$id;
+       $sql="select * from ".C("A00_PRODUCT")." where product_name = '".$id."'";
        return $sql;
    }
    private function insertPicture($productId,$pictureName){
@@ -104,6 +104,7 @@ class ClothesController extends AdminLoginController
        return $sql;
    }
 
+   // 分页显示所有产品
    public function showProduct(){
        $pid=$_GET["p"];
        if(empty($pid)){
@@ -131,6 +132,9 @@ class ClothesController extends AdminLoginController
            $retn[]=$v;
        }
        foreach ($retn as $k=>$v){
+           if($v["product_price"]==0){
+               $retn[$k]["product_price"]="产品尚未标价";
+           }
            if($v["product_sex"]==1){
                $retn[$k]["product_real_sex"]="男装";
            }else if($v["product_sex"]==2){
@@ -191,6 +195,7 @@ class ClothesController extends AdminLoginController
            }
        }
        $data["category"]=$res;
+       $data["product_price"]=$data["product_price"]==0?"产品尚未标价":$data["product_price"];
        $data["num"]=empty($num)?"产品还没有填写数量":$num[0]["product_num"];
        $this->showProductDetail($data);
    }
@@ -211,7 +216,7 @@ class ClothesController extends AdminLoginController
               $retn["message"].=empty($data["productName"])?"没有输入产品名字 ":"";
               $retn["message"].=empty($data["productPrice"])?"没有输入产品价格 ":"";
               $retn["message"].=empty($data["productType"])?"没有输入产品类型 ":"";
-             // $retn["message"].=empty($data["productSex"])?"没有输入产品性别":"";
+              $retn["message"].=empty($data["productSex"])?"没有输入产品性别":"";
               echo json_encode($retn);
               return ;
        }
@@ -228,7 +233,7 @@ class ClothesController extends AdminLoginController
        $pdata=$pdata[0];
        // 删除图片
        if(!empty($data["productImage"])){
-           $ids=explode(";",$data["productImage"]);
+           $ids=explode(";",trim($data["productImage"],";"));
            $deleteSql=$this->produceDeleteProductImageSql($ids);
            $imageModel=new ProductImageModel();
            $imageModel->baseUpdate($deleteSql);
@@ -239,7 +244,7 @@ class ClothesController extends AdminLoginController
        $productNum=intval($data["productNum"]);
        $productId=intval($data["productId"]);
        $productType=intval($data["productType"]);
-       $productPrice=doubleval($data["productPrice"]);
+       $productPrice=doubleval($data["productPrice"])==0.0?0:doubleval($data["productPrice"]);
        $productSex=intval($data["productSex"]);
        if(!empty($productNum)||$productNum!=0){
           $numSql=$this->produceSelectProductNumSql($productId);
@@ -464,5 +469,9 @@ class ClothesController extends AdminLoginController
        return $sql;
    }
 
+   private function  produceSelectProductIdByNameSql($productName){
+       $sql="select * from ".C("A00_PRODUCT")." where product_name='".$productName."'" ;
+       return $sql;
+   }
 
 }
