@@ -444,18 +444,16 @@
                             <th>权限编号</th>
                             <th>类别描述</th>
                             <th>权限添加时间</th>
-                            <th>权限添加人</th>
                             <th>其他操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <?php if(is_array($data)): foreach($data as $key=>$v): ?><tr id="<?php echo ($v['category_id']); ?>">
-                                <td><?php echo ($v["category_id"]); ?></td>
-                                <td><?php echo ($v["category_name"]); ?></td>
-                                <td><?php echo ($v["category_date"]); ?></td>
-                                <td><?php echo ($v["category_change_date"]); ?></td>
-                                <td><input class="btn btn-success radius" type="button" value="修改" onclick="changeCategory(<?php echo ($v['category_id']); ?>)" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteCategory(<?php echo ($v['category_id']); ?>)"></td>
+                        <?php if(is_array($data)): foreach($data as $key=>$v): ?><tr >
+                                <td><?php echo ($v['prevelidge_id']); ?></td>
+                                <td><?php echo ($v['prevelidge_desc']); ?></td>
+                                <td><?php echo ($v['prevelidge_add_date']); ?></td>
+                                <td><input class="btn btn-success radius" type="button" value="修改" onclick="searchPrevelidgeInfo(<?php echo ($v['prevelidge_id']); ?>)" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteCategory(<?php echo ($v['prevelidge_id']); ?>)"></td>
                             </tr><?php endforeach; endif; ?>
                         </tbody>
 

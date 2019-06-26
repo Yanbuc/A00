@@ -58,8 +58,9 @@ class AdminLoginController extends AdminController
             return false;
         }
         $previelidge=explode(",",$data["prevelidge_id"]);
+        $preId=C("ADMIN_PREVELIDGE_ID");
         foreach($previelidge as $k=>$v){
-            if($v==$pid||$v==3){  // 3 是全部权限
+            if($v==$pid||$v==$preId){  // 3 是全部权限
                 return true;
             }
         }

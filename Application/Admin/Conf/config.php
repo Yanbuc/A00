@@ -36,9 +36,14 @@ return array(
 
     //*****************返回日期配置参数**********
      "DATE"=>"date",
+     "DAY"=>"day",
 
     //**********权限id*************************
     "SELECT_PREVELIDGE_PREVELEDGE"=>1,
+    "ADMIN_PREVELIDGE_ID"=>5,
+    "CHANGE_PREVELIDGE_PREVELIDGE"=>6,
+    "UNCHANEGEABLE_PREVELIDGE"=>"1,2,3,4,5",
+
 
     //******************************提示配置
     "CATEGORY_TIP"=>"类别名已经存在",
@@ -59,6 +64,9 @@ return array(
     "LOG_LEVEL_CHANGE_USER_INFO_EXCEPTION"=>14,
     "LOG_LEVEL_CHANGE_USER_INFO"=>15,
     "LOG_LEVEL_CHANGE_USER_PASSWORD_EXCEPTION"=>16,
-    "LOG_LEVEL_CHANGE_USER_PASSWORD"=>17
+    "LOG_LEVEL_CHANGE_USER_PASSWORD"=>17,
+    "LOG_LEVEL_SELECT_PREVELIDGE_EXCEPTION"=>18,
+
+
 
 );

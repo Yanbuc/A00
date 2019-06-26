@@ -42,6 +42,11 @@ function getCurrentDate($flag){
         $date = date("Y_m_d_H:i:s");
 
     }
+
+    if($flag=="day"){
+        $date = date("Y/m/d");
+    }
+
     return $date;
 }
 

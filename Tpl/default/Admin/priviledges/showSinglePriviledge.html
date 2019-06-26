@@ -1,0 +1,43 @@
+<include file="Public:anotherjsandcss"/>
+<body>
+<form action="" method="post" class="form form-horizontal" id="demoform-1">
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">权限编号</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="prevelidge_id" readonly="true" type="text" class="input-text" autocomplete="off" placeholder="权限编号" value="{$prevelidgeData['prevelidge_id']}">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">权限描述</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <if condition="$prevelidgeData['prevelidge_id'] lt 5 ">
+                <input  name="tmp_desc" type="text" readonly="true" class="input-text" autocomplete="off" placeholder="权限描述" value="{$prevelidgeData['prevelidge_desc']}">
+                <else />
+                <input name="tmp_desc" type="text" class="input-text" autocomplete="off" placeholder="权限描述" value="{$prevelidgeData['prevelidge_desc']}">
+            </if>
+            <input id="preve_hidden" type="hidden" value="{$prevelidgeData['prevelidge_desc']}"  />
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">权限添加时间</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="prevelidge_add_date" readonly="true" type="text" class="input-text" autocomplete="off" placeholder="权限添加日期" value="{$prevelidgeData['prevelidge_add_date']}">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-3">权限添加人</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="prevelidge_add_owner" readonly="true"  type="text" class="input-text" autocomplete="off" placeholder="权限添加人" value="{$prevelidgeData['prevelidge_add_user']}">
+        </div>
+    </div>
+    <div class="row cl">
+        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+            <input  id="today" class="btn btn-success radius" type="button" value="是否修改" onclick="todayDate()" style="color: #FFFFFF;" name="1">
+            <!--<button type="button" id="today" class="btn btn-primary radius" onclick="todayDate()" style="color: #0062CC;" name="1">是否修改</button>-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="btn btn-primary radius" type="button" value="提交" onclick="updateSinglePrevelidge()">
+        </div>
+    </div>
+</form>
+</body>
+</html>

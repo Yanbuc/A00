@@ -136,3 +136,19 @@ function submitUserPwd() {
         })
     }
 }
+
+// 查询权限
+function searchPrevelidgeInfo(prevelidgeid) {
+    var url=urlPrefix+"Priviledges/showSinglePriviledge"+"?prevelidgeId="+prevelidgeid;
+    layer.open({
+        area:["800px","400px"],
+        type: 2,
+        scrollbar:false,
+        content: url//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    });
+}
+
+//更新权限
+function updateSinglePrevelidge(prevelidgeId) {
+    desc=$("#preve_hidden").val();
+}

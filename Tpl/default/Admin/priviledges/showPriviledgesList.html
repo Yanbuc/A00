@@ -61,19 +61,17 @@
                             <th>权限编号</th>
                             <th>类别描述</th>
                             <th>权限添加时间</th>
-                            <th>权限添加人</th>
                             <th>其他操作</th>
                         </tr>
                         </thead>
                         <tbody>
                         <foreach name="data" item="v">
-                            <tr id="{$v['category_id']}">
-                                <td>{$v["category_id"]}</td>
-                                <td>{$v["category_name"]}</td>
-                                <td>{$v["category_date"]}</td>
-                                <td>{$v["category_change_date"]}</td>
-                                <td><input class="btn btn-success radius" type="button" value="修改" onclick="changeCategory({$v['category_id']})" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteCategory({$v['category_id']})"></td>
+                            <tr >
+                                <td>{$v['prevelidge_id']}</td>
+                                <td>{$v['prevelidge_desc']}</td>
+                                <td>{$v['prevelidge_add_date']}</td>
+                                <td><input class="btn btn-success radius" type="button" value="修改" onclick="searchPrevelidgeInfo({$v['prevelidge_id']})" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteCategory({$v['prevelidge_id']})"></td>
                             </tr>
                         </foreach>
                         </tbody>
