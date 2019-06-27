@@ -11,9 +11,9 @@
         <label class="form-label col-xs-4 col-sm-3">权限描述</label>
         <div class="formControls col-xs-8 col-sm-9">
             <if condition="$prevelidgeData['prevelidge_id'] lt 5 ">
-                <input  name="tmp_desc" type="text" readonly="true" class="input-text" autocomplete="off" placeholder="权限描述" value="{$prevelidgeData['prevelidge_desc']}">
+                <input id="desc1"  name="tmp_desc" type="text" readonly="true" class="input-text" autocomplete="off" placeholder="权限描述" value="{$prevelidgeData['prevelidge_desc']}">
                 <else />
-                <input name="tmp_desc" type="text" class="input-text" autocomplete="off" placeholder="权限描述" value="{$prevelidgeData['prevelidge_desc']}">
+                <input id="desc2" name="tmp_desc" type="text" class="input-text" autocomplete="off" placeholder="权限描述" value="{$prevelidgeData['prevelidge_desc']}">
             </if>
             <input id="preve_hidden" type="hidden" value="{$prevelidgeData['prevelidge_desc']}"  />
         </div>

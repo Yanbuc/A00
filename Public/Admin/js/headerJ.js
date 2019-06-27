@@ -149,6 +149,62 @@ function searchPrevelidgeInfo(prevelidgeid) {
 }
 
 //更新权限
-function updateSinglePrevelidge(prevelidgeId) {
-    desc=$("#preve_hidden").val();
+function updateSinglePrevelidge() {
+    var today=document.getElementById("today");
+    var flag=today.name;
+    if(flag==1){
+        layer.open(
+            {
+                title:"友情提示",
+                type:1,
+                content:"<span style=\"font-size: large;color: #006dcc\">尚未点击修改按钮,无法修改</span>",
+                area:["240px","150px"]
+            }
+        )
+    }
+    if(flag==2){
+        var desc=$("#desc1").val();
+        if(desc==null){
+            desc=$("#desc2").val();
+        }
+        var prevelidgeId=$("#prevelidge_id").val();
+        if(prevelidgeId<=5){
+            layer.msg("固定权限无法更改",{time:2000},function(index){
+                layer.close(index);
+                window.location.reload();
+            });
+            return ;
+        }
+        var ru=urlPrefix+"Priviledges/changePrevelidgeDesc";
+        $.ajax({
+            url:ru,
+            type:"post",
+            dataType:"JSON",
+            data:{
+                "prevelidgeId":prevelidgeId,
+                "prevelidgeDesc":desc,
+            },
+            success:function(data){
+                if(data.status=="success"){
+                    layer.msg(data.message,{icon: 1,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+                }else{
+                    layer.msg(data.message,{icon: 2,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+
+                }
+            },
+            error:function(e,x){
+                console.log('nonono');
+            }
+
+        })
+    }
+
+
+
 }

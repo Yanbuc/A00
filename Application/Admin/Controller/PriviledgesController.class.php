@@ -86,9 +86,55 @@ class PriviledgesController extends AdminLoginController
        $data=$_POST;
        $unchangeAblePrevelidge=explode(",",C("UNCHANEGEABLE_PREVELIDGE"));
        $prevelidgeId=intval($data["prevelidgeId"]);
-       $prevelidgeDesc=intval($data["prevelidgeDesc"]);
-
+       $prevelidgeDesc=strval($data["prevelidgeDesc"]);
+       if(empty($prevelidgeId)||$prevelidgeId==0){
+           $logMessage="修改权限异常，没有prevelidge_id";
+           $this->putLog($logMessage,C( "LOG_LEVEL_CHANGE_PREVELIDGE_EXCEPTION"));
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"you are a silly boy!!!!");
+           echo json_encode($retn);
+           return ;
+       }
+       foreach ($unchangeAblePrevelidge as $k=>$v){
+           if($v==$prevelidgeId){
+               $logMessage="修改权限失败，修改的权限是系统固定权限";
+               $this->putLog($logMessage,C( "LOG_LEVEL_CHANGE_PREVELIDGE_EXCEPTION"));
+               $retn=$this->getRetnArray(C("RETN_ERROR"),"系统权限无法修改");
+               echo json_encode($retn);
+               return ;
+           }
+       }
+       $searchData=array();
+       $searchData["prevelidge_id"]=$prevelidgeId;
+       $searchSql=$this->produceSelectPrevelidgeSql($searchData);
+       $prevelidgeModel=new PrevelidgeModel();
+       $preData=$prevelidgeModel->baseFind($searchSql);
+       if(count($preData)==0){
+           $logMessage="修改权限失败，传入了prevelidge_id,但是数据库之中没有这个prevelidge_id";
+           $this->putLog($logMessage,C( "LOG_LEVEL_CHANGE_PREVELIDGE_EXCEPTION"));
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"you are a silly boy");
+           echo json_encode($retn);
+           return ;
+       }
+       $preData=$preData[0];
+       if($preData["prevelidge_desc"]!=$prevelidgeDesc){
+           $upData=array();
+           $upData["prevelidge_desc"]=$prevelidgeDesc;
+           $updateSql=$this->produceUpdatePrevelidgeSql($prevelidgeId,$upData);
+           $prevelidgeModel->baseUpdate($updateSql);
+           $logMessage="修改权限成功";
+           $this->putLog($logMessage,C( "LOG_LEVEL_CHANGE_PREVELIDGE"));
+       }
+        $retn=$this->getRetnArray(C("RETN_SUCCESS"),"修改权限成功");
+        echo json_encode($retn);
+        return ;
     }
+
+    // 展示增加权限
+    public function showAddPrevelidgeInfo(){
+           $this->display("Priviledges/showAddPrevelidgeInfo");
+           return ;
+    }
+
 
 
     private function produceSelectPrevelidgeListSql($pageId){
@@ -114,6 +160,16 @@ class PriviledgesController extends AdminLoginController
         foreach ($data as $k=>$v){
             $body.=$k."=".$v;
         }
+        return $sql.$body;
+    }
+
+    private function produceUpdatePrevelidgeSql($prevelidgeId,$data){
+        $sql=" update  ".C("A00_PREVELEDGES")." set  " ;
+        $body="  where `prevelidge_id`=".$prevelidgeId;
+        foreach ($data as $k=>$v){
+            $sql.= $k."='".$v."',";
+        }
+        $sql=substr($sql,0,strlen($sql)-1);
         return $sql.$body;
     }
 }

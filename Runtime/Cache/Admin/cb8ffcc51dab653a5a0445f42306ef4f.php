@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -94,6 +93,41 @@
 </head>
 <body>
 
+<div id="mws-themer">
+    <div id="mws-themer-hide"></div>
+    <div id="mws-themer-content">
+        <div class="mws-themer-section">
+            <label for="mws-theme-presets">Presets</label> <select id="mws-theme-presets"></select>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <ul>
+                <li><span>Base Color</span> <div id="mws-base-cp" class="mws-cp-trigger"></div></li>
+                <li><span>Text Color</span> <div id="mws-text-cp" class="mws-cp-trigger"></div></li>
+                <li><span>Text Glow Color</span> <div id="mws-textglow-cp" class="mws-cp-trigger"></div></li>
+            </ul>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <ul>
+                <li><span>Text Glow Opacity</span> <div id="mws-textglow-op"></div></li>
+            </ul>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <button class="mws-button red small" id="mws-themer-getcss">Get CSS</button>
+        </div>
+    </div>
+    <div id="mws-themer-css-dialog">
+        <div class="mws-form">
+            <div class="mws-form-row" style="padding:0;">
+                <div class="mws-form-item">
+                    <textarea cols="auto" rows="auto" readonly="readonly"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="mws-header" class="clearfix">
 
@@ -252,25 +286,16 @@
 </div>
 
 
-
-
-<!-- Main Wrapper -->
 <div id="mws-wrapper">
-    <!-- Necessary markup, do not remove -->
     <div id="mws-sidebar-stitch"></div>
     <div id="mws-sidebar-bg"></div>
-
-    <!-- Sidebar Wrapper -->
     <div id="mws-sidebar">
-
-        <!-- Search Box -->
         <div id="mws-searchbox" class="mws-inset">
-            <form action="http://www.malijuwebshop.com/themes/mws-admin/dashboard.html">
+            <form action="http://www.malijuwebshop.com/themes/mws-admin/form_layouts.html">
                 <input type="text" class="mws-search-input" />
                 <input type="submit" class="mws-search-submit" />
             </form>
         </div>
-
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -408,95 +433,39 @@
 </div>
 </body>
 
-
     </div>
 
-
-    <!-- Container Wrapper -->
     <div id="mws-container" class="clearfix">
-
-        <!-- Main Container -->
         <div class="container">
-
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span class="mws-i-24 i-sign-post">查询产品信息</span>
-                </div>
-                <div class="mws-panel-body" >
-                    <form class="mws-form form-horizontal" action="" >
-                        <div class="row cl">
-                            <label class="form-label col-xs-4 col-sm-3">产品编号</label>
-                            <div class="formControls col-xs-8 col-sm-9">
-                                <input id="product_id" type="text" class="input-text" autocomplete="off" placeholder="产品编号">
-                            </div>
-                        </div>
-                        <div class="row cl">
-                            <label class="form-label col-xs-4 col-sm-3">产品名</label>
-                            <div class="formControls col-xs-8 col-sm-9">
-                                <input id="product_name" type="password" class="input-text" autocomplete="off" placeholder="产品名">
-                            </div>
-                        </div>
-                        <div class="row cl">
-                            <label class="form-label col-xs-4 col-sm-3">产品查询信息显示</label>
-                            <div class="formControls col-xs-8 col-sm-9">
-                                <textarea class="textarea" placeholder="查询产品信息显示" rows="" cols="" name=""></textarea>
-                            </div>
-                        </div>
-                        <div class="row cl">
-                            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-                                <input class="btn btn-primary radius" type="submit" value="查询">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="mws-panel grid_8 mws-collapsible">
-                <div class="mws-panel-header">
-                    <span class="mws-i-24 i-table-1">卖出商品</span>
+                    <span class="mws-i-24 i-list">类别添加表</span>
                 </div>
                 <div class="mws-panel-body">
-                    <form class="mws-form form-horizontal" action="" style="width:80%">
-                        <div class="row cl">
-                            <label class="form-label col-xs-4 col-sm-3">产品名字</label>
-                            <div class="formControls col-xs-8 col-sm-9">
-                                <input id="product_sub_name" type="text" class="input-text" autocomplete="off" placeholder="产品名字">
+                    <form class="mws-form" id="uploadForm">
+                        <div class="mws-form-inline">
+                            <div class="mws-form-row">
+                                <label>类别名字</label>
+                                <div class="mws-form-item small">
+                                    <input type="text" class="mws-textinput" name="categoryName" id="categoryName" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>类别描述</label>
+                                <div class="mws-form-item large">
+                                    <textarea rows="100%" cols="100%" name="categoryDescription" id="categoryDescription"></textarea>
+                                </div>
                             </div>
                         </div>
-                        <div class="row cl">
-                            <label class="form-label col-xs-4 col-sm-3">产品数量</label>
-                            <div class="formControls col-xs-8 col-sm-9">
-                                <input id="product_sub_num" type="password" class="input-text" autocomplete="off" placeholder="产品数量">
-                            </div>
-                        </div>
-                        <div class="row cl">
-                            <label class="form-label col-xs-4 col-sm-3">产品总金额</label>
-                            <div class="formControls col-xs-8 col-sm-9">
-                                <input id="product_price" type="password" class="input-text" autocomplete="off" placeholder="产品总金额">
-                            </div>
-                        </div>
-                        <div class="row cl">
-                            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-                                <input class="btn btn-primary radius" type="submit" value="售出">
-                            </div>
+                        <div class="mws-button-row">
+                            <button type="button" value="添加" class="mws-button green" onclick="addCategory()" >添加</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <!-- End Main Container -->
-
-
-
     </div>
-    <!-- End Container Wrapper -->
-
 </div>
-<!-- End Main Wrapper -->
 </body>
-<script type="text/javascript">
-      $("#product_sub_num").blur(function(){
 
-      });
-</script>
 </html>

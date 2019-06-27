@@ -102,9 +102,9 @@
     <div class="row cl">
         <label class="form-label col-xs-4 col-sm-3">权限描述</label>
         <div class="formControls col-xs-8 col-sm-9">
-            <?php if($prevelidgeData['prevelidge_id'] < 5 ): ?><input  name="tmp_desc" type="text" readonly="true" class="input-text" autocomplete="off" placeholder="权限描述" value="<?php echo ($prevelidgeData['prevelidge_desc']); ?>">
+            <?php if($prevelidgeData['prevelidge_id'] < 5 ): ?><input id="desc1"  name="tmp_desc" type="text" readonly="true" class="input-text" autocomplete="off" placeholder="权限描述" value="<?php echo ($prevelidgeData['prevelidge_desc']); ?>">
                 <?php else: ?>
-                <input name="tmp_desc" type="text" class="input-text" autocomplete="off" placeholder="权限描述" value="<?php echo ($prevelidgeData['prevelidge_desc']); ?>"><?php endif; ?>
+                <input id="desc2" name="tmp_desc" type="text" class="input-text" autocomplete="off" placeholder="权限描述" value="<?php echo ($prevelidgeData['prevelidge_desc']); ?>"><?php endif; ?>
             <input id="preve_hidden" type="hidden" value="<?php echo ($prevelidgeData['prevelidge_desc']); ?>"  />
         </div>
     </div>
