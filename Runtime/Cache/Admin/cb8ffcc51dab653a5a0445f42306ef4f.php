@@ -418,7 +418,6 @@
             <a  href="#" class="mws-i-24 i-chart">权限管理</a>
             <ul>
                 <li><a href="<?php echo U('Admin/Priviledges/showPriviledgesList');?>">权限列表</a></li>
-                <li><a href="<?php echo U('Admin/Priviledges/showAddPrevelidgeInfo');?>">添加权限</a></li>
             </ul>
         </li>
         <li>

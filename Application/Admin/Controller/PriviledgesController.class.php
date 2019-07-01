@@ -34,6 +34,7 @@ class PriviledgesController extends AdminLoginController
         $preData=$previledgesModel->baseFind($selSql);
         if(count($preData)!=0){
             $this->assign("data",$preData);
+            $this->assign("show",$p->show());
         }
         $this->display("Priviledges/showPriviledgesList");
         return ;
@@ -129,11 +130,7 @@ class PriviledgesController extends AdminLoginController
         return ;
     }
 
-    // 展示增加权限
-    public function showAddPrevelidgeInfo(){
-           $this->display("Priviledges/showAddPrevelidgeInfo");
-           return ;
-    }
+
 
 
 

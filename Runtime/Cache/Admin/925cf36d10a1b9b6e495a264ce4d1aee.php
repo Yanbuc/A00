@@ -99,6 +99,12 @@
         </div>
     </div>
     <div class="row cl" >
+        <label class="form-label col-xs-4 col-sm-3">账号</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="account" value="<?php echo ($user['username']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
+        </div>
+    </div>
+    <div class="row cl" >
         <label class="form-label col-xs-4 col-sm-3">用户名</label>
         <div class="formControls col-xs-8 col-sm-9">
             <input id="userName" value="<?php echo ($user['useralis']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
@@ -107,7 +113,25 @@
     <div class="row cl">
         <label class="form-label col-xs-4 col-sm-3">真实姓名</label>
         <div class="formControls col-xs-8 col-sm-9">
-            <input id="userRealName" type="text" value="<?php echo ($user['real_name']); ?>" class="input-text" autocomplete="off" placeholder="用户真实姓名"   style="width: 400px">
+            <input id="userRealName" type="text" value="<?php echo ($user['real_name']); ?>" class="input-text" autocomplete="off" placeholder="用户真实姓名"   style="width: 300px">
+        </div>
+    </div>
+    <div class="row cl" >
+        <label class="form-label col-xs-4 col-sm-3">添加日期</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="addDate" value="<?php echo ($user['user_add_date']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
+        </div>
+    </div>
+    <div class="row cl" >
+        <label class="form-label col-xs-4 col-sm-3">修改日期</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input id="changeDate" value="<?php echo ($user['user_change_date']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
+        </div>
+    </div>
+    <div class="row cl" >
+        <label class="form-label col-xs-4 col-sm-3">用户权限</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <?php if(is_array($prevelidge)): foreach($prevelidge as $key=>$v): ?><label><?php echo ($v["prevelidge_desc"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;</label><?php endforeach; endif; ?>
         </div>
     </div>
     <div class="row cl">

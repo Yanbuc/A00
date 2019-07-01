@@ -415,13 +415,12 @@
             <a  href="#" class="mws-i-24 i-chart">权限管理</a>
             <ul>
                 <li><a href="<?php echo U('Admin/Priviledges/showPriviledgesList');?>">权限列表</a></li>
-                <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">添加权限</a></li>
             </ul>
         </li>
         <li>
             <a  href="#" class="mws-i-24 i-chart">用户管理</a>
             <ul>
-                <li><a href="<?php echo U('Admin/Bussiness/showAddProduct');?>">用户列表</a></li>
+                <li><a href="<?php echo U('Admin/User/showUserInfoList');?>">用户列表</a></li>
                 <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">添加用户</a></li>
                 <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">查询用户</a></li>
             </ul>
@@ -453,7 +452,6 @@
                                 <td><?php echo ($v['prevelidge_desc']); ?></td>
                                 <td><?php echo ($v['prevelidge_add_date']); ?></td>
                                 <td><input class="btn btn-success radius" type="button" value="修改" onclick="searchPrevelidgeInfo(<?php echo ($v['prevelidge_id']); ?>)" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteCategory(<?php echo ($v['prevelidge_id']); ?>)"></td>
                             </tr><?php endforeach; endif; ?>
                         </tbody>
 

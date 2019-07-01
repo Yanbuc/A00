@@ -43,6 +43,8 @@ return array(
     "ADMIN_PREVELIDGE_ID"=>5,
     "CHANGE_PREVELIDGE_PREVELIDGE"=>6,
     "UNCHANEGEABLE_PREVELIDGE"=>"1,2,3,4,5",
+    "SELECT_OTHER_USERS_PREVELIDGE"=>8,
+    "CHANGE_OTHER_USERS_INFO"=>9,
 
 
     //******************************提示配置

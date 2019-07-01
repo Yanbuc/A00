@@ -14,4 +14,9 @@ class UsersModel extends BaseModel
        // $sql="update a00_users set password='96e79218965eb72d' where username='aaa' ";
         $this->execute($sql);
     }
+    public function getCount(){
+        $sql="select * from  ".C("A00_USERS")." where `user_del`=0 ";
+        $data=$this->baseFind($sql);
+        return count($data);
+    }
 }

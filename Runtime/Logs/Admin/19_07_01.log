@@ -1,0 +1,2519 @@
+[ 2019-07-01T18:24:02+08:00 ] ::1 /A00/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017656s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.027490s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.027556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016599s ]
+
+[ 2019-07-01T18:24:13+08:00 ] ::1 /A00/admin.php/Index/checkLoginIn.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.2001s ]
+SQL: select * from a00_users where   username='aaa'  [ RunTime:0.0419s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2019-07-01T18:26:07+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0009s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0405s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0019s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0014s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000608s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 461 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2019-07-01T18:26:14+08:00 ] ::1 /A00/admin.php/Category/deleteCategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_categories` [ RunTime:0.1732s ]
+SQL: select * from a00_categories where category_id=6 and category_del=0  [ RunTime:0.0045s ]
+SQL: update a00_categories set category_del=1 where category_id= 6 [ RunTime:0.1751s ]
+SQL: insert into a00_log(log_level,log_message,log_date) values('6','天一|::1|类别被删除','2019_07_01_18:26:14') [ RunTime:0.0502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002411s ]
+
+[ 2019-07-01T18:26:16+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0188s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 461 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2019-07-01T18:26:18+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 461 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2019-07-01T18:26:20+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0005s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 461 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2019-07-01T18:26:38+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0005s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 461 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001424s ]
+
+[ 2019-07-01T18:27:33+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0381s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 460 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2019-07-01T18:28:33+08:00 ] ::1 /A00/admin.php/Priviledges/showAddPrevelidgeInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2019-07-01T18:28:40+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0024s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0008s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 460 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001880s ]
+
+[ 2019-07-01T18:28:42+08:00 ] ::1 /A00/admin.php/Priviledges/showSinglePriviledge?prevelidgeId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select * from a00_prevelidge where prevelidge_id=1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where id=1 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2019-07-01T18:28:46+08:00 ] ::1 /A00/admin.php/Priviledges/showAddPrevelidgeInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2019-07-01T18:31:10+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 460 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2019-07-01T18:31:14+08:00 ] ::1 /A00/admin.php/Priviledges/showAddPrevelidgeInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2019-07-01T18:31:41+08:00 ] ::1 /A00/admin.php/Priviledges/showAddPrevelidgeInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2019-07-01T18:31:42+08:00 ] ::1 /A00/admin.php/Priviledges/showAddPrevelidgeInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2019-07-01T18:31:43+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0007s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0005s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 459 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2019-07-01T18:33:57+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0159s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000529s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000668s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2019-07-01T18:35:44+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0017s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2019-07-01T18:35:45+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0008s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined variable: show D:\phpStudy\WWW\A00\Runtime\Cache\Admin\58175ecf9f6bc46fb6f3d28ef7120082.php 第 459 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001715s ]
+
+[ 2019-07-01T18:35:50+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0017s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2019-07-01T18:36:14+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2019-07-01T18:36:21+08:00 ] ::1 /A00/admin.php/User/changeUserName
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0004s ]
+SQL: update a00_users set useralis='天水',user_change_date='2019_07_01_18:36:21'  where `id`=1 [ RunTime:0.0492s ]
+SQL: insert into a00_log(log_level,log_message,log_date,log_user) values('15','天一|::1|修改用户信息,将用户名从aaa 转化为天水','2019_07_01_18:36:21','天一') [ RunTime:0.0296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001742s ]
+
+[ 2019-07-01T18:36:24+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2019-07-01T18:36:26+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0017s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2019-07-01T18:59:43+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0017s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001257s ]
+
+[ 2019-07-01T18:59:45+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+ERR: 1054:Unknown column 'prevelidge_del' in 'where clause'
+ [ SQL语句 ] : select * from  a00_users where `prevelidge_del`=0 
+ERR: 1054:Unknown column 'prevelidge_del' in 'where clause'
+ [ SQL语句 ] : select * from  a00_users where `prevelidge_del`=0 
+
+[ 2019-07-01T19:00:05+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0020s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2019-07-01T19:00:06+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+ERR: 1054:Unknown column 'prevelidge_del' in 'where clause'
+ [ SQL语句 ] : select * from  a00_users where `prevelidge_del`=0 
+ERR: 1054:Unknown column 'prevelidge_del' in 'where clause'
+ [ SQL语句 ] : select * from  a00_users where `prevelidge_del`=0 
+
+[ 2019-07-01T19:00:26+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0006s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2019-07-01T19:00:28+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+
+[ 2019-07-01T19:00:53+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0016s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2019-07-01T19:00:54+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0016s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2019-07-01T19:00:55+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+
+[ 2019-07-01T19:01:40+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0013s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0028s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2019-07-01T19:01:42+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2019-07-01T19:02:36+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0034s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2019-07-01T19:02:37+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2019-07-01T19:02:55+08:00 ] ::1 /A00/admin.php/Bussiness/showAddProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0020s ]
+SQL: select `product_id`,`product_name` from a00_product [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2019-07-01T19:02:57+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+
+[ 2019-07-01T19:03:18+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2019-07-01T19:03:59+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0009s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0005s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2019-07-01T19:04:15+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2019-07-01T19:05:39+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0008s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002815s ]
+
+[ 2019-07-01T19:06:00+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0005s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2019-07-01T19:06:01+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2019-07-01T19:06:20+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2019-07-01T19:08:54+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0005s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: realname D:\phpStudy\WWW\A00\Runtime\Cache\Admin\54530df7cf534cdb4c42d518abb92829.php 第 455 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2019-07-01T19:09:08+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0005s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2019-07-01T19:10:18+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2019-07-01T19:16:43+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+
+[ 2019-07-01T19:16:57+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2019-07-01T19:17:25+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2019-07-01T19:20:20+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 185 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2019-07-01T19:21:33+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 185 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2019-07-01T19:23:40+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 184 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2019-07-01T19:23:43+08:00 ] ::1 /A00/admin.php/Priviledges/showPriviledgesList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0010s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\PriviledgesController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0014s ]
+SQL: select * from  a00_prevelidge where `prevelidge_del`=0  [ RunTime:0.0007s ]
+SQL: select * from a00_prevelidge where `prevelidge_del`=0 order by prevelidge_id limit  0  ,10 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2019-07-01T19:23:48+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 184 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2019-07-01T19:27:18+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0009s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2019-07-01T19:28:10+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0011s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2019-07-01T19:29:41+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 184 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2019-07-01T19:29:42+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2019-07-01T19:30:06+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2019-07-01T19:30:32+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 184 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2019-07-01T19:30:33+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2019-07-01T19:30:54+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 184 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2019-07-01T19:30:55+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2019-07-01T19:42:23+08:00 ] ::1 /A00/admin.php/Clothes/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 19 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `a00_categories` [ RunTime:0.0058s ]
+SQL: select * from a00_categories where category_del=0 [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2019-07-01T19:42:27+08:00 ] ::1 /A00/admin.php/Category/showCatgeoryList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\CategoryController.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `a00_categories` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0009s ]
+SQL: select * from a00_categories where category_del=0 [ RunTime:0.0006s ]
+SQL: select * from a00_categories where category_del=0 order by category_id limit  0,10 [ RunTime:0.0006s ]
+SQL: select username,real_name from  a00_users [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2019-07-01T19:42:29+08:00 ] ::1 /A00/admin.php/Category/changeCategory?product_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_categories` [ RunTime:0.0019s ]
+SQL: select * from a00_categories where category_id=2 and category_del=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2019-07-01T19:42:34+08:00 ] ::1 /A00/admin.php/Clothes/showProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 19 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 109 行.
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0005s ]
+SQL: select * from a00_product where product_del=0  [ RunTime:0.0003s ]
+SQL: select * from a00_product where product_del=0 order by product_id  limit 0 ,10 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `a00_categories` [ RunTime:0.0017s ]
+SQL: select * from a00_categories where category_id in (6,2,2,2) [ RunTime:0.0425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001732s ]
+
+[ 2019-07-01T19:42:36+08:00 ] ::1 /A00/admin.php/Clothes/getProductFullInformation?product_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 19 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0017s ]
+SQL: select * from a00_product where product_id= 3 and product_del=0 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_product_image` [ RunTime:0.0389s ]
+SQL: select * from  a00_product_image where pid=3 and `pic_del`=0 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_product_num` [ RunTime:0.0171s ]
+SQL: select * from a00_product_num where product_id=3 and `product_del`=0 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `a00_categories` [ RunTime:0.0019s ]
+SQL: select * from a00_categories where category_del=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001162s ]
+
+[ 2019-07-01T19:42:40+08:00 ] ::1 /A00/admin.php/Clothes/showUploadImage?product_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 19 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0006s ]
+SQL: select * from a00_product where product_id=3 and product_del=0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_product_image` [ RunTime:0.0022s ]
+SQL: select * from a00_product_image where pid=3 and `pic_del`=0 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2019-07-01T19:42:43+08:00 ] ::1 /A00/admin.php/Clothes/getProductFullInformation?product_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 19 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0027s ]
+SQL: select * from a00_product where product_id= 12 and product_del=0 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_product_image` [ RunTime:0.0026s ]
+SQL: select * from  a00_product_image where pid=12 and `pic_del`=0 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_product_num` [ RunTime:0.0016s ]
+SQL: select * from a00_product_num where product_id=12 and `product_del`=0 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `a00_categories` [ RunTime:0.0006s ]
+SQL: select * from a00_categories where category_del=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2019-07-01T19:44:04+08:00 ] ::1 /A00/admin.php/Clothes/showProduct.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+NOTIC: [2048] Declaration of Admin\Controller\ClothesController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 19 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\ClothesController.class.php 第 109 行.
+NOTIC: [2048] Declaration of Admin\Model\ProductModel::find() should be compatible with Think\Model::find($options = Array) D:\phpStudy\WWW\A00\Application\Admin\Model\ProductModel.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `a00_product` [ RunTime:0.0008s ]
+SQL: select * from a00_product where product_del=0  [ RunTime:0.0005s ]
+SQL: select * from a00_product where product_del=0 order by product_id  limit 0 ,10 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_categories` [ RunTime:0.0021s ]
+SQL: select * from a00_categories where category_id in (6,2,2,2) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2019-07-01T19:44:06+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2019-07-01T19:44:09+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0007s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: k D:\phpStudy\WWW\A00\Runtime\Cache\Admin\925cf36d10a1b9b6e495a264ce4d1aee.php 第 136 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\A00\Runtime\Cache\Admin\925cf36d10a1b9b6e495a264ce4d1aee.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2019-07-01T19:44:58+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0009s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2019-07-01T19:45:00+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\A00\Runtime\Cache\Admin\925cf36d10a1b9b6e495a264ce4d1aee.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001095s ]
+
+[ 2019-07-01T19:45:30+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2019-07-01T19:45:32+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0014s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0008s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\A00\Runtime\Cache\Admin\925cf36d10a1b9b6e495a264ce4d1aee.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2019-07-01T19:45:47+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0002s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2019-07-01T19:45:48+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0012s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0015s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\A00\Runtime\Cache\Admin\925cf36d10a1b9b6e495a264ce4d1aee.php 第 136 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\A00\Runtime\Cache\Admin\925cf36d10a1b9b6e495a264ce4d1aee.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2019-07-01T19:46:22+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 191 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2019-07-01T19:46:23+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2019-07-01T19:46:50+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2019-07-01T19:46:51+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0012s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0008s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\A00\Runtime\Cache\Admin\925cf36d10a1b9b6e495a264ce4d1aee.php 第 136 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\A00\Runtime\Cache\Admin\925cf36d10a1b9b6e495a264ce4d1aee.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001425s ]
+
+[ 2019-07-01T19:47:14+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2019-07-01T19:47:15+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0012s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0005s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2019-07-01T19:47:49+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0009s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0005s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2019-07-01T19:47:51+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+
+[ 2019-07-01T19:48:38+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0005s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2019-07-01T19:48:39+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0013s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2019-07-01T19:49:15+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0003s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2019-07-01T19:49:17+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0007s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0013s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001482s ]
+
+[ 2019-07-01T19:49:32+08:00 ] ::1 /A00/admin.php/User/showUserInfoList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0008s ]
+SQL: select * from a00_users where `id` =1  and `user_del`=0 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\A00\Application\Admin\Controller\UserController.class.php 第 189 行.
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0006s ]
+SQL: select * from  a00_users where `user_del`=0  [ RunTime:0.0004s ]
+SQL: select * from a00_users where `user_del`=0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2019-07-01T19:49:33+08:00 ] ::1 /A00/admin.php/User/showUserInfo?userId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::select() should be compatible with Think\Model::select($options = Array) D:\phpStudy\WWW\A00\Application\Common\Model\BaseModel.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `a00_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a00_users` [ RunTime:0.0010s ]
+SQL: select * from a00_users where `id`=1 and `user_del`=0 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `a00_prevelidge` [ RunTime:0.0006s ]
+SQL: select `prevelidge_desc` from a00_prevelidge where `prevelidge_id` in (5) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2019-07-01T19:49:43+08:00 ] ::1 /A00/admin.php/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+

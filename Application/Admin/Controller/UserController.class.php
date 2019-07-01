@@ -7,6 +7,7 @@
  */
 
 namespace Admin\Controller;
+use Admin\Model\PrevelidgeModel;
 use Admin\Model\UsersModel;
 use Common\Controller\AdminLoginController;
 
@@ -32,7 +33,11 @@ class UserController extends AdminLoginController
           return ;
       }
       $userData=$userData[0];
+      $selPreSql=$this->produceSelectPrevelidgeSql($userData["prevelidge_id"]);
+      $prevelidgeModel=new PrevelidgeModel();
+      $preData=$prevelidgeModel->baseFind($selPreSql);
       $this->assign("user",$userData);
+      $this->assign("prevelidge",$preData);
       $this->display("User/showUserInfo");
       return;
    }
@@ -174,6 +179,45 @@ class UserController extends AdminLoginController
 
    }
 
+   public function showUserInfoList(){
+       // 权限检查
+       $can=$this->checkUserPrevelidges(C("SELECT_OTHER_USERS_PREVELIDGE"));
+       if(!$can){
+           $this->error("没有权限，快去和管理员沟通");
+           return ;
+       }
+       $pid=$_GET["p"];
+       if(empty($pid)){
+           $pid=1;
+       }
+       $userModel=new UsersModel();
+       $pageSize = C("PAGE_SIZE");
+       $count = $userModel->getCount();
+       if($pageSize*($pid-1)>$count){
+           $pid=1;
+       }
+       $p = getPage($count, $pageSize);
+
+       $selSql=$this->produceSelectUserListSql();
+       $userData=$userModel->baseFind($selSql);
+       if(count($userData)!=0){
+           $this->assign("data",$userData);
+           $this->assign("show",$p->show());
+       }
+       $this->display("User/showUserInfoList");
+       return ;
+   }
+
+   // 修改用户的信息
+   public function changeUserInfo(){
+
+   }
+
+   // 添加用户
+    public function showAddUserList(){
+
+    }
+
 
     private function produceSelectUserSql($userId){
         $sql="select * from ".C("a00_users")." where `id`=".$userId." and `user_del`=0";
@@ -190,4 +234,16 @@ class UserController extends AdminLoginController
         $sql=$sql.$body."  where `id`=".$user_id;
         return $sql;
     }
+
+    private function produceSelectUserListSql(){
+        $sql="select * from ".C("A00_USERS")." where `user_del`=0 ";
+        return $sql;
+    }
+
+    private function  produceSelectPrevelidgeSql($prevelidgeIdList){
+       $prevelidgeIdList="(".$prevelidgeIdList.")";
+        $sql="select `prevelidge_desc` from ".C("A00_PREVELEDGES")." where `prevelidge_id` in ".$prevelidgeIdList;
+        return $sql;
+    }
+
 }
