@@ -455,7 +455,9 @@
                                 <td><?php echo ($u["useralis"]); ?></td>
                                 <td><?php echo ($u["real_name"]); ?></td>
                                 <td><?php echo ($u["user_add_date"]); ?></td>
-                                <td><input class="btn btn-success radius" type="button" value="修改" onclick="" >
+                                <td><input class="btn btn-success radius" type="button" value="修改" onclick="searchUserInfo(<?php echo ($u['id']); ?>)" >
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="btn btn-success radius" type="button" value="修改权限" onclick="searchUserPrevelidge(<?php echo ($u['id']); ?>)" >
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <input class="btn btn-danger radius" type="button" value="删除" onclick="">
                                 </td>

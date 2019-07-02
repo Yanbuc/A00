@@ -13,6 +13,7 @@ use Common\Controller\AdminLoginController;
 
 class UserController extends AdminLoginController
 {
+    // 显示用户信息
    public function showUserInfo(){
       $userId=empty($_GET["userId"])?0:intval($_GET["userId"]);
       if($userId==0){
@@ -22,6 +23,19 @@ class UserController extends AdminLoginController
           echo json_encode($retn);
           return ;
       }
+      $selectUserId=$_SESSION["user_id"];
+      $can=false;
+      if($selectUserId==$userId){
+          $can=true;
+      }
+      if(!$can){
+        $can=$this->checkUserPrevelidges(C("SELECT_OTHER_USERS_PREVELIDGE"));
+        if(!$can){
+            $this->error("没有权限，快去和管理员沟通");
+            return ;
+        }
+      }
+
       $selSql=$this->produceSelectUserSql($userId);
       $userModel=new UsersModel();
       $userData=$userModel->baseFind($selSql);
@@ -208,6 +222,60 @@ class UserController extends AdminLoginController
        return ;
    }
 
+   // 显示所有的用户权限
+   public function showUserPrevelidge(){
+       $userId=empty($_GET["userId"])?0:intval($_GET["userId"]);
+       if($userId==0){
+           $logMessage="查询用户权限操作出现异常,没有传入userId";
+           $this->putLog($logMessage,C("LOG_LEVEL_SELECT_USER_PREVELIDGE_EXCEPTION"));
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"a problem appear");
+           echo json_encode($retn);
+           return ;
+       }
+       $can=$this->checkUserPrevelidges(C("SELECT_OTHER_USERS_PREVELIDGE"));
+       if(!$can){
+           $this->error("没有权限，快去和管理员沟通");
+           return ;
+       }
+      $selSql=$this->produceSelectUserSql($userId);
+      $userModel=new UsersModel();
+      $userData=$userModel->baseFind($selSql);
+      if(count($userData)==0){
+          $logMessage="查询用户权限操作出现异常,传入了user_id 但是数据库之中没有这个用户的信息";
+          $this->putLog($logMessage,C("LOG_LEVEL_SELECT_USER_PREVELIDGE_EXCEPTION"));
+          $retn=$this->getRetnArray(C("RETN_ERROR"),"a problem appear");
+          echo json_encode($retn);
+          return ;
+      }
+      $userData=$userData[0];
+      $selPreveSql=$this->produceSelectAllPrevelidge();
+      $prevelidgeModel=new PrevelidgeModel();
+      $preData=$prevelidgeModel->baseFind($selPreveSql);
+      $preids=explode(",",$userData["prevelidge_id"]);
+      $userGetPrevelidge=array();
+      $userNotHavePrevelidge=array();
+      foreach($preids as $k=>$v){
+          for($i=0;$i<count($preData);$i++){
+              if($v==$preData[$i]["prevelidge_id"]){
+                   $userGetPrevelidge[$v]=$preData[$i]["prevelidge_desc"];
+              }else{
+                  $userNotHavePrevelidge[$preData[$i]["prevelidge_id"]]=$preData[$i]["prevelidge_desc"];
+              }
+          }
+      }
+      $this->assign("userId",$userData["id"]);
+      $this->assign("username",$userData["useralis"]);
+      $this->assign("userHas",$userGetPrevelidge);
+      $this->assign("userNotHas",$userNotHavePrevelidge);
+      $this->display("User/showUserPrevelidge");
+      return ;
+   }
+
+   // 用户权限修改
+   public function changeUserPrevelidge(){
+
+   }
+
    // 修改用户的信息
    public function changeUserInfo(){
 
@@ -243,6 +311,11 @@ class UserController extends AdminLoginController
     private function  produceSelectPrevelidgeSql($prevelidgeIdList){
        $prevelidgeIdList="(".$prevelidgeIdList.")";
         $sql="select `prevelidge_desc` from ".C("A00_PREVELEDGES")." where `prevelidge_id` in ".$prevelidgeIdList;
+        return $sql;
+    }
+
+    private function produceSelectAllPrevelidge(){
+        $sql="select * from ".C("A00_PREVELEDGES");
         return $sql;
     }
 

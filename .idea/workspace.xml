@@ -7,21 +7,14 @@
     <list default="true" id="73226bb6-5638-4bdd-91b0-836ce7359bd2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/PriviledgesController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/PriviledgesController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/UsersModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/UsersModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/js/headerJ.js" afterPath="$PROJECT_DIR$/Public/Admin/js/headerJ.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/0624284b37336278d642e8aea73cf64a.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/0624284b37336278d642e8aea73cf64a.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/1b4b01fafc2260ec36279b9b0fed27d2.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/1b4b01fafc2260ec36279b9b0fed27d2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/36b0c170c62def63144a5629e391c365.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/36b0c170c62def63144a5629e391c365.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/58175ecf9f6bc46fb6f3d28ef7120082.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/58175ecf9f6bc46fb6f3d28ef7120082.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/6369c8f9f1d151cf15186cd50cdc65c1.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/6369c8f9f1d151cf15186cd50cdc65c1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/54530df7cf534cdb4c42d518abb92829.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/54530df7cf534cdb4c42d518abb92829.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/925cf36d10a1b9b6e495a264ce4d1aee.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/925cf36d10a1b9b6e495a264ce4d1aee.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/a4ad8a2d42bad5b9a35bac0500aaabf1.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/a4ad8a2d42bad5b9a35bac0500aaabf1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/cb8ffcc51dab653a5a0445f42306ef4f.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/cb8ffcc51dab653a5a0445f42306ef4f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Cache/Admin/d07fe48795c3843019b9de8f4b5d7341.php" afterPath="$PROJECT_DIR$/Runtime/Cache/Admin/d07fe48795c3843019b9de8f4b5d7341.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/priviledges/showPriviledgesList.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/priviledges/showPriviledgesList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfoList.html" afterPath="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfoList.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,96 +28,86 @@
       <file leaf-file-name="headerJ.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/Admin/js/headerJ.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+            <state relative-caret-position="262">
+              <caret line="69" column="18" lean-forward="true" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
               <folding>
-                <element signature="n#!!block;n#changeUserInfo#0" expanded="false" />
+                <element signature="n#!!block;n#searchUserPrevelidge#0" expanded="false" />
                 <element signature="n#!!block;n#changeUserPwd#0" expanded="false" />
-                <element signature="n#!!block;n#submitUserChange#0" expanded="false" />
                 <element signature="n#!!block;n#submitUserPwd#0" expanded="false" />
                 <element signature="n#!!block;n#searchPrevelidgeInfo#0" expanded="false" />
                 <element signature="n#!!block;n#updateSinglePrevelidge#0" expanded="false" />
-                <marker date="1561978542599" expanded="true" signature="910:941" ph="..." />
-                <marker date="1561978542599" expanded="true" signature="2690:2721" ph="..." />
-                <marker date="1561978542599" expanded="true" signature="4599:4630" ph="..." />
+                <marker date="1562067186810" expanded="true" signature="1220:1251" ph="..." />
+                <marker date="1562067186810" expanded="true" signature="3496:3527" ph="..." />
+                <marker date="1562067186810" expanded="true" signature="5276:5307" ph="..." />
+                <marker date="1562067186810" expanded="true" signature="7185:7216" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+            <state relative-caret-position="223">
+              <caret line="271" column="4" lean-forward="true" selection-start-line="271" selection-start-column="4" selection-end-line="271" selection-end-column="4" />
               <folding>
                 <element signature="e#118#150#0#PHP" expanded="true" />
-                <element signature="e#1466#2464#0#PHP" expanded="false" />
-                <element signature="e#2469#4554#0#PHP" expanded="false" />
-                <element signature="e#4572#6886#0#PHP" expanded="false" />
-                <element signature="e#6891#7698#0#PHP" expanded="false" />
-                <element signature="e#7821#7984#0#PHP" expanded="false" />
-                <element signature="e#7990#8301#0#PHP" expanded="false" />
-                <marker date="1561981608979" expanded="true" signature="7883:7955" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
-                <marker date="1561981608979" expanded="true" signature="8366:8379" ph="select * fro... " />
-                <marker date="1561981608979" expanded="true" signature="8366:8380" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-                <marker date="1561981608979" expanded="true" signature="8366:8417" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-                <marker date="1561981608979" expanded="true" signature="8366:8419" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-                <marker date="1561981608979" expanded="true" signature="8584:8613" ph="select * fro... " />
-                <marker date="1561981608979" expanded="true" signature="8584:8614" ph="select * fro... ${c()}" />
-                <marker date="1561981608979" expanded="true" signature="8584:8663" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-                <marker date="1561981608979" expanded="true" signature="8584:8664" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-                <marker date="1561981608979" expanded="true" signature="8584:8665" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+                <element signature="e#1800#2798#0#PHP" expanded="false" />
+                <element signature="e#2803#4888#0#PHP" expanded="false" />
+                <element signature="e#4906#7220#0#PHP" expanded="false" />
+                <element signature="e#7225#8032#0#PHP" expanded="false" />
+                <element signature="e#8053#10037#0#PHP" expanded="false" />
+                <element signature="e#10392#10703#0#PHP" expanded="false" />
+                <marker date="1562067315306" expanded="true" signature="10285:10357" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
+                <marker date="1562067315306" expanded="true" signature="10768:10781" ph="select * fro... " />
+                <marker date="1562067315306" expanded="true" signature="10768:10782" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+                <marker date="1562067315306" expanded="true" signature="10768:10819" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+                <marker date="1562067315306" expanded="true" signature="10768:10821" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+                <marker date="1562067315306" expanded="true" signature="10986:11015" ph="select * fro... " />
+                <marker date="1562067315306" expanded="true" signature="10986:11016" ph="select * fro... ${c()}" />
+                <marker date="1562067315306" expanded="true" signature="10986:11065" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+                <marker date="1562067315306" expanded="true" signature="10986:11066" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+                <marker date="1562067315306" expanded="true" signature="10986:11067" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+                <marker date="1562067315306" expanded="true" signature="11180:11193" ph="select * fro... " />
+                <marker date="1562067315306" expanded="true" signature="11180:11194" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showUserInfo.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html">
+      <file leaf-file-name="showUserPrevelidge.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showUserPrevelidge.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+            <state relative-caret-position="-882">
+              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#form#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#3;n#form#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="e#2236#2242#0" expanded="true" />
-                <element signature="e#2242#2248#0" expanded="true" />
-                <element signature="e#2248#2254#0" expanded="true" />
-                <element signature="e#2254#2260#0" expanded="true" />
+                <element signature="e#1061#1067#0" expanded="true" />
+                <element signature="e#1067#1073#0" expanded="true" />
+                <element signature="e#1073#1079#0" expanded="true" />
+                <element signature="e#1079#1085#0" expanded="true" />
+                <element signature="e#1549#1555#0" expanded="true" />
+                <element signature="e#1555#1561#0" expanded="true" />
+                <element signature="e#1561#1567#0" expanded="true" />
+                <element signature="e#1567#1573#0" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#4;n#form#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showProductDetail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html">
+      <file leaf-file-name="AdminLoginController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="90" column="86" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="89" />
+            <state relative-caret-position="157">
+              <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
               <folding>
-                <element signature="e#4475#4481#0" expanded="true" />
+                <marker date="1561548140484" expanded="true" signature="1323:1336" ph="select * fro... " />
+                <marker date="1561548140484" expanded="true" signature="1323:1337" ph="select * fro... ${C()}" />
+                <marker date="1561548140484" expanded="true" signature="1323:1368" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+                <marker date="1561548140484" expanded="true" signature="1323:1369" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+                <marker date="1561548140484" expanded="true" signature="1323:1397" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+                <marker date="1561548140484" expanded="true" signature="1323:1398" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showProduct.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -132,8 +115,8 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="672">
+              <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -151,9 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>di</find>
-      <find>sho</find>
-      <find>logou</find>
       <find>logout</find>
       <find>dashboard</find>
       <find>floor</find>
@@ -181,6 +161,9 @@
       <find>image_</find>
       <find>$p</find>
       <find>show</find>
+      <find>用户信息</find>
+      <find>checked</find>
+      <find>searchUserInfo</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -196,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/clothes/add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ProductImageModel.php" />
         <option value="$PROJECT_DIR$/Application/Common/Conf/db.php" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/show.html" />
@@ -215,7 +197,6 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showChangePwdInfo.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/add.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/changeCategory.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Category/showCategoryList.html" />
@@ -239,14 +220,16 @@
         <option value="$PROJECT_DIR$/Tpl/default/Admin/priviledges/showAddPrevelidgeInfo.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/priviledges/showPriviledgesList.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html" />
-        <option value="$PROJECT_DIR$/Public/Admin/js/headerJ.js" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/PrevelidgeModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/UsersModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/PriviledgesController.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" />
         <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfoList.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html" />
+        <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showUserPrevelidge.html" />
+        <option value="$PROJECT_DIR$/Public/Admin/js/headerJ.js" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html" />
       </list>
     </option>
   </component>
@@ -281,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -391,7 +375,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,11 +466,12 @@
       <workItem from="1561634656175" duration="2467000" />
       <workItem from="1561800007293" duration="596000" />
       <workItem from="1561976590348" duration="5194000" />
+      <workItem from="1562062974699" duration="4350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173595000" />
+    <option name="totallyTimeSpent" value="177945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -543,7 +527,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/DashBoard/index.html" />
     <entry file="file://$PROJECT_DIR$/Public/Admin/js/a.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3150">
@@ -582,13 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -631,13 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
           <caret line="84" column="11" lean-forward="true" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -722,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/js/Click.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2058">
-          <caret line="148" column="13" lean-forward="true" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/CategoryController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2261">
@@ -773,21 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1438">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-          <folding>
-            <marker date="1561548140484" expanded="true" signature="1323:1336" ph="select * fro... " />
-            <marker date="1561548140484" expanded="true" signature="1323:1337" ph="select * fro... ${C()}" />
-            <marker date="1561548140484" expanded="true" signature="1323:1368" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-            <marker date="1561548140484" expanded="true" signature="1323:1369" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-            <marker date="1561548140484" expanded="true" signature="1323:1397" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-            <marker date="1561548140484" expanded="true" signature="1323:1398" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-84">
@@ -806,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="706">
           <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,9 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,37 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfoList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="69" column="54" lean-forward="true" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
-          <folding>
-            <element signature="e#3246#3252#0" expanded="false" />
-            <element signature="e#3252#3258#0" expanded="false" />
-            <element signature="e#3258#3264#0" expanded="false" />
-            <element signature="e#3264#3270#0" expanded="false" />
-            <element signature="e#3270#3276#0" expanded="false" />
-            <element signature="e#3282#3288#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PriviledgesController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
@@ -1027,79 +939,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/js/headerJ.js">
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#changeUserInfo#0" expanded="false" />
-            <element signature="n#!!block;n#changeUserPwd#0" expanded="false" />
-            <element signature="n#!!block;n#submitUserChange#0" expanded="false" />
-            <element signature="n#!!block;n#submitUserPwd#0" expanded="false" />
-            <element signature="n#!!block;n#searchPrevelidgeInfo#0" expanded="false" />
-            <element signature="n#!!block;n#updateSinglePrevelidge#0" expanded="false" />
-            <marker date="1561978542599" expanded="true" signature="910:941" ph="..." />
-            <marker date="1561978542599" expanded="true" signature="2690:2721" ph="..." />
-            <marker date="1561978542599" expanded="true" signature="4599:4630" ph="..." />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3402">
+          <caret line="81" column="54" lean-forward="false" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="20" />
+        <state relative-caret-position="672">
+          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html">
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfoList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="90" column="86" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="89" />
+        <state relative-caret-position="-672">
+          <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
           <folding>
-            <element signature="e#4475#4481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
-          <folding>
-            <element signature="e#118#150#0#PHP" expanded="true" />
-            <element signature="e#1466#2464#0#PHP" expanded="false" />
-            <element signature="e#2469#4554#0#PHP" expanded="false" />
-            <element signature="e#4572#6886#0#PHP" expanded="false" />
-            <element signature="e#6891#7698#0#PHP" expanded="false" />
-            <element signature="e#7821#7984#0#PHP" expanded="false" />
-            <element signature="e#7990#8301#0#PHP" expanded="false" />
-            <marker date="1561981608979" expanded="true" signature="7883:7955" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
-            <marker date="1561981608979" expanded="true" signature="8366:8379" ph="select * fro... " />
-            <marker date="1561981608979" expanded="true" signature="8366:8380" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-            <marker date="1561981608979" expanded="true" signature="8366:8417" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-            <marker date="1561981608979" expanded="true" signature="8366:8419" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
-            <marker date="1561981608979" expanded="true" signature="8584:8613" ph="select * fro... " />
-            <marker date="1561981608979" expanded="true" signature="8584:8614" ph="select * fro... ${c()}" />
-            <marker date="1561981608979" expanded="true" signature="8584:8663" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-            <marker date="1561981608979" expanded="true" signature="8584:8664" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
-            <marker date="1561981608979" expanded="true" signature="8584:8665" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+            <element signature="e#3272#3278#0" expanded="true" />
+            <element signature="e#3278#3284#0" expanded="true" />
+            <element signature="e#3284#3290#0" expanded="true" />
+            <element signature="e#3290#3296#0" expanded="true" />
+            <element signature="e#3296#3302#0" expanded="true" />
+            <element signature="e#3302#3308#0" expanded="true" />
+            <element signature="e#3308#3314#0" expanded="true" />
+            <element signature="e#3503#3509#0" expanded="true" />
+            <element signature="e#3515#3521#0" expanded="true" />
+            <element signature="e#3521#3527#0" expanded="true" />
+            <element signature="e#3527#3533#0" expanded="true" />
+            <element signature="e#3533#3539#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showUserInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showUploadImage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Clothes/showProductDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2512">
+          <caret line="94" column="14" lean-forward="true" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#form#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#3;n#form#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#2236#2242#0" expanded="true" />
-            <element signature="e#2242#2248#0" expanded="true" />
-            <element signature="e#2248#2254#0" expanded="true" />
-            <element signature="e#2254#2260#0" expanded="true" />
+            <element signature="e#4995#5001#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/Public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="145" column="58" lean-forward="false" selection-start-line="145" selection-start-column="54" selection-end-line="145" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Controller/AdminLoginController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding>
+            <marker date="1561548140484" expanded="true" signature="1323:1336" ph="select * fro... " />
+            <marker date="1561548140484" expanded="true" signature="1323:1337" ph="select * fro... ${C()}" />
+            <marker date="1561548140484" expanded="true" signature="1323:1368" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+            <marker date="1561548140484" expanded="true" signature="1323:1369" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+            <marker date="1561548140484" expanded="true" signature="1323:1397" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+            <marker date="1561548140484" expanded="true" signature="1323:1398" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/Click.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
+          <folding>
+            <marker date="1561459192396" expanded="true" signature="4086:4117" ph="..." />
+            <marker date="1561459192396" expanded="true" signature="6898:6929" ph="..." />
+            <marker date="1561459192396" expanded="true" signature="10415:10446" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/default/Admin/User/showUserPrevelidge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-882">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#1061#1067#0" expanded="true" />
+            <element signature="e#1067#1073#0" expanded="true" />
+            <element signature="e#1073#1079#0" expanded="true" />
+            <element signature="e#1079#1085#0" expanded="true" />
+            <element signature="e#1549#1555#0" expanded="true" />
+            <element signature="e#1555#1561#0" expanded="true" />
+            <element signature="e#1561#1567#0" expanded="true" />
+            <element signature="e#1567#1573#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#4;n#form#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/headerJ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="69" column="18" lean-forward="true" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!block;n#searchUserPrevelidge#0" expanded="false" />
+            <element signature="n#!!block;n#changeUserPwd#0" expanded="false" />
+            <element signature="n#!!block;n#submitUserPwd#0" expanded="false" />
+            <element signature="n#!!block;n#searchPrevelidgeInfo#0" expanded="false" />
+            <element signature="n#!!block;n#updateSinglePrevelidge#0" expanded="false" />
+            <marker date="1562067186810" expanded="true" signature="1220:1251" ph="..." />
+            <marker date="1562067186810" expanded="true" signature="3496:3527" ph="..." />
+            <marker date="1562067186810" expanded="true" signature="5276:5307" ph="..." />
+            <marker date="1562067186810" expanded="true" signature="7185:7216" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="271" column="4" lean-forward="true" selection-start-line="271" selection-start-column="4" selection-end-line="271" selection-end-column="4" />
+          <folding>
+            <element signature="e#118#150#0#PHP" expanded="true" />
+            <element signature="e#1800#2798#0#PHP" expanded="false" />
+            <element signature="e#2803#4888#0#PHP" expanded="false" />
+            <element signature="e#4906#7220#0#PHP" expanded="false" />
+            <element signature="e#7225#8032#0#PHP" expanded="false" />
+            <element signature="e#8053#10037#0#PHP" expanded="false" />
+            <element signature="e#10392#10703#0#PHP" expanded="false" />
+            <marker date="1562067315306" expanded="true" signature="10285:10357" ph="select * fro... ${C(&quot;a00_users&quot;)}" />
+            <marker date="1562067315306" expanded="true" signature="10768:10781" ph="select * fro... " />
+            <marker date="1562067315306" expanded="true" signature="10768:10782" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+            <marker date="1562067315306" expanded="true" signature="10768:10819" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+            <marker date="1562067315306" expanded="true" signature="10768:10821" ph="select * fro... ${C(&quot;A00_USERS&quot;)}" />
+            <marker date="1562067315306" expanded="true" signature="10986:11015" ph="select * fro... " />
+            <marker date="1562067315306" expanded="true" signature="10986:11016" ph="select * fro... ${c()}" />
+            <marker date="1562067315306" expanded="true" signature="10986:11065" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+            <marker date="1562067315306" expanded="true" signature="10986:11066" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+            <marker date="1562067315306" expanded="true" signature="10986:11067" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
+            <marker date="1562067315306" expanded="true" signature="11180:11193" ph="select * fro... " />
+            <marker date="1562067315306" expanded="true" signature="11180:11194" ph="select * fro... ${C(&quot;A00_PREVELEDGES&quot;)}" />
           </folding>
         </state>
       </provider>

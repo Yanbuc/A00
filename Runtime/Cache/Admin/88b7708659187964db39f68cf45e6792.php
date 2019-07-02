@@ -99,45 +99,33 @@
         </div>
     </div>
     <div class="row cl" >
-        <label class="form-label col-xs-4 col-sm-3">账号</label>
-        <div class="formControls col-xs-8 col-sm-9">
-            <input id="account" readonly="true" value="<?php echo ($user['username']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
-        </div>
-    </div>
-    <div class="row cl" >
         <label class="form-label col-xs-4 col-sm-3">用户名</label>
         <div class="formControls col-xs-8 col-sm-9">
-            <input id="userName" value="<?php echo ($user['useralis']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
-        </div>
-    </div>
-    <div class="row cl">
-        <label class="form-label col-xs-4 col-sm-3">真实姓名</label>
-        <div class="formControls col-xs-8 col-sm-9">
-            <input id="userRealName" readonly="true" type="text" value="<?php echo ($user['real_name']); ?>" class="input-text" autocomplete="off" placeholder="用户真实姓名"   style="width: 300px">
+            <input id="userName" value="<?php echo ($username); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
         </div>
     </div>
     <div class="row cl" >
-        <label class="form-label col-xs-4 col-sm-3">添加日期</label>
-        <div class="formControls col-xs-8 col-sm-9">
-            <input id="addDate" readonly="true" value="<?php echo ($user['user_add_date']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
+        <label class="form-label col-xs-4 col-sm-3">用户已有权限</label>
+        <div class="mws-form-item large">
+            <?php if(is_array($userHas)): foreach($userHas as $k=>$v): ?><div class="check-box">
+                    <input type="checkbox" id="checkbox-<?php echo ($k); ?>" name="chks" value="<?php echo ($k); ?>" checked="checked">
+                    <label for="checkbox-<?php echo ($k); ?>"><?php echo ($v); ?>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div><?php endforeach; endif; ?>
         </div>
     </div>
     <div class="row cl" >
-        <label class="form-label col-xs-4 col-sm-3">修改日期</label>
+        <label class="form-label col-xs-4 col-sm-3">用户未有权限</label>
         <div class="formControls col-xs-8 col-sm-9">
-            <input id="changeDate" readonly="true" value="<?php echo ($user['user_change_date']); ?>" type="text" class="input-text" autocomplete="off" placeholder="用户名"  style="width: 300px" >
-        </div>
-    </div>
-    <div class="row cl" >
-        <label class="form-label col-xs-4 col-sm-3">用户权限</label>
-        <div class="formControls col-xs-8 col-sm-9">
-            <?php if(is_array($prevelidge)): foreach($prevelidge as $key=>$v): ?><label><?php echo ($v["prevelidge_desc"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;</label><?php endforeach; endif; ?>
+            <?php if(is_array($userNotHas)): foreach($userNotHas as $k=>$v): ?><div class="check-box">
+                    <input type="checkbox" id="checkbox-<?php echo ($k); ?>" name="chk2" value="<?php echo ($k); ?>">
+                    <label for="checkbox-<?php echo ($k); ?>"><?php echo ($v); ?>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div><?php endforeach; endif; ?>
         </div>
     </div>
     <div class="row cl">
         <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
             <input  id="today" class="btn btn-success radius" type="button" value="是否修改" onclick="todayDate()" style="color: #FFFFFF;" name="1">
-            <input class="btn btn-primary radius" type="button" value="提交" onclick="submitUserChange()">
+            <input class="btn btn-primary radius" type="button" value="提交" onclick="submitUserPrevelidgeChange(<?php echo ($userId); ?>)">
         </div>
     </div>
 </form>

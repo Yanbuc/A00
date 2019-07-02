@@ -47,6 +47,7 @@ return array(
     "CHANGE_OTHER_USERS_INFO"=>9,
 
 
+
     //******************************提示配置
     "CATEGORY_TIP"=>"类别名已经存在",
    //******************日志级别配置
@@ -70,6 +71,7 @@ return array(
     "LOG_LEVEL_SELECT_PREVELIDGE_EXCEPTION"=>18,
     "LOG_LEVEL_CHANGE_PREVELIDGE_EXCEPTION"=>19,
     "LOG_LEVEL_CHANGE_PREVELIDGE"=>20,
+    "LOG_LEVEL_SELECT_USER_PREVELIDGE_EXCEPTION"=>21,
 
 
 
