@@ -19,6 +19,7 @@ function searchUserInfo(userId) {
         content: url//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
     });
 }
+// 查询用户权限
 function searchUserPrevelidge(userId) {
     var url=urlPrefix+"User/showUserPrevelidge"+"?userId="+userId;
     layer.open({
@@ -26,6 +27,49 @@ function searchUserPrevelidge(userId) {
         type: 2,
         scrollbar:false,
         content: url//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+    });
+}
+
+// 删除指定用户
+function deleteUser(userId) {
+    layer.confirm('确定是否删除用户', {
+        btn: ['确定删除', '我再想想'] //可以无限个按钮
+    }, function(inde, layero){
+        rurl=urlPrefix+"User/deleteUser"
+        //yes 按钮的回调
+        $.ajax({
+            url:rurl,
+            type:"post",
+          //  dataType:"JSON",
+            data:{
+                "userId":userId
+            },
+            success:function(data){
+                alert(data);
+                return ;
+                if(data.status=="success"){
+                    layer.msg(data.message,{icon: 1,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+
+                }else{
+                    layer.msg(data.message,{icon: 2,time:2000},function(index){
+                        layer.close(index);
+                        window.location.reload();
+                    });
+                }
+            },
+            error:function(e,x){
+                console.log('nonono');
+            }
+
+        })
+        layer.close(inde);
+
+    },function(index){
+        //no 按钮
+        layer.close(index)
     });
 }
 
@@ -50,16 +94,16 @@ function submitUserPrevelidgeChange(userId) {
         var userNotHas="";
         for (var i = 0; i < check.length; i++) {
             if (check[i].checked) {
-                userHas += (check[i].value + ";");
+                userHas += (check[i].value + ",");
             }else{
-                userNotHas+=(check[i].value + ";");
+                userNotHas+=(check[i].value + ",");
             }
         }
         for (var i = 0; i < check2.length; i++) {
             if (check2[i].checked) {
-                userHas += (check2[i].value + ";");
+                userHas += (check2[i].value + ",");
             }else{
-                userNotHas+=(check2[i].value + ";");
+                userNotHas+=(check2[i].value + ",");
             }
         }
         var ru=urlPrefix+"User/changeUserPrevelidge";
@@ -292,5 +336,15 @@ function updateSinglePrevelidge() {
 
 
 
+}
+
+// 增加用户
+
+function addUser(){
+
+   var name= document.getElementsByName("ckj");
+   for(var i=0;i<name.length;i++){
+      //
+   }
 }
 

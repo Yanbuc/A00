@@ -273,17 +273,104 @@ class UserController extends AdminLoginController
 
    // 用户权限修改
    public function changeUserPrevelidge(){
+         $userId=empty($_POST["user_id"])?0:intval($_POST["user_id"]);
+         $userHas=empty($_POST["userHas"])?"":strval($_POST["userHas"]);
+         $userNotHas=empty($_POST["userNotHas"])?"":strval($_POST["userNotHas"]);
+         if($userId==0){
+             $logMessage="修改用户权限出现异常，没有传入足够的参数";
+             $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PREVELIDGE_EXCEPTION"));
+             $retn=$this->getRetnArray(C("RETN_ERROR"),"a problem appear");
+             echo json_encode($retn);
+             return ;
+         }
+        $can=$this->checkUserPrevelidges(C("CHANGE_OTHER_USERS_INFO"));
+        if(!$can){
+            $this->error("没有权限，快去和管理员沟通");
+            return ;
+        }
+         $userModel=new UsersModel();
+         $selSql=$this->produceSelectUserSql($userId);
+         $userData=$userModel->baseFind($selSql);
+         if(count($userData)==0){
+             $logMessage="修改用户权限出现异常，传入了user_id,但是数据库之中没有这个用户";
+             $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PREVELIDGE_EXCEPTION"));
+             $retn=$this->getRetnArray(C("RETN_ERROR"),"a problem appear");
+             echo json_encode($retn);
+             return ;
+         }
+         $userHas=substr($userHas,0,strlen($userHas)-1);
+         $upDataSql=$this->produceUpdateUserPrevelidgeSql($userId,$userHas);
+         $userModel->baseUpdate($upDataSql);
+         $logMessage="修改用户权限成功";
+         $this->putLog($logMessage,C("LOG_LEVEL_CHANGE_USER_PREVELIDGE_EXCEPTION"));
+         $retn=$this->getRetnArray(C("RETN_SUCCESS"),"用户修改权限成功");
+         echo json_encode($retn);
+         return ;
 
    }
 
-   // 修改用户的信息
-   public function changeUserInfo(){
-
+   // 删除用户
+   public function deleteUser(){
+       $userId=empty($_POST["userId"])?0:intval($_POST["userId"]);
+       if($userId==0){
+           $logMessage="删除用户异常，没有传入user_id";
+           $this->putLog($logMessage,C("LOG_LEVEL_DELETE_USER_EXCEPTION"));
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"a problem appear");
+           echo json_encode($retn);
+           return ;
+       }
+       $userModel=new UsersModel();
+       $selSql=$this->produceSelectUserSql($userId);
+       $userData=$userModel->baseFind($selSql);
+       if(count($userData)==0){
+           $logMessage="删除用户异常，传入了user_id,但是数据库之中不存在这个用户";
+           $this->putLog($logMessage,C("LOG_LEVEL_DELETE_USER_EXCEPTION"));
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"a problem appear");
+           echo json_encode($retn);
+           return ;
+       }
+       $can=$this->checkUserPrevelidges(C( "DELETE_OTHER_USER"));
+       if(!$can){
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"没有权限");
+           echo json_encode($retn);
+           return ;
+       }
+       if($_SESSION["user_id"]==$userId){
+           $retn=$this->getRetnArray(C("RETN_ERROR"),"自己不能删除自己");
+           echo json_encode($retn);
+           return ;
+       }
+       $updateSql=$this->produceDeleteUserSql($userId);
+       $userModel->baseUpdate($updateSql);
+       $logMessage="删除用户操作成功";
+       $this->putLog($logMessage,C("LOG_LEVEL_DELETE_USER"));
+       $retn=$this->getRetnArray(C("RETN_SUCCESS"),"用户修改成功");
+       echo json_encode($retn);
+       return ;
    }
 
    // 添加用户
-    public function showAddUserList(){
-
+    public function showAddUser(){
+        $selPrev=$this->produceSelectAllPrevelidge();
+        $prevelidgeModel=new PrevelidgeModel();
+        $prevData=$prevelidgeModel->baseFind($selPrev);
+        $data=array();
+        $i=0;
+        $j=1;
+        foreach($prevData as $k=>$v){
+            if(empty($data[$i])){
+                $data[$i]=array();
+            }
+            if($j%4==0){
+                $j=1;
+                $i+=1;
+            }
+            $data[$i][]=array("desc"=>$v["prevelidge_desc"],"id"=>$v["prevelidge_id"]);
+            $j++;
+        }
+        $this->assign("prev",$data);
+        $this->display("User/showAddUser");
+        return ;
     }
 
 
@@ -316,6 +403,14 @@ class UserController extends AdminLoginController
 
     private function produceSelectAllPrevelidge(){
         $sql="select * from ".C("A00_PREVELEDGES");
+        return $sql;
+    }
+    private function produceUpdateUserPrevelidgeSql($userId,$prevelidge){
+        $sql="update ".C("A00_USERS")." set `prevelidge_id`='".$prevelidge."' where `id`=".$userId;
+        return $sql;
+    }
+    private function produceDeleteUserSql($userId){
+        $sql="update ".C("A00_USERS")." set `user_del`=0 where `id`=".$userId;
         return $sql;
     }
 

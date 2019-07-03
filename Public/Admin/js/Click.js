@@ -160,7 +160,7 @@ function changeProduct(){
         var check = document.getElementsByName("chk");
         for (var i = 0; i < check.length; i++) {
             if (check[i].checked) {
-                deletePids += (check[i].value + ";");
+                deletePids += (check[i].value + ",");
             }
         }
         layer.confirm('确定是否修改产品信息', {

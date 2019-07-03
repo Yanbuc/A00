@@ -1,0 +1,135 @@
+<include file="Public:anotherjsandcss"/>
+<body>
+<div id="mws-themer">
+    <div id="mws-themer-hide"></div>
+    <div id="mws-themer-content">
+        <div class="mws-themer-section">
+            <label for="mws-theme-presets">Presets</label> <select id="mws-theme-presets"></select>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <ul>
+                <li><span>Base Color</span> <div id="mws-base-cp" class="mws-cp-trigger"></div></li>
+                <li><span>Text Color</span> <div id="mws-text-cp" class="mws-cp-trigger"></div></li>
+                <li><span>Text Glow Color</span> <div id="mws-textglow-cp" class="mws-cp-trigger"></div></li>
+            </ul>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <ul>
+                <li><span>Text Glow Opacity</span> <div id="mws-textglow-op"></div></li>
+            </ul>
+        </div>
+        <div class="mws-themer-separator"></div>
+        <div class="mws-themer-section">
+            <button class="mws-button red small" id="mws-themer-getcss">Get CSS</button>
+        </div>
+    </div>
+    <div id="mws-themer-css-dialog">
+        <div class="mws-form">
+            <div class="mws-form-row" style="padding:0;">
+                <div class="mws-form-item">
+                    <textarea cols="auto" rows="auto" readonly="readonly"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="Public:header"/>
+
+<div id="mws-wrapper">
+    <div id="mws-sidebar-stitch"></div>
+    <div id="mws-sidebar-bg"></div>
+    <div id="mws-sidebar">
+        <div id="mws-searchbox" class="mws-inset">
+            <form action="http://www.malijuwebshop.com/themes/mws-admin/form_layouts.html">
+                <input type="text" class="mws-search-input" />
+                <input type="submit" class="mws-search-submit" />
+            </form>
+        </div>
+        <include file="Public:menu"/>
+    </div>
+
+    <div id="mws-container" class="clearfix">
+        <div class="container">
+            <div class="mws-panel grid_8">
+                <div class="mws-panel-header">
+                    <span class="mws-i-24 i-list">进货</span>
+                </div>
+                <div class="mws-panel-body">
+                    <form class="mws-form"  enctype="multipart/form-data" id="uploadForm">
+                        <div class="mws-form-inline">
+                            <div class="mws-form-row">
+                                <label>用户账号</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>用户名</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label>用户真实姓名</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                </div>
+                            </div>
+                            <
+                            <div class="mws-form-row">
+                                <label>用户权限</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                    <table>
+                                        <foreach name="prev" item="v" key="k" >
+                                            <tr>
+                                                <?php
+                                                   if(!empty($v[0]['desc'])){
+
+                                                      echo "<td>";
+                                                      echo $v[0]['desc'];
+                                                      echo "<input type=\"checkbox\" value=\" ";
+                                                      echo $v[0]['id'];
+                                                       echo " \" name=\"ckj\" ></td>";
+                                                }
+                                                ?>
+                                                <?php
+                                                   if(!empty($v[1]['desc'])){
+
+                                                      echo "<td>";
+                                                echo $v[1]['desc'];
+                                                echo "<input type=\"checkbox\" value=\" ";
+                                                echo $v[1]['id'];
+                                                echo " \" name=\"ckj\" ></td>";
+                                                }
+                                                ?>
+                                                <?php
+                                                   if(!empty($v[2]['desc'])){
+
+                                                      echo "<td>";
+                                                echo $v[2]['desc'];
+                                                echo "<input type=\"checkbox\" value=\" ";
+                                                echo $v[2]['id'];
+                                                echo " \" name=\"ckj\" ></td>";
+                                                }
+                                                ?>
+                                            </tr>
+                                        </foreach>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mws-button-row">
+                            <button type="button" value="提交" class="mws-button green" onclick="addUser()"  >提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

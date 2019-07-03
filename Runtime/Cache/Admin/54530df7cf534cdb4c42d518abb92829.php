@@ -421,7 +421,7 @@
             <a  href="#" class="mws-i-24 i-chart">用户管理</a>
             <ul>
                 <li><a href="<?php echo U('Admin/User/showUserInfoList');?>">用户列表</a></li>
-                <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">添加用户</a></li>
+                <li><a href="<?php echo U('Admin/User/showAddUser');?>">添加用户</a></li>
                 <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">查询用户</a></li>
             </ul>
         </li>
@@ -459,7 +459,7 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <input class="btn btn-success radius" type="button" value="修改权限" onclick="searchUserPrevelidge(<?php echo ($u['id']); ?>)" >
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="">
+                                    <input class="btn btn-danger radius" type="button" value="删除" onclick="deleteUser(<?php echo ($u['id']); ?>)">
                                 </td>
 
                             </tr><?php endforeach; endif; ?>

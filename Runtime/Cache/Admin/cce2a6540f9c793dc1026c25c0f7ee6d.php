@@ -92,7 +92,6 @@
     </style>
 </head>
 <body>
-
 <div id="mws-themer">
     <div id="mws-themer-hide"></div>
     <div id="mws-themer-content">
@@ -424,7 +423,7 @@
             <a  href="#" class="mws-i-24 i-chart">用户管理</a>
             <ul>
                 <li><a href="<?php echo U('Admin/User/showUserInfoList');?>">用户列表</a></li>
-                <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">添加用户</a></li>
+                <li><a href="<?php echo U('Admin/User/showAddUser');?>">添加用户</a></li>
                 <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">查询用户</a></li>
             </ul>
         </li>
@@ -438,26 +437,48 @@
         <div class="container">
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span class="mws-i-24 i-list">类别添加表</span>
+                    <span class="mws-i-24 i-list">进货</span>
                 </div>
                 <div class="mws-panel-body">
-                    <form class="mws-form" id="uploadForm">
+                    <form class="mws-form"  enctype="multipart/form-data" id="uploadForm">
                         <div class="mws-form-inline">
                             <div class="mws-form-row">
-                                <label>类别名字</label>
-                                <div class="mws-form-item small">
-                                    <input type="text" class="mws-textinput" name="categoryName" id="categoryName" />
+                                <label>用户账号</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
                                 </div>
                             </div>
                             <div class="mws-form-row">
-                                <label>类别描述</label>
-                            <div class="mws-form-item large">
-                                <textarea rows="100%" cols="100%" name="categoryDescription" id="categoryDescription"></textarea>
+                                <label>用户名</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                </div>
                             </div>
+                            <div class="mws-form-row">
+                                <label>用户真实姓名</label>
+                                <div class="mws-form-item large">
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                </div>
+                            </div>
+                            <
+                            <div class="mws-form-row">
+                                <label>用户权限</label>
+                                <div class="formControls col-xs-8 col-sm-9">
+                                    <table>
+                                        <?php if(is_array($prev)): foreach($prev as $k=>$v): ?><tr>
+                                                <?php
+ if(!empty($v[0]['desc'])){ echo "<td>"; echo $v[0]['desc']; echo "<input type=\"checkbox\" value=\" "; echo $v[0]['id']; echo " \" name=\"ckj\" ></td>"; } ?>
+                                                <?php
+ if(!empty($v[1]['desc'])){ echo "<td>"; echo $v[1]['desc']; echo "<input type=\"checkbox\" value=\" "; echo $v[1]['id']; echo " \" name=\"ckj\" ></td>"; } ?>
+                                                <?php
+ if(!empty($v[2]['desc'])){ echo "<td>"; echo $v[2]['desc']; echo "<input type=\"checkbox\" value=\" "; echo $v[2]['id']; echo " \" name=\"ckj\" ></td>"; } ?>
+                                            </tr><?php endforeach; endif; ?>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <div class="mws-button-row">
-                            <button type="button" value="添加" class="mws-button green" onclick="addCategory()" >添加</button>
+                            <button type="button" value="提交" class="mws-button green" onclick="addUser()"  >提交</button>
                         </div>
                     </form>
                 </div>
