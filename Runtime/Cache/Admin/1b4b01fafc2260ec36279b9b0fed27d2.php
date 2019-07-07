@@ -434,7 +434,7 @@
             <a  href="#" class="mws-i-24 i-chart">用户管理</a>
             <ul>
                 <li><a href="<?php echo U('Admin/User/showUserInfoList');?>">用户列表</a></li>
-                <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">添加用户</a></li>
+                <li><a href="<?php echo U('Admin/User/showAddUser');?>">添加用户</a></li>
                 <li><a href="<?php echo U('Admin/Bussiness/showAddsellProduct');?>">查询用户</a></li>
             </ul>
         </li>

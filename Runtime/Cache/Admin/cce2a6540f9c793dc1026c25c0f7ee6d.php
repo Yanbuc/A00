@@ -445,19 +445,19 @@
                             <div class="mws-form-row">
                                 <label>用户账号</label>
                                 <div class="mws-form-item large">
-                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="useraccount" />
                                 </div>
                             </div>
                             <div class="mws-form-row">
                                 <label>用户名</label>
                                 <div class="mws-form-item large">
-                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="username" />
                                 </div>
                             </div>
                             <div class="mws-form-row">
                                 <label>用户真实姓名</label>
                                 <div class="mws-form-item large">
-                                    <input type="text" class="mws-textinput" name="clothesPrice" id="add_product_num" />
+                                    <input type="text" class="mws-textinput" name="clothesPrice" id="user_real_name" />
                                 </div>
                             </div>
                             <

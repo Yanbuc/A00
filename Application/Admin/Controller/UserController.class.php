@@ -351,6 +351,11 @@ class UserController extends AdminLoginController
 
    // 添加用户
     public function showAddUser(){
+        $can=$this->checkUserPrevelidges(C("ADD_OTHER_USER"));
+        if(!$can){
+            $this->error("没有权限，快去和管理员沟通");
+            return ;
+        }
         $selPrev=$this->produceSelectAllPrevelidge();
         $prevelidgeModel=new PrevelidgeModel();
         $prevData=$prevelidgeModel->baseFind($selPrev);
@@ -371,6 +376,57 @@ class UserController extends AdminLoginController
         $this->assign("prev",$data);
         $this->display("User/showAddUser");
         return ;
+    }
+
+    public function addUser(){
+        $userName=empty($_POST["username"])?"":strval($_POST["username"]);
+        $useraccount=empty($_POST["useraccount"])?"":strval($_POST["useraccount"]);
+        $userRealName=empty($_POST["userRealName"])?"":strval($_POST["userRealName"]);
+        $userHas=empty($_POST["userHas"])?"":strval($_POST["userHas"]);
+        $can=$this->checkUserPrevelidges(C("ADD_OTHER_USER"));
+        if(!$can){
+            $logMessage="增加用户异常，用户没有增加用户的权限";
+            $this->putLog($logMessage,C("LOG_LEVEL_ADD_USER_EXCEPTION"));
+            $retn=$this->getRetnArray(C("RETN_ERROR"),"快点向管理员查询权限吧");
+            echo json_encode($retn);
+            return ;
+        }
+        if($userName==""||$useraccount==""||$userRealName==""){
+            $logMessage="增加用户异常，没有传入足够的信息";
+            $this->putLog($logMessage,C("LOG_LEVEL_ADD_USER_EXCEPTION"));
+            $retn=$this->getRetnArray(C("RETN_ERROR"),"a problem disappear");
+            echo json_encode($retn);
+            return ;
+        }
+        $userModel=new UsersModel();
+        $selSql=$this->produceSelectUserAccountSql($useraccount);
+        $userData=$userModel->baseFind($selSql);
+        if(count($userData)!=0){
+            $logMessage="增加用户异常，用户账号已经存在";
+            $this->putLog($logMessage,C("LOG_LEVEL_ADD_USER_EXCEPTION"));
+            $retn=$this->getRetnArray(C("RETN_ERROR"),"a problem disappear");
+            echo json_encode($retn);
+            return ;
+        }
+        $inst=array();
+        $inst["username"]=$useraccount;
+        $inst["real_name"]=$userRealName;
+        $inst["useralis"]=$userName;
+        $inst["useradded"]=$_SESSION["user_id"];
+        $inst["user_add_date"]=getCurrentDate(C("DAY"));
+        $inst["user_change_date"]=getCurrentDate(C("DAY"));
+        $inst["password"]=encodePassword("123456");
+        if($userHas!=""){
+            $inst["prevelidge_id"]=substr($userHas,0,strlen($userHas)-1);
+        }
+        $insSql=$this->produceAddUserSql($inst);
+        $userModel->baseUpdate($insSql);
+        $logMessage="用户增加成功";
+        $this->putLog($logMessage,C("LOG_LEVEL_ADD_USER"));
+        $retn=$this->getRetnArray(C("RETN_SUCCESS"),"用户增加成功");
+        echo json_encode($retn);
+        return ;
+
     }
 
 
@@ -412,6 +468,26 @@ class UserController extends AdminLoginController
     private function produceDeleteUserSql($userId){
         $sql="update ".C("A00_USERS")." set `user_del`=0 where `id`=".$userId;
         return $sql;
+    }
+
+    private function produceSelectUserAccountSql($useraccount){
+        $sql="select * from ".C("A00_USERS")." where `username`='".$useraccount."' and `user_del`=0";
+        return $sql;
+    }
+
+    private function produceAddUserSql($data){
+        $sql="insert into ".C("A00_USERS");
+        $body="(";
+        $end="values(";
+        foreach($data as $k =>$v){
+            $body.=$k.",";
+            $end.="'".$v."',";
+        }
+        $body=substr($body,0,strlen($body)-1);
+        $end=substr($end,0,strlen($end)-1);
+        $body.=") ";
+        $end.=") ";
+        return $sql.$body.$end;
     }
 
 }

@@ -40,13 +40,11 @@ function deleteUser(userId) {
         $.ajax({
             url:rurl,
             type:"post",
-          //  dataType:"JSON",
+            dataType:"JSON",
             data:{
                 "userId":userId
             },
             success:function(data){
-                alert(data);
-                return ;
                 if(data.status=="success"){
                     layer.msg(data.message,{icon: 1,time:2000},function(index){
                         layer.close(index);
@@ -343,8 +341,47 @@ function updateSinglePrevelidge() {
 function addUser(){
 
    var name= document.getElementsByName("ckj");
+   var userHas="";
    for(var i=0;i<name.length;i++){
-      //
+       if(name[i].checked) {
+           userHas += name[i].value + ",";
+       }
    }
+   var username=$("#username").val();
+   var useraccount=$("#useraccount").val();
+   var userRealName=$("#user_real_name").val();
+    var ru=urlPrefix+"User/addUser";
+    $.ajax({
+        url:ru,
+        type:"post",
+       // dataType:"JSON",
+        data:{
+            "username":username,
+            "useraccount":useraccount,
+            "userRealName":userRealName,
+            "userHas":userHas
+        },
+        success:function(data){
+            alert(data);
+            return ;
+            if(data.status=="success"){
+                layer.msg(data.message,{icon: 1,time:2000},function(index){
+                    layer.close(index);
+                    window.location.reload();
+                });
+            }else{
+                layer.msg(data.message,{icon: 2,time:2000},function(index){
+                    layer.close(index);
+                    window.location.reload();
+                });
+
+            }
+        },
+        error:function(e,x){
+            console.log('nonono');
+        }
+
+    })
+
 }
 
